@@ -39,8 +39,7 @@ const CEF = {
     MSHENEBLOBA_PROGRESS: 36,
     MART: 37,
     MEQANIKOSI: 38,
-    MERIA: 39,
-    SAVALI: 40
+    MERIA: 39
 };
 
 
@@ -107,7 +106,6 @@ function hideAllCefPackets(){
 
     document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
     document.getElementById('MERIA-CONTAINER').style.display = "none";
-    document.getElementById('SAVALI-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -268,11 +266,7 @@ function sendCefPacket(response) {
 
         case CEF.MERIA:
             document.getElementById('MERIA-CONTAINER').style.display = "block";
-            break
-
-        case CEF.SAVALI:
-            document.getElementById('SAVALI-CONTAINER').style.display = "block";
-            break    
+            break  
     }
 }
 
@@ -431,10 +425,6 @@ function hideCefPacket(response) {
 
         case CEF.MERIA:
             document.getElementById('MERIA-CONTAINER').style.display = "none";
-            break
-
-        case CEF.SAVALI:
-            document.getElementById('SAVALI-CONTAINER').style.display = "none";
             break
     }
 }
