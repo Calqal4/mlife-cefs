@@ -41,7 +41,7 @@ const CEF = {
     DASTUR: 38,
     GUNSHOP: 39,
     MEQANIKOSI: 40,
-    MERIA: 41
+    SAVALI: 41
 };
 
 
@@ -109,7 +109,6 @@ function hideAllCefPackets(){
     document.getElementById('DASTUR-CONTAINER').style.display = "none";
     document.getElementById('gun-container').style.display = "none";
     document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
-    document.getElementById('MERIA-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -276,8 +275,8 @@ function sendCefPacket(response) {
             document.getElementById('MEQANIKOSI-CONTAINER').style.display = "block";
             break
 
-        case CEF.MERIA:
-            document.getElementById('MERIA-CONTAINER').style.display = "block";
+        case CEF.SAVALI:
+            document.getElementById('SAVALI-CONTAINER').style.display = "block";
             break
     }
 }
@@ -443,8 +442,8 @@ function hideCefPacket(response) {
             document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
             break
 
-        case CEF.MERIA:
-            document.getElementById('MERIA-CONTAINER').style.display = "block";
+        case CEF.SAVALI:
+            document.getElementById('SAVALI-CONTAINER').style.display = "none";
             break
     }
 }
