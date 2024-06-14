@@ -2245,30 +2245,6 @@
                 cef.emit("Mechanic:clicked", attemp)
             }
         </script>
-        <!-- MERIA -->
-
-        <div id="MERIA-CONTAINER">
-            <DIV>   
-                <div class="meriaBg"></div><div class="meriaUpEffect animate__animated animate__fadeInDown"></div><div class="meriaMain"><div class="meriaText"><div class="meriaArvici">გომორჯობოთ რით შემიძლიო დოგეხმოროთ ?</div><div class="meriaAvtosaloni">სოქოლოქო მერიო</div></div><div onclick="MeriaButton(0)" class="meriaCard3"><div class="bARATITBG3"></div><div class="mERIABARATIT6">ბიზნესის სობუთები</div><div class="mERIABARATIT5">1 000 000 დოლორი</div></div><div onclick="MeriaButton(1)" class="meriaCard2"><div class="bARATITBG2"></div><div class="mERIABARATIT4">სოზღვოო / სოჰოერო სობუთები</div><div class="mERIABARATIT3">500 000 დოლორი</div></div><div onclick="MeriaButton(2)" class="meriaCard"><div class="bARATITBG"></div><div class="mERIABARATIT2">ტოქსის ლიცენზიო</div><div class="mERIABARATIT">50 000 დოლორი</div></div></div></div></div>
-            </div> 
-        </div>
-
-        <script>
-            function MeriaButton(button){
-                let attemp = button + "," + "a";
-                cef.emit("Meria:clicked", attemp)
-            }
-        </script>
-        <script>
-        document.addEventListener("keydown", function(event) {
-            if (event.key === "Escape") {
-                hideAllCefPackets();
-                sendCefPacket(CEF.HUD);
-                cef.set_focus(false);
-                cef.hide(true);
-            }
-        });
-        </script>
         <script src="./scripts/script.js"></script>
         <script src="./scripts/app.js"></script>
     </BODY>
