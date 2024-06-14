@@ -179,6 +179,9 @@ body {
 #gun-container{
   display: none;
 }
+#MEQANIKOSI-CONTAINER{
+  display: none;
+}
 /* =========================================================== */
 
 @font-face {
@@ -18932,4 +18935,328 @@ transition-duration: 0.3s;
   text-align: center;
   align-items: center;
   flex-direction: column;
+}
+/* meqanikosi */
+.mEQANIKIBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/mEQANIKIBG.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mEQANIKOSIEFFECTUP {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/mEQANIKOSIEFFECTUP.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mEQANIKI {
+  position: absolute;
+  left: calc(50% - 0.5px);
+  top: calc(50% - -0.5px);
+  width: 633px;
+  height: 285px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mEQANIKIFRAME {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 633px;
+  height: 285px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mEQANIKIDZRAVISDASTEIJEBAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 148px;
+  width: 190px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIDZRAVISDASTEIJEBAFRAME:hover{
+  opacity: 1;
+}
+.mEQANIKIDZRAVISDASTEIJEBABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIDZRAVISDASTEIJEBATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 140px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIDISKEBISDAYENEBAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 205px;
+  top: 148px;
+  width: 190px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIDISKEBISDAYENEBAFRAME:hover{
+  opacity: 1;
+}
+.mEQANIKIDISKEBISDAYENEBABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIDISKEBISDAYENEBATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 140px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIPOPKORNISCHAWERAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 410px;
+  top: 148px;
+  width: 188px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIPOPKORNISCHAWERAFRAME:hover{
+ opacity: 1;
+}
+.mEQANIKIPOPKORNISCHAWERABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 188px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIPOPKORNISCHAWERATEXT1 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  width: 138px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIPOPKORNISCHAWERATEXT2 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 8px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 34px;
+  width: 138px;
+  height: 7px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIFERISSHECVLAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 224px;
+  width: 156px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIFERISSHECVLAFRAME:hover{
+  opacity: 1;
+}
+.mEQANIKIFERISSHECVLABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 156px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIFERISSHECVLATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 106px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKISAVALINAWILEBISGADZLIE {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 171px;
+  top: 224px;
+  width: 281px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKISAVALINAWILEBISGADZLIE:hover{
+  opacity: 1;
+}
+.mEQANIKISAVALINAWILEBISGADZLIE2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 281px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKISAVALINAWILEBISGADZLIE3 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 231px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIZEDAAGWERATEXT {
+  transform-origin: top left;
+  color: #ffffff80;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 84px;
+  width: 633px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIZEDATEXTFRAME {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 59px;
+  align-items: flex-start;
+}
+.mEQANIKIZEDATEXT2 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 36px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIZEDATEXT1 {
+  transform-origin: top left;
+  color: #73abff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 633px;
+  height: 18px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
