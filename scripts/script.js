@@ -38,7 +38,7 @@ const CEF = {
     SHAXTA_PROGRESS: 35,
     MSHENEBLOBA_PROGRESS: 36,
     MART: 37,
-    MERIA: 38
+    DASTUR: 38
 };
 
 
@@ -102,8 +102,8 @@ function hideAllCefPackets(){
     document.getElementById('AVTOASISTENTI-Section').style.display = "none";
     document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById('MART-CONTAINER').style.display = "none";
-    // meria no meqanika
-    document.getElementById('MERIA-CONTAINER').style.display = "none";
+
+    document.getElementById('DASTUR-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -258,10 +258,9 @@ function sendCefPacket(response) {
             document.getElementById('MART-CONTAINER').style.display = "block";
             break   
             
-
-        case CEF.MERIA:
-            document.getElementById('MERIA-CONTAINER').style.display = "block";
-            break  
+        case CEF.DASTUR:
+            document.getElementById('DASTUR-CONTAINER').style.display = "block";
+            break
     }
 }
 
@@ -414,8 +413,8 @@ function hideCefPacket(response) {
             document.getElementById('MART-CONTAINER').style.display = "none";
             break  
 
-        case CEF.MERIA:
-            document.getElementById('MERIA-CONTAINER').style.display = "none";
+        case CEF.DASTUR:
+            document.getElementById('DASTUR-CONTAINER').style.display = "none";
             break
     }
 }
