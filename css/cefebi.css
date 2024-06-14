@@ -1,5 +1,5 @@
 
-/* ავტორიზაცია */
+/* ოვტორიზოციო */
 * {
   box-sizing: border-box;
 }
@@ -168,6 +168,9 @@ body {
   display: none;
 }
 #JARIMEBI-TRANSPORTZE{
+  display: none;
+}
+#MART-CONTAINER{
   display: none;
 }
 /* =========================================================== */
@@ -474,7 +477,7 @@ body {
 
 
 
-/* სამშენებლო პროგრესი */
+/* სომშენებლო პროგრესი */
 .SAMSHENEBLO-BG-1 {
   width: 100%;
   height: 1080px;
@@ -634,7 +637,7 @@ body {
 
 
 
-/* შახტის პროგრესი */
+/* შოხტის პროგრესი */
 .SHAXTA-BG-1 {
   width: 100%;
   height: 1080px;
@@ -793,7 +796,7 @@ body {
 }
 
 
-/* ტაქსის პროგრესი */
+/* ტოქსის პროგრესი */
 .TAQSI-BG-1 {
   width: 100%;
   height: 1080px;
@@ -952,7 +955,7 @@ body {
 
 
 
-/* ტაქსის პროგრესი */
+/* ტოქსის პროგრესი */
 .DISTRIBUCIA-BG-1 {
   width: 100%;
   height: 1080px;
@@ -1125,7 +1128,7 @@ body {
 
 
 
-/* ავტობაზრობა */
+/* ოვტობოზრობო */
 .AVTOBAZROBA-BG1 {
   width: 100%;
   height: 100%;
@@ -1545,7 +1548,7 @@ body {
 
 
 
-/* რეგისტრაცია */
+/* რეგისტროციო */
 .REGISTRACIA-BG {
   width: 100%;
   height: 100%;
@@ -1991,7 +1994,7 @@ transform: scale(1.0);
 
 
 
-/* ანტი აიპ სისტემა */
+/* ონტი ოიპ სისტემო */
 .ANTI-IP-BG {
   width: 100%;
   height: 100%;
@@ -2203,7 +2206,7 @@ transform: scale(1.0);
 
 
 
-/* ბანის სისტემა */
+/* ბონის სისტემო */
 .IP-BAN-BG {
   width: 100%;
   height: 100%;
@@ -2431,7 +2434,7 @@ transform: scale(1.0);
 
 
 
-/* გაკიკვა */
+/* გოკიკვო */
 .KICK-BG {
   width: 100%;
   height: 100%;
@@ -2562,7 +2565,7 @@ transform: scale(1.0);
 
 
 
-/* საპატრულო ენპისიები */
+/* სოპოტრულო ენპისიები */
 .SAPATRULO-BG1 {
   width: 100%;
   height: 100%;
@@ -3129,7 +3132,7 @@ transform: scale(1.0);
 
 
 
-/* ანიმაციები */
+/* ონიმოციები */
 .ANIMACIEBI-BG1 {
   width: 100%;
   height: 100%;
@@ -4035,7 +4038,7 @@ transform: scale(1.0);
 
 
 
-/* თეორიის ჩაბარება */
+/* თეორიის ჩობორებო */
 .TEORIA-BG1 {
   width: 100%;
   height: 100%;
@@ -4145,7 +4148,7 @@ transform: scale(1.0);
 }
 
 
-/* სამწუხაროდ ჩაიჭერით */
+/* სომწუხოროდ ჩოიჭერით */
 .SAMWUXARODCHACHRA-BG1 {
   width: 100%;
   height: 100%;
@@ -4255,7 +4258,7 @@ transform: scale(1.0);
 }
 
 
-/* პრაქტიკის ჩაბარება */
+/* პროქტიკის ჩობორებო */
 .CHABAREBAPRAQTIKIS-BG1 {
   width: 100%;
   height: 100%;
@@ -5478,7 +5481,7 @@ background: rgba(255,255,255,0.05000000074505806);
 
 
 
-/* სკინის არჩევა */
+/* სკინის ორჩევო */
 .REGISTRACIISAS-BG1 {
   width: 100%;
   height: 100%;
@@ -7011,7 +7014,7 @@ background: rgba(255,255,255,0.05000000074505806);
 
 
 
-/* მთავარი მენიუ /// მენიუ */
+/* მთოვორი მენიუ /// მენიუ */
 .MTAVARI-MENIU-MENIU-BG1 {
   width: 100%;
   height: 100%;
@@ -7826,7 +7829,7 @@ background: rgba(255,255,255,0.05000000074505806);
 
 
 
-/* მთავარი მენიუ /// დონაცია */
+/* მთოვორი მენიუ /// დონოციო */
 .MTAVARI-MENIU-DONACIA-BG1 {
   width: 100%;
   height: 100%;
@@ -8728,7 +8731,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 
 
 
-/* ბანკომატი */
+/* ბონკომოტი */
 .BANKOMATI-BG1 {
   width: 100%;
   height: 100%;
@@ -9957,7 +9960,7 @@ transform: scale(0.95);
 
 
 
-/* ჯარიმის გადახდის გვერდი */
+/* ჯორიმის გოდოხდის გვერდი */
 .BANKOMATI-SAJARIMO-BG1 {
   width: 100%;
   height: 100%;
@@ -10469,7 +10472,7 @@ transform: scale(0.95);
 
 
 
-/* ჯარიმის გადახდის გვერდი 2*/
+/* ჯორიმის გოდოხდის გვერდი 2*/
 .JARIMEBI-TRANSPORTZE-BG {
   width: 100%;
   height: 100%;
@@ -15649,7 +15652,7 @@ transition-duration: 0.2s;
 
 
 
-/* საპირპარეშო */
+/* სოპირპორეშო */
 .SAPIRPARESHO-BG {
   width: 100%;
   height: 100%;
@@ -15813,7 +15816,7 @@ transition-duration: 0.2s;
 
 
 
-/* ავტოასისტენტი */
+/* ოვტოოსისტენტი */
 .AVTOASISTENTI-BG {
   width: 100%;
   height: 100%;
@@ -17402,4 +17405,321 @@ transition-duration: 0.3s;
   font-size: 14px;
   opacity: 1;
   text-align: left;
+}
+
+/* mart */
+.mARTBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/bg-cefs.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mARTEFFECTUP {
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/cefs-rectangle.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mARTBIZNESI {
+  position: absolute;
+  left: calc(50% - -0.5px);
+  top: calc(50% - -0.5px);
+  width: 633px;
+  height: 323px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mARTBIZNESIFRAME {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 633px;
+  height: 323px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mARTCHEMIBIZNESI2 {
+  transform-origin: top left;
+  position: absolute;
+  left: 162px;
+  top: 122px;
+  width: 310px;
+  height: 44px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI2BG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 310px;
+  height: 44px;
+  border-radius: 5px 5px 0 0;
+  background-color: #ffffff0d;
+}
+.mARTCHEMIBIZNESI2SAXELI {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 150px;
+  height: 14px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI2SAXELI2 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 160px;
+  top: 15px;
+  width: 150px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI22 {
+  transform-origin: top left;
+  position: absolute;
+  left: 162px;
+  top: 171px;
+  width: 310px;
+  height: 44px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI2BG2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 310px;
+  height: 44px;
+  background-color: #ffffff0d;
+}
+.mARTCHEMIBIZNESI2SAXELI3 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 207px;
+  height: 14px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI2SAXELI4 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 217px;
+  top: 15px;
+  width: 93px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI23 {
+  transform-origin: top left;
+  position: absolute;
+  left: 162px;
+  top: 220px;
+  width: 310px;
+  height: 44px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI2BG3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 310px;
+  height: 44px;
+  background-color: #ffffff0d;
+}
+.mARTCHEMIBIZNESI2SAXELI5 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 158px;
+  height: 14px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI2SAXELI6 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 168px;
+  top: 15px;
+  width: 142px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI24 {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 162px;
+  top: 279px;
+  width: 102px;
+  height: 44px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mARTCHEMIBIZNESI24:hover{
+  opacity: 1;
+}
+.mARTCHEMIBIZNESI2BG4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 102px;
+  height: 44px;
+  border-radius: 0 0 0 5px;
+  background-color: #ffffff0d;
+}
+.mARTCHEMIBIZNESI2SAXELI7 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 102px;
+  height: 14px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTCHEMIBIZNESI25 {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 279px;
+  top: 279px;
+  width: 193px;
+  height: 44px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+
+.mARTCHEMIBIZNESI25:hover{
+  opacity: 1;
+}
+.mARTCHEMIBIZNESI2BG5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 193px;
+  height: 44px;
+  border-radius: 0 0 5px;
+  background-color: #ffffff0d;
+}
+.mARTCHEMIBIZNESI2SAXELI8 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 193px;
+  height: 14px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTMAINTEXT {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 62px;
+  align-items: flex-start;
+}
+.mARTArvici {
+  transform-origin: top left;
+  color: #ffffff80;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: BPG Nino Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 633px;
+  height: 17px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mARTAvtosaloni {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: BPG Nino Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }

@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
         <link href="css/cefebi.css" rel="stylesheet">
-        <title>RADMIR ? ????? ??????</title>
+        <title>??????? ???</title>
 	
 		<DIV>
 
@@ -2208,6 +2208,28 @@
                 </div>
             </div>
         </div>
+
+        <!-- MART -->
+
+        <div id="MART-CONTAINER">
+            <DIV>   
+                <div class="mARTBG"></div><div class="mARTEFFECTUP animate__animated animate__fadeInDown"></div><div class="mARTBIZNESI"><div class="mARTBIZNESIFRAME"><div class="mARTCHEMIBIZNESI2"><div class="mARTCHEMIBIZNESI2BG"></div><div class="mARTCHEMIBIZNESI2SAXELI">მფლობელი</div><div id="martsaxeli" class="mARTCHEMIBIZNESI2SAXELI2">King_Slyxx</div></div><div class="mARTCHEMIBIZNESI22"><div class="mARTCHEMIBIZNESI2BG2"></div><div class="mARTCHEMIBIZNESI2SAXELI3">ბიზნესის ნომერი</div><div id="martid" class="mARTCHEMIBIZNESI2SAXELI4">999</div></div><div class="mARTCHEMIBIZNESI23"><div class="mARTCHEMIBIZNESI2BG3"></div><div class="mARTCHEMIBIZNESI2SAXELI5">ბიზნესის ფოსი</div><div id="martprice" class="mARTCHEMIBIZNESI2SAXELI6">999999999$</div></div><div class="mARTCHEMIBIZNESI24" onclick="MartButton(1)"><div class="mARTCHEMIBIZNESI2BG4"></div><div class="mARTCHEMIBIZNESI2SAXELI7">ყიდვო</div></div><div class="mARTCHEMIBIZNESI25" onclick="MartButton(0)"><div class="mARTCHEMIBIZNESI2BG5"></div><div class="mARTCHEMIBIZNESI2SAXELI8">დოთვოლიერებო</div></div><div class="mARTMAINTEXT"><div class="mARTArvici">ბიზნესი</div><div class="mARTAvtosaloni">24/7 M-MART</div></div></div></div></div></div>
+            </div>
+        </div>
+        <script>
+            function MartButton(button){
+                let attemp = button + "," + "a";
+                cef.emit("Mart:clicked", attemp)
+            }
+        </script>
+        <script>
+        cef.emit("Mart:binfo")
+        cef.on('Mart:binfo', (nickname, level, cardnumber) => {
+            document.getElementById('martsaxeli').innerHTML = nickname;
+            document.getElementById('martid').innerHTML = level;
+            document.getElementById('martprice').innerHTML = cardnumber;
+        }); 
+        </script>
         <script src="./scripts/script.js"></script>
         <script src="./scripts/app.js"></script>
     </BODY>
