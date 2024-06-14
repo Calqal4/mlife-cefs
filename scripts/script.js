@@ -37,7 +37,10 @@ const CEF = {
     TAXI_PROGRESS: 34,
     SHAXTA_PROGRESS: 35,
     MSHENEBLOBA_PROGRESS: 36,
-    MART: 37
+    MART: 37,
+    MEQANIKOSI: 38,
+    MERIA: 39,
+    SAVALI: 40
 };
 
 
@@ -101,6 +104,10 @@ function hideAllCefPackets(){
     document.getElementById('AVTOASISTENTI-Section').style.display = "none";
     document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById('MART-CONTAINER').style.display = "none";
+
+    document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
+    document.getElementById('MERIA-CONTAINER').style.display = "none";
+    document.getElementById('SAVALI-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -253,6 +260,18 @@ function sendCefPacket(response) {
 
         case CEF.MART:
             document.getElementById('MART-CONTAINER').style.display = "block";
+            break   
+            
+        case CEF.MEQANIKOSI:
+            document.getElementById('MEQANIKOSI-CONTAINER').style.display = "block";
+            break
+
+        case CEF.MERIA:
+            document.getElementById('MERIA-CONTAINER').style.display = "block";
+            break
+
+        case CEF.SAVALI:
+            document.getElementById('SAVALI-CONTAINER').style.display = "block";
             break    
     }
 }
@@ -404,7 +423,19 @@ function hideCefPacket(response) {
     
         case CEF.MART:
             document.getElementById('MART-CONTAINER').style.display = "none";
-            break   
+            break  
+            
+        case CEF.MEQANIKOSI:
+            document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
+            break
+
+        case CEF.MERIA:
+            document.getElementById('MERIA-CONTAINER').style.display = "none";
+            break
+
+        case CEF.SAVALI:
+            document.getElementById('SAVALI-CONTAINER').style.display = "none";
+            break
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {

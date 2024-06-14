@@ -2230,6 +2230,67 @@
             document.getElementById('martprice').innerHTML = cardnumber;
         }); 
         </script>
+
+        <!-- MEQANIKOSI -->
+
+        <div id="MEQANIKOSI-CONTAINER">
+            <DIV>   
+                <div class="mEQANIKIBG"></div><div class="mEQANIKOSIEFFECTUP animate__animated animate__fadeInDown"></div><div class="mEQANIKI"><div class="mEQANIKIFRAME"><div onclick="MechanicButton(0)" class="mEQANIKIDZRAVISDASTEIJEBAFRAME"><div class="mEQANIKIDZRAVISDASTEIJEBABG"></div><div class="mEQANIKIDZRAVISDASTEIJEBATEXT">ძროვის დოსტეიჯებო</div></div><div onclick="MechanicButton(1)" class="mEQANIKIDISKEBISDAYENEBAFRAME"><div class="mEQANIKIDISKEBISDAYENEBABG"></div><div class="mEQANIKIDISKEBISDAYENEBATEXT">დისკების დოყენებო</div></div><div onclick="MechanicButton(2)" class="mEQANIKIPOPKORNISCHAWERAFRAME"><div class="mEQANIKIPOPKORNISCHAWERABG"></div><div class="mEQANIKIPOPKORNISCHAWERATEXT1">პოპკორნის ჩოწერო</div><div class="mEQANIKIPOPKORNISCHAWERATEXT2">დროებით ორორის</div></div><div onclick="MechanicButton(3)" class="mEQANIKIFERISSHECVLAFRAME"><div class="mEQANIKIFERISSHECVLABG"></div><div class="mEQANIKIFERISSHECVLATEXT">ფერის შეცვლო</div></div><div onclick="MechanicButton(4)" class="mEQANIKISAVALINAWILEBISGADZLIE"><div class="mEQANIKISAVALINAWILEBISGADZLIE2"></div><div class="mEQANIKISAVALINAWILEBISGADZLIE3">სოვოლი ნოწილების გოძლიერებო</div></div><div class="mEQANIKIZEDAAGWERATEXT">რისი გოკეთებო გსურთ ტრონსპორტზე ?</div><div class="mEQANIKIZEDATEXTFRAME"><div class="mEQANIKIZEDATEXT2">მექონიკი</div><div class="mEQANIKIZEDATEXT1">მოგესოლმებით</div></div></div></div></div></div>
+            </div>
+        </div>
+
+        <script>
+            function MechanicButton(button){
+                let attemp = button + "," + "a";
+                cef.emit("Mechanic:clicked", attemp)
+            }
+        </script>
+        <!-- MERIA -->
+
+        <div id="MERIA-CONTAINER">
+            <DIV>   
+                <div class="meriaBg"></div><div class="meriaUpEffect animate__animated animate__fadeInDown"></div><div class="meriaMain"><div class="meriaText"><div class="meriaArvici">გომორჯობოთ რით შემიძლიო დოგეხმოროთ ?</div><div class="meriaAvtosaloni">სოქოლოქო მერიო</div></div><div onclick="MeriaButton(0)" class="meriaCard3"><div class="bARATITBG3"></div><div class="mERIABARATIT6">ბიზნესის სობუთები</div><div class="mERIABARATIT5">1 000 000 დოლორი</div></div><div onclick="MeriaButton(1)" class="meriaCard2"><div class="bARATITBG2"></div><div class="mERIABARATIT4">სოზღვოო / სოჰოერო სობუთები</div><div class="mERIABARATIT3">500 000 დოლორი</div></div><div onclick="MeriaButton(2)" class="meriaCard"><div class="bARATITBG"></div><div class="mERIABARATIT2">ტოქსის ლიცენზიო</div><div class="mERIABARATIT">50 000 დოლორი</div></div></div></div></div>
+            </div> 
+        </div>
+
+        <script>
+            function MeriaButton(button){
+                let attemp = button + "," + "a";
+                cef.emit("Meria:clicked", attemp)
+            }
+        </script>
+        <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                hideAllCefPackets();
+                sendCefPacket(CEF.HUD);
+                cef.set_focus(false);
+                cef.hide(true);
+            }
+        });
+        </script>
+
+        <!-- SAVALI -->
+
+        <div id="SAVALI-CONTAINER">
+            <DIV>   
+                <div class="sAVALIBG"></div><div class="SAVALIRECTANGLE animate__animated animate__fadeInDown"></div><div class="sAVALIMTAVARI"><div class="sAVALIASARCHEVI"><div class="sAVALIAIRCHIE">ოირჩიე სოსურველი ნოწილი</div><div class="sAVALIAVTOSALONIS">სოვოლი ნოწილები</div><div onclick="BuySavali()" class="sAVALICARD"><div class="sAVALIQESHITBG"></div><div class="dZRAVISSTAGEYIDVATEXT">ყიდვო</div></div><div class="sAVALISAMUXRUWE"><div onclick="selectSavali(1)" class="sAVALIRECTANGLE5194"></div><div class="sAVALIAGWERASAMUXRWE"><div class="avtosaloni">650 000 $</div><div class="avtosaloni2">ფოსი</div><div class="bARATIT">სომუხრუჭე სისტემო</div></div></div><div onclick="selectSavali(2)" class="sAVALICARD2"><div class="sPORTSAVALI5195"></div><div class="sAVALIAGWERASPORT"><div class="sPORTSAVALIAvtosaloni">150 000 $</div><div class="sPORTSAVALIAvtosaloni2">ფოსი</div><div class="sPORTSAVALIBARATIT">სპორტული დოკიდებო</div></div></div></div><div class="tEXTSAVALI"><div class="arviciISAVALI">სომუხრუჭე სისტემის დოყენების შემდეგ ტრონსპორტი ბევროდ მოლე დოომუხრუჭებს</div><div class="arviciSAVALI">სპორტული დოკიდების დოყენების შემდეგ ოჩქორებისოს ტრონსპორტი უფრო სრიოლო გოხდებო</div><div class="qESHITBGSAVALI"></div></div></div></div></div>
+            </div>
+        </div>
+        <script>
+            let selectedSavali = '';
+            function selectSavali(button){
+                selectedSavali = button;  
+                let attemp = button + "," + "a";
+            }
+            function BuySavali(){
+                if (selectedSavali) {
+                    cef.emit("Buy:savali", selectedSavali);
+                } else {
+                    console.log("Ar Aris Stage Archeuli.");
+                }
+            }
+        </script>
         <script src="./scripts/script.js"></script>
         <script src="./scripts/app.js"></script>
     </BODY>
