@@ -176,6 +176,9 @@ body {
 #DASTUR-CONTAINER{
   display: none;
 }
+#gun-container{
+  display: none;
+}
 /* =========================================================== */
 
 @font-face {
