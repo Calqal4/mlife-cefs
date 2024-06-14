@@ -102,6 +102,7 @@ function hideAllCefPackets(){
     document.getElementById('AVTOASISTENTI-Section').style.display = "none";
     document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById('MART-CONTAINER').style.display = "none";
+    // meria no meqanika
     document.getElementById('MERIA-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
