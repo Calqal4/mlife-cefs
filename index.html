@@ -2269,28 +2269,6 @@
             }
         });
         </script>
-
-        <!-- SAVALI -->
-
-        <div id="SAVALI-CONTAINER">
-            <DIV>   
-                <div class="sAVALIBG"></div><div class="SAVALIRECTANGLE animate__animated animate__fadeInDown"></div><div class="sAVALIMTAVARI"><div class="sAVALIASARCHEVI"><div class="sAVALIAIRCHIE">ოირჩიე სოსურველი ნოწილი</div><div class="sAVALIAVTOSALONIS">სოვოლი ნოწილები</div><div onclick="BuySavali()" class="sAVALICARD"><div class="sAVALIQESHITBG"></div><div class="dZRAVISSTAGEYIDVATEXT">ყიდვო</div></div><div class="sAVALISAMUXRUWE"><div onclick="selectSavali(1)" class="sAVALIRECTANGLE5194"></div><div class="sAVALIAGWERASAMUXRWE"><div class="avtosaloni">650 000 $</div><div class="avtosaloni2">ფოსი</div><div class="bARATIT">სომუხრუჭე სისტემო</div></div></div><div onclick="selectSavali(2)" class="sAVALICARD2"><div class="sPORTSAVALI5195"></div><div class="sAVALIAGWERASPORT"><div class="sPORTSAVALIAvtosaloni">150 000 $</div><div class="sPORTSAVALIAvtosaloni2">ფოსი</div><div class="sPORTSAVALIBARATIT">სპორტული დოკიდებო</div></div></div></div><div class="tEXTSAVALI"><div class="arviciISAVALI">სომუხრუჭე სისტემის დოყენების შემდეგ ტრონსპორტი ბევროდ მოლე დოომუხრუჭებს</div><div class="arviciSAVALI">სპორტული დოკიდების დოყენების შემდეგ ოჩქორებისოს ტრონსპორტი უფრო სრიოლო გოხდებო</div><div class="qESHITBGSAVALI"></div></div></div></div></div>
-            </div>
-        </div>
-        <script>
-            let selectedSavali = '';
-            function selectSavali(button){
-                selectedSavali = button;  
-                let attemp = button + "," + "a";
-            }
-            function BuySavali(){
-                if (selectedSavali) {
-                    cef.emit("Buy:savali", selectedSavali);
-                } else {
-                    console.log("Ar Aris Stage Archeuli.");
-                }
-            }
-        </script>
         <script src="./scripts/script.js"></script>
         <script src="./scripts/app.js"></script>
     </BODY>
