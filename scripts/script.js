@@ -38,7 +38,8 @@ const CEF = {
     SHAXTA_PROGRESS: 35,
     MSHENEBLOBA_PROGRESS: 36,
     MART: 37,
-    DASTUR: 38
+    DASTUR: 38,
+    GUNSHOP: 39
 };
 
 
@@ -104,6 +105,7 @@ function hideAllCefPackets(){
     document.getElementById('MART-CONTAINER').style.display = "none";
 
     document.getElementById('DASTUR-CONTAINER').style.display = "none";
+    document.getElementById('gun-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -261,6 +263,10 @@ function sendCefPacket(response) {
         case CEF.DASTUR:
             document.getElementById('DASTUR-CONTAINER').style.display = "block";
             break
+
+        case CEF.GUNSHOP:
+            document.getElementById('gun-container').style.display = "block";
+            break
     }
 }
 
@@ -415,6 +421,10 @@ function hideCefPacket(response) {
 
         case CEF.DASTUR:
             document.getElementById('DASTUR-CONTAINER').style.display = "none";
+            break
+
+        case CEF.GUNSHOP:
+            document.getElementById('gun-container').style.display = "none";
             break
     }
 }
