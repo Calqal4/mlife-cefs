@@ -42,7 +42,8 @@ const CEF = {
     GUNSHOP: 39,
     MEQANIKOSI: 40,
     SAVALI: 41,
-    SAXLI: 42
+    SAXLI: 42,
+    SPEED: 43
 };
 
 
@@ -112,6 +113,8 @@ function hideAllCefPackets(){
     document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
 
     document.getElementById('SAXLI-CONTAINER').style.display = "none";
+    document.getElementById('speedometer-container').style.display = "none";
+
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -285,6 +288,10 @@ function sendCefPacket(response) {
         case CEF.SAXLI:
             document.getElementById('SAXLI-CONTAINER').style.display = "block";
             break
+
+        case CEF.SPEED:
+            document.getElementById('speedometer-container').style.display = "block";
+            break 
     }
 }
 
@@ -456,6 +463,10 @@ function hideCefPacket(response) {
         case CEF.SAXLI:
             document.getElementById('SAXLI-CONTAINER').style.display = "none";
             break
+
+        case CEF.SPEED:
+            document.getElementById('speedometer-container').style.display = "none";
+            break 
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
