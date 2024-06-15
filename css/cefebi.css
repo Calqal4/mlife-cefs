@@ -200,6 +200,9 @@ body {
 #STAGE-CONTAINER{
   display: none;
 }
+#fixcar-container{
+  display: none;
+}
 /* =========================================================== */
 
 @font-face {
