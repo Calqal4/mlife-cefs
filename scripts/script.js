@@ -119,7 +119,7 @@ function hideAllCefPackets(){
     document.getElementById('speedometer-container').style.display = "none";
     document.getElementById('STAGE-CONTAINER').style.display = "none";
     document.getElementById('fixcar-container').style.display = "none";
-    document.getElementById('fix-car-container').style.display = "none";
+    document.getElementById('fix-dcar-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -307,7 +307,7 @@ function sendCefPacket(response) {
             break
 
         case CEF.CARFIX:
-            document.getElementById('fix-car-container').style.display = "block";
+            document.getElementById('fix-dcar-container').style.display = "block";
             break
     }
 }
@@ -494,7 +494,7 @@ function hideCefPacket(response) {
             break
 
         case CEF.CARFIX:
-            document.getElementById('fix-car-container').style.display = "none";
+            document.getElementById('fix-dcar-container').style.display = "none";
             break
     }
 }
