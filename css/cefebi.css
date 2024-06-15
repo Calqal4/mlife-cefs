@@ -207,6 +207,10 @@ body {
 #fix-dcar-container{
   display: none;
 }
+
+#popcorn-container{
+  display: none;
+}
 /* =========================================================== */
 
 @font-face {
@@ -21496,4 +21500,547 @@ transition-duration: 0.3s;
   align-items: center;
   flex-direction: column;
   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* popcorn */
+
+.popcorn-bG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/bg-cefs.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pOPCORNEFFECTUP {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  transform: translateX(-50%);
+}
+.pOPCORNEFFECTUPFOTO {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/cefs-rectangle.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pOPCORN {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1346px;
+  height: 544px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.pOPCORNRIGHT {
+  position: absolute;
+  left: 683px;
+  top: 0;
+  width: 663px;
+  height: 241px;
+  align-items: flex-start;
+}
+.pOPCORNRIGHTTEXT1 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 20px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: calc(50% - -15px);
+  top: calc(50% - 62.5px);
+  width: 633px;
+  height: 66px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
+}
+.pOPCORNRIGHTXAZI {
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 241px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, #ffff 0%, #fff0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORNFRAME {
+  position: absolute;
+  left: calc(50% - 356.5px);
+  top: calc(50% - -12.5px);
+  width: 633px;
+  height: 519px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.pOPCORNUPLEFT {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 69px;
+  align-items: flex-start;
+}
+.pOPCORNUPLEFTTEXT2 {
+  transform-origin: top left;
+  color: #ffffff80;
+  font-size: 20px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -25.5px);
+  width: 633px;
+  height: 18px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
+}
+.pOPCORNUPLEFTTEXT1 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 16.5px);
+  width: 633px;
+  height: 36px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
+}
+.selected {
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, #ffffff50 0%, #fff0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.pOPCORN1 {
+  opacity: 1;
+  position: absolute;
+  left: 268px;
+  top: 119px;
+  width: 365px;
+  height: 100px;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.pOPCORN1:hover {
+  opacity: 1;
+  position: absolute;
+  left: 268px;
+  top: 119px;
+  width: 365px;
+  height: 100px;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.popcorncard1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 365px;
+  height: 100px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, #ffffff1a 0%, #fff0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.pOPCORN1XMA {
+  opacity: 0.5;
+  position: absolute;
+  left: 320px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+  transition-duration: 0.4s;
+}
+.pOPCORN1XMA:hover {
+  opacity: 1;
+  position: absolute;
+  left: 320px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+  cursor: pointer;
+  transform: scale(0.90);
+  transition-duration: 0.4s;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.pOPCORN1SHUA {
+  position: absolute;
+  left: 107px;
+  top: 30px;
+  width: 180px;
+  height: 40px;
+  align-items: flex-start;
+}
+.pOPCORN1SHUAFASI {
+  transform-origin: top left;
+  color: #73abff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 39px;
+  top: 0;
+  width: 141px;
+  height: 16px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORN1SHUATEXT2 {
+  transform-origin: top left;
+  color: #ffffffa6;
+  font-size: 12px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 34px;
+  height: 11px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORN1SHUATEXT1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 180px;
+  height: 16px;
+  flex-direction: column;
+}
+.pOPCORN2 {
+  opacity: 1;
+  position: absolute;
+  left: 268px;
+  top: 234px;
+  width: 365px;
+  height: 100px;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.pOPCORN2:hover {
+  opacity: 1;
+  position: absolute;
+  left: 268px;
+  top: 234px;
+  width: 365px;
+  height: 100px;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.popcorncardbg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 365px;
+  height: 100px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, #ffffff1a 0%, #fff0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.pOPCORN1XMA2 {
+  opacity: 0.5;
+  position: absolute;
+  left: 320px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+  transition-duration: 0.4s;
+}
+.pOPCORN1XMA2:hover {
+  opacity: 1;
+  position: absolute;
+  left: 320px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+  cursor: pointer;
+  transform: scale(0.90);
+  transition-duration: 0.4s;
+}
+.icon2 {
+  width: 100%;
+  height: 100%;
+}
+.pOPCORN2SHUA {
+  position: absolute;
+  left: 107px;
+  top: 30px;
+  width: 180px;
+  height: 40px;
+  align-items: flex-start;
+}
+.pOPCORN2SHUAFASI {
+  transform-origin: top left;
+  color: #73abff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 39px;
+  top: 0;
+  width: 141px;
+  height: 16px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORN2SHUATEXT2 {
+  transform-origin: top left;
+  color: #ffffffa6;
+  font-size: 12px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 34px;
+  height: 11px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORN2SHUATEXT1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 180px;
+  height: 16px;
+  flex-direction: column;
+}
+.pOPCORN3 {
+  opacity: 1;
+  position: absolute;
+  left: 268px;
+  top: 349px;
+  width: 365px;
+  height: 100px;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.pOPCORN3:hover {
+  opacity: 1;
+  position: absolute;
+  left: 268px;
+  top: 349px;
+  width: 365px;
+  height: 100px;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.popcornbg3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 365px;
+  height: 100px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, #ffffff1a 0%, #fff0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.pOPCORN1XMA3 {
+  opacity: 0.5;
+  position: absolute;
+  left: 320px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+  transition-duration: 0.4s;
+}
+.pOPCORN1XMA3:Hover {
+  opacity: 1;
+  position: absolute;
+  left: 320px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  overflow: visible;
+  cursor: pointer;
+  transform: scale(0.90);
+  transition-duration: 0.4s;
+}
+.icon3 {
+  width: 100%;
+  height: 100%;
+}
+.pOPCORN3SHUA {
+  position: absolute;
+  left: 107px;
+  top: 30px;
+  width: 180px;
+  height: 40px;
+  align-items: flex-start;
+}
+.pOPCORN3SHUAFASI {
+  transform-origin: top left;
+  color: #73abff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 39px;
+  top: 0;
+  width: 141px;
+  height: 16px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORN3SHUATEXT2 {
+  transform-origin: top left;
+  color: #ffffffa6;
+  font-size: 12px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 34px;
+  height: 11px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.pOPCORN3SHUATEXT1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 180px;
+  height: 16px;
+  flex-direction: column;
+}
+.pOPCORNYIDVA {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 499px;
+  top: 474px;
+  width: 134px;
+  height: 45px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-duration: 0.4s;
+}
+.pOPCORNYIDVA:Hover {
+  opacity: 1;
+  transform-origin: top left;
+  position: absolute;
+  left: 499px;
+  top: 474px;
+  width: 134px;
+  height: 45px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.pOPCORNYIDVABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 134px;
+  height: 45px;
+  border-radius: 5px;
+  background-image: linear-gradient(108.6deg, #3e8bffff 0%, #73abffff 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.pOPCORNYIDVATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 134px;
+  height: 13px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.popcornbg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 365px;
+  height: 100px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, #ffffff1a 0%, #fff0 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
