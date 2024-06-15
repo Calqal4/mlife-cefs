@@ -48,7 +48,9 @@ const CEF = {
     FIXCAR: 44,
     CARFIX: 45,
     POPCORN: 46,
-    GUNSHOP: 47
+    GUNSHOP: 47,
+    DASTUR: 48,
+    ANTIIP: 49
 };
 
 
@@ -124,6 +126,9 @@ function hideAllCefPackets(){
     document.getElementById('fix-dcar-container').style.display = "none";
     document.getElementById('popcorn-container').style.display = "none";
     document.getElementById('gun-container').style.display = "none";
+
+    document.getElementById('DASTUR-CONTAINER').style.display = "none";
+    document.getElementById('anti-ip-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -321,6 +326,14 @@ function sendCefPacket(response) {
         case CEF.GUNSHOP:
             document.getElementById('gun-container').style.display = "block";
             break
+
+        case CEF.DASTUR:
+            document.getElementById('DASTUR-CONTAINER').style.display = "block";
+            break
+
+        case CEF.ANTIIP:
+            document.getElementById('anti-ip-black').style.display = "block";
+            break
     }
 }
 
@@ -515,6 +528,14 @@ function hideCefPacket(response) {
 
         case CEF.GUNSHOP:
             document.getElementById('gun-container').style.display = "none";
+            break
+
+        case CEF.DASTUR:
+            document.getElementById('DASTUR-CONTAINER').style.display = "none";
+            break
+
+        case CEF.ANTIIP:
+            document.getElementById('anti-ip-black').style.display = "none";
             break
     }
 }
