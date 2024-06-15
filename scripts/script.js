@@ -43,7 +43,8 @@ const CEF = {
     MEQANIKOSI: 40,
     SAVALI: 41,
     SAXLI: 42,
-    SPEED: 43
+    SPEED: 43,
+    STAGE: 44
 };
 
 
@@ -114,7 +115,7 @@ function hideAllCefPackets(){
 
     document.getElementById('SAXLI-CONTAINER').style.display = "none";
     document.getElementById('speedometer-container').style.display = "none";
-
+    document.getElementById('STAGE-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -292,6 +293,10 @@ function sendCefPacket(response) {
         case CEF.SPEED:
             document.getElementById('speedometer-container').style.display = "block";
             break 
+
+        case CEF.STAGE:
+            document.getElementById('STAGE-CONTAINER').style.display = "block";
+            break
     }
 }
 
@@ -467,6 +472,10 @@ function hideCefPacket(response) {
         case CEF.SPEED:
             document.getElementById('speedometer-container').style.display = "none";
             break 
+
+        case CEF.STAGE:
+            document.getElementById('STAGE-CONTAINER').style.display = "none";
+            break
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
