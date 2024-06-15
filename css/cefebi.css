@@ -203,6 +203,9 @@ body {
 #fixcar-container{
   display: none;
 }
+#fix-car-container{
+  display: none;
+}
 /* =========================================================== */
 
 @font-face {

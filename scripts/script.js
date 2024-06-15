@@ -45,7 +45,8 @@ const CEF = {
     SAXLI: 42,
     SPEED: 43,
     STAGE: 44,
-    FIXCAR: 44
+    FIXCAR: 44,
+    CARFIX: 45
 };
 
 
@@ -118,6 +119,7 @@ function hideAllCefPackets(){
     document.getElementById('speedometer-container').style.display = "none";
     document.getElementById('STAGE-CONTAINER').style.display = "none";
     document.getElementById('fixcar-container').style.display = "none";
+    document.getElementById('fix-car-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -303,6 +305,10 @@ function sendCefPacket(response) {
         case CEF.FIXCAR:
             document.getElementById('fixcar-container').style.display = "block";
             break
+
+        case CEF.CARFIX:
+            document.getElementById('fix-car-container').style.display = "block";
+            break
     }
 }
 
@@ -485,6 +491,10 @@ function hideCefPacket(response) {
 
         case CEF.FIXCAR:
             document.getElementById('fixcar-container').style.display = "none";
+            break
+
+        case CEF.CARFIX:
+            document.getElementById('fix-car-container').style.display = "none";
             break
     }
 }
