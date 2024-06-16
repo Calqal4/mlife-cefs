@@ -50,7 +50,8 @@ const CEF = {
     POPCORN: 46,
     GUNSHOP: 47,
     ANTIIP: 48,
-    IPANTI: 49
+    IPANTI: 49,
+    CASE: 50
 };
 
 
@@ -129,6 +130,7 @@ function hideAllCefPackets(){
 
     document.getElementById('anti-ip-black').style.display = "none";
     document.getElementById('anti-ip-container').style.display = "none";
+    document.getElementById('case-open-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -334,6 +336,10 @@ function sendCefPacket(response) {
         case CEF.IPANTI:
             document.getElementById('anti-ip-container').style.display = "block";
             break 
+
+        case CEF.CASE:
+            document.getElementById('case-open-container').style.display = "block";
+            break    
     }
 }
 
@@ -530,13 +536,17 @@ function hideCefPacket(response) {
             document.getElementById('gun-container').style.display = "none";
             break
 
-        // case CEF.ANTIIP:
-        //     document.getElementById('anti-ip-black').style.display = "none";
-        //     break
+        case CEF.ANTIIP:
+            document.getElementById('anti-ip-black').style.display = "none";
+            break
 
         case CEF.IPANTI:
-            document.getElementById('anti-ip-container').style.display = "block";
-            break 
+            document.getElementById('anti-ip-container').style.display = "none";
+            break
+
+        case CEF.CASE:
+            document.getElementById('case-open-container').style.display = "none";
+            break  
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
