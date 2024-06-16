@@ -114,7 +114,7 @@ function hideAllCefPackets(){
     document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById('MART-CONTAINER').style.display = "none";
 
-    // document.getElementById('DASTUR-CONTAINER').style.display = "none";
+    document.getElementById('DASTUR-CONTAINER').style.display = "none";
     document.getElementById('gun-container').style.display = "none";
     document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
 
