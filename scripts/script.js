@@ -49,7 +49,9 @@ const CEF = {
     CARFIX: 45,
     POPCORN: 46,
     GUNSHOP: 47,
-    ANTIIP: 48
+    ANTIIP: 48,
+    IPANTI: 48,
+    CASE: 49
 };
 
 
@@ -127,6 +129,8 @@ function hideAllCefPackets(){
     document.getElementById('gun-container').style.display = "none";
 
     document.getElementById('anti-ip-black').style.display = "none";
+    document.getElementById('anti-ip-black').style.display = "none";
+    document.getElementById('case-open-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -325,10 +329,17 @@ function sendCefPacket(response) {
             document.getElementById('gun-container').style.display = "block";
             break
 
-
         case CEF.ANTIIP:
             document.getElementById('anti-ip-black').style.display = "block";
             break
+
+        case CEF.IPANTI:
+            document.getElementById('anti-ip-container').style.display = "block";
+            break
+            
+        case CEF.CASE:
+            document.getElementById('case-open-container').style.display = "block";
+            break    
     }
 }
 
@@ -528,6 +539,14 @@ function hideCefPacket(response) {
         // case CEF.ANTIIP:
         //     document.getElementById('anti-ip-black').style.display = "none";
         //     break
+
+        case CEF.IPANTI:
+            document.getElementById('anti-ip-container').style.display = "block";
+            break
+            
+        case CEF.CASE:
+            document.getElementById('case-open-container').style.display = "block";
+            break   
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
