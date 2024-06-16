@@ -224,6 +224,9 @@ body {
 #case-open-container{
   display: none;
 }
+#case-opening-container{
+  display: none;
+}
 
 /* =========================================================== */
 
@@ -22769,4 +22772,142 @@ transition-duration: 0.3s;
 
 #text-open{
   left: 100px;
+}
+
+/* CASE OPENING */
+
+/* CASE OPENING */
+
+.case-trialebs-bG {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/BG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+
+.mAINFRAMETEXTCASEDAILYTRIALEBS {
+  position: absolute;
+  left: 593px;
+  top: 118px;
+  width: 734px;
+  height: 82px;
+  align-items: flex-start;
+}
+
+.dIALYCASE {
+  background-image: linear-gradient(90deg, #4032deff 41%, #ffff 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 211px;
+  top: 0;
+  width: 312px;
+  height: 45px;
+  flex-direction: column;
+}
+
+._3 {
+  color: #ffffff80;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 734px;
+  height: 18px;
+  flex-direction: column;
+}
+
+.tRIALEBS {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -0.5px);
+  width: 1920px;
+  height: 179px;
+  align-items: flex-start;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.scrollWrapper {
+  display: flex;
+  width: 200%; /* Ensure this is long enough to allow all items to scroll through */
+  height: 100%;
+  animation: scrollItems 10s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; /* Starts fast, ends slow */
+}
+
+@keyframes scrollItems {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Assuming full length to scroll */
+}
+
+.tRIALEBSSS {
+  display: flex;
+}
+
+.tRIALEBS100, .tRIALEBS9, .tRIALEBS8, .tRIALEBS7, .tRIALEBS6, .tRIALEBS5, .tRIALEBS4, .tRIALEBS3, .tRIALEBS2, .tRIALEBS1 {
+  position: relative;
+  width: 198px;
+  height: 179px;
+  align-items: flex-start;
+  border-radius: 5px;
+  background-color: #9eff0020;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.tRIALEBS101, .tRIALEBS12, .tRIALEBS15, .tRIALEBS18, .tRIALEBS20, .tRIALEBS22, .tRIALEBS28, .tRIALEBS30, .tRIALEBS32, .tRIALEBS35 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tRIALEBSDAIWERS {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 1px);
+  width: 8px;
+  height: 181px;
+  background-color: #bdff00;
+  transform: translate(-50%, -50%);
+}
+
+.tRIALEBS6{
+  background-color: #CCFF3C;
+  opacity: 50%;
+}
+
+.tRIALEBS3{
+  background-color: #FF0000;
+  opacity: 12.5%;
+}
+
+.tRIALEBS5{
+  background-color: #FF0000;
+  opacity: 12.5%;
+}
+
+#text-opening{
+  left: 200px;
 }

@@ -51,7 +51,8 @@ const CEF = {
     GUNSHOP: 47,
     ANTIIP: 48,
     IPANTI: 49,
-    CASE: 50
+    CASE: 50,
+    CASEO: 51
 };
 
 
@@ -131,6 +132,7 @@ function hideAllCefPackets(){
     document.getElementById('anti-ip-black').style.display = "none";
     document.getElementById('anti-ip-container').style.display = "none";
     document.getElementById('case-open-container').style.display = "none";
+    document.getElementById('case-opening-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -340,6 +342,10 @@ function sendCefPacket(response) {
         case CEF.CASE:
             document.getElementById('case-open-container').style.display = "block";
             break    
+
+        case CEF.CASEO:
+            document.getElementById('case-opening-container').style.display = "block";
+            break   
     }
 }
 
@@ -546,7 +552,11 @@ function hideCefPacket(response) {
 
         case CEF.CASE:
             document.getElementById('case-open-container').style.display = "none";
-            break  
+            break 
+            
+        case CEF.CASEO:
+            document.getElementById('case-opening-container').style.display = "none";
+            break   
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
