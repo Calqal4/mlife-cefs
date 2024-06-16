@@ -49,8 +49,7 @@ const CEF = {
     CARFIX: 45,
     POPCORN: 46,
     GUNSHOP: 47,
-    DASTUR: 48,
-    ANTIIP: 49
+    ANTIIP: 48
 };
 
 
@@ -115,7 +114,7 @@ function hideAllCefPackets(){
     document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById('MART-CONTAINER').style.display = "none";
 
-    document.getElementById('DASTUR-CONTAINER').style.display = "none";
+    // document.getElementById('DASTUR-CONTAINER').style.display = "none";
     document.getElementById('gun-container').style.display = "none";
     document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
 
@@ -127,8 +126,7 @@ function hideAllCefPackets(){
     document.getElementById('popcorn-container').style.display = "none";
     document.getElementById('gun-container').style.display = "none";
 
-    document.getElementById('DASTUR-CONTAINER').style.display = "none";
-    document.getElementById('anti-ip-black').style.display = "none";
+    // document.getElementById('anti-ip-black').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -327,9 +325,6 @@ function sendCefPacket(response) {
             document.getElementById('gun-container').style.display = "block";
             break
 
-        case CEF.DASTUR:
-            document.getElementById('DASTUR-CONTAINER').style.display = "block";
-            break
 
         case CEF.ANTIIP:
             document.getElementById('anti-ip-black').style.display = "block";
@@ -530,13 +525,9 @@ function hideCefPacket(response) {
             document.getElementById('gun-container').style.display = "none";
             break
 
-        case CEF.DASTUR:
-            document.getElementById('DASTUR-CONTAINER').style.display = "none";
-            break
-
-        case CEF.ANTIIP:
-            document.getElementById('anti-ip-black').style.display = "none";
-            break
+        // case CEF.ANTIIP:
+        //     document.getElementById('anti-ip-black').style.display = "none";
+        //     break
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
