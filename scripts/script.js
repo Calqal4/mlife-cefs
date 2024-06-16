@@ -128,7 +128,7 @@ function hideAllCefPackets(){
     document.getElementById('gun-container').style.display = "none";
 
     document.getElementById('DASTUR-CONTAINER').style.display = "none";
-    document.getElementById('anti-ip-container').style.display = "none";
+    document.getElementById('anti-ip-black').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
