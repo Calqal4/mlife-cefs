@@ -126,7 +126,7 @@ function hideAllCefPackets(){
     document.getElementById('popcorn-container').style.display = "none";
     document.getElementById('gun-container').style.display = "none";
 
-    // document.getElementById('anti-ip-black').style.display = "none";
+    document.getElementById('anti-ip-black').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)

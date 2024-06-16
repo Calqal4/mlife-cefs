@@ -22052,3 +22052,218 @@ transition-duration: 0.3s;
   align-items: center;
   flex-direction: column;
 }
+
+/* antii notification */
+.ANTI-IP-NOTIFICATION-BG {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/BG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+.mAINFRAMENOTIFICATIONANTIIP {
+  position: absolute;
+  left: 0;
+  top: calc(50% - -0.5px);
+  width: 1336px;
+  height: 571px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.lEFTEFFECTANTIIPNOT {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 574px;
+  height: 571px;
+  background-image: linear-gradient(270deg, #202020ff 0%, #20202000 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.mAINEFFECTANTIIPNOT {
+  position: absolute;
+  left: 584px;
+  top: 0;
+  width: 752px;
+  height: 571px;
+  border-radius: 0 15px 15px 0;
+  background-image: linear-gradient(90deg, #202020ff 0%, #20202000 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.mAINFRAMETEXTNOTIFICATIONANTII {
+  position: absolute;
+  left: calc(50% - -292px);
+  top: 50%;
+  width: 552px;
+  height: 371px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.fORMINSERTNOT {
+  transform-origin: top left;
+  opacity: 80%;
+  position: absolute;
+  left: 0;
+  top: 326px;
+  width: 145px;
+  height: 45px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+.fORMINSERTNOT:hover{
+  opacity: 100%;
+  box-shadow: 0px 0px 25px 0px #3e8bffff;
+}
+.bGANTIIPNOT {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 145px;
+  height: 45px;
+  border-radius: 5px;
+  background-image: linear-gradient(107.2deg, #3e8bffff 0%, #73abffff 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.tEXTNOTIP {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 145px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mAINTEXTANTIIPNOTBLACKIP {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 167.5px);
+  width: 552px;
+  height: 36px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0) translateY(-50%);
+}
+.yOURBLACKLISTIPNOT {
+  transform-origin: top left;
+  color: #73abff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 135.5px);
+  width: 552px;
+  height: 18px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0) translateY(-50%);
+}
+.bLACKLISTIPNOT {
+  position: absolute;
+  left: 0;
+  top: 109px;
+  width: 552px;
+  height: 71px;
+  align-items: flex-start;
+}
+.arvici {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 552px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.arvici2 {
+  transform-origin: top left;
+  color: #ffffff80;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0px;
+  top: 19px;
+  width: 552px;
+  height: 52px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.hOWTOPLAYANTIIPNOT {
+  position: absolute;
+  left: 0;
+  top: 205px;
+  width: 552px;
+  height: 71px;
+  align-items: flex-start;
+}
+.hOWMUCHTIME {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 552px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.aNTIIPMAXSIMUMNOT {
+  transform-origin: top left;
+  color: #ffffff80;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0px;
+  top: 19px;
+  width: 552px;
+  height: 52px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
