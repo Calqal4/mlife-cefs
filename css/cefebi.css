@@ -291,7 +291,7 @@ body {
 .AVTORIZACIA-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/AVTORIZACIA/BG.png");
+  background: url("../FOTOEBI/AVTORIZACIA/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -391,7 +391,7 @@ body {
 .AVTORIZACIA-LOGO {
   width: 224px;
   height: 171px;
-  background: url("saitislinkiaq/FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
+  background: url("../FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -405,7 +405,7 @@ body {
 .AVTORIZACIA-LOGO:hover {
   width: 224px;
   height: 171px;
-  background: url("saitislinkiaq/FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
+  background: url("../FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -475,7 +475,7 @@ body {
 }
 .AVTORIZACIA-SHEIYVANE-PAROLI-ICON2 {
   width: 40px;
-  background: url("saitislinkiaq/FOTOEBI/AVTORIZACIA/SHEIYVANE-PAROLI-ICON.png");
+  background: url("../FOTOEBI/AVTORIZACIA/SHEIYVANE-PAROLI-ICON.png");
   height: 40px;
   opacity: 1;
   position: absolute;
@@ -526,7 +526,7 @@ body {
 .AVTORIZACIA-SAXELI-GVARI-ICON2 {
   width: 40px;
   height: 40px;  
-  background: url("saitislinkiaq/FOTOEBI/AVTORIZACIA/SAXELI-GVARI-ICON.png");
+  background: url("../FOTOEBI/AVTORIZACIA/SAXELI-GVARI-ICON.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -1218,7 +1218,7 @@ body {
 .AVTOBAZROBA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1398,7 +1398,7 @@ body {
 .AVTOBAZROBA-CXENISDZALA-FOTO {
   width: 131px;
   height: 56px;
-  background: url("saitislinkiaq/FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-CXENISDZALA-FOTO.png");
+  background: url("../FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-CXENISDZALA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1447,7 +1447,7 @@ body {
 .AVTOBAZROBA-TORQI-FOTO {
   width: 121px;
   height: 56px;
-  background: url("saitislinkiaq/FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-TORQI-FOTO.png");
+  background: url("../FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-TORQI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1484,7 +1484,7 @@ body {
 .AVTOBAZROBA-STEIJI-FOTO {
   width: 126px;
   height: 56px;
-  background: url("saitislinkiaq/FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-STEIJI-FOTO.png");
+  background: url("../FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-STEIJI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1557,7 +1557,7 @@ body {
 .AVTOBAZROBA-MDGOMAREOBA-FOTO {
   width: 222px;
   height: 56px;
-  background: url("saitislinkiaq/FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-DZRAVIS-MDGOMAREOBA-FOTO.png");
+  background: url("../FOTOEBI/AVTOBAZROBA/AVTOBAZROBA-DZRAVIS-MDGOMAREOBA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1626,7 +1626,7 @@ body {
 .REGISTRACIA-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIA/BG.png");
+  background: url("../FOTOEBI/REGISTRACIA/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1881,7 +1881,7 @@ transform: scale(1.0);
   overflow: hidden;
 }
 .REGISTRACIA-SHEIYVANE-PAROLI-ICON2 {
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIA/SHEIYVANE-PAROLI-ICON.png");
+  background: url("../FOTOEBI/REGISTRACIA/SHEIYVANE-PAROLI-ICON.png");
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -1949,7 +1949,7 @@ transform: scale(1.0);
   overflow: hidden;
 }
 .REGISTRACIA-SHEIYVANE-MEILI-ICON2 {
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIA/SHEIYVANE-MEILI-ICON.png");
+  background: url("../FOTOEBI/REGISTRACIA/SHEIYVANE-MEILI-ICON.png");
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -1999,7 +1999,7 @@ transform: scale(1.0);
   overflow: hidden;
 }
 .REGISTRACIA-SAXELI-GVARI-ICON2 {
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIA/SAXELI-GVARI-ICON.png");
+  background: url("../FOTOEBI/REGISTRACIA/SAXELI-GVARI-ICON.png");
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -2024,7 +2024,7 @@ transform: scale(1.0);
 .REGISTRACIA-LOGO {
   width: 224px;
   height: 171px;
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIA/REGISTRACIA-LOGO.png");
+  background: url("../FOTOEBI/REGISTRACIA/REGISTRACIA-LOGO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2038,7 +2038,7 @@ transform: scale(1.0);
 .REGISTRACIA-LOGO:hover {
   width: 224px;
   height: 171px;
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIA/REGISTRACIA-LOGO.png");
+  background: url("../FOTOEBI/REGISTRACIA/REGISTRACIA-LOGO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2072,7 +2072,7 @@ transform: scale(1.0);
 .ANTI-IP-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2116,7 +2116,7 @@ transform: scale(1.0);
 .ANTI-IP-SHUA-1 {
   width: 552px;
   height: 371px;
-  background: url("saitislinkiaq/FOTOEBI/v645_74.png");
+  background: url("../FOTOEBI/v645_74.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2284,7 +2284,7 @@ transform: scale(1.0);
 .IP-BAN-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2520,7 +2520,7 @@ transform: scale(1.0);
   top: 0px;
   left: 0px;
   overflow: hidden;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
 }
 .KICK-SHUA {
   width: 100%;
@@ -2643,7 +2643,7 @@ transform: scale(1.0);
 .SAPATRULO-BG1 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2817,7 +2817,7 @@ transform: scale(1.0);
   width: 455px;
   height: 217px;
   align-items: flex-start;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/SPEEDO-SPEEDO-BG.png");
+  background: url("../FOTOEBI/SPIDOMETRI/SPEEDO-SPEEDO-BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2917,7 +2917,7 @@ transform: scale(1.0);
 .SPEEDO-BENZINI-AIKONI {
   width: 20px;
   height: 20px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/BENZINI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/BENZINI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3004,7 +3004,7 @@ transform: scale(1.0);
 .SPEEDO-DZRAVA-FOTO-GAMORTULI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/DZRAVA-GAMORTULI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/DZRAVA-GAMORTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3031,7 +3031,7 @@ transform: scale(1.0);
 .SPEEDO-DZRAVA-FOTO-CHARTULI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/DZRAVA-CHARTULI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/DZRAVA-CHARTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3070,7 +3070,7 @@ transform: scale(1.0);
 .SPEEDO-GVEDI-FOTO-MOXSNILI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/GVEDI-MOXSNILI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/GVEDI-MOXSNILI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3097,7 +3097,7 @@ transform: scale(1.0);
 .SPEEDO-GVEDI-FOTO-GAKETEBULI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/GVEDI-GAKETEBULI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/GVEDI-GAKETEBULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3136,7 +3136,7 @@ transform: scale(1.0);
 .SPEEDO-FAREBI-FOTO-GAMORTULI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/FAREBI-GAMORTULI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/FAREBI-GAMORTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3163,7 +3163,7 @@ transform: scale(1.0);
 .SPEEDO-FAREBI-FOTO-CHARTULI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/SPIDOMETRI/FAREBI-CHARTULI.png");
+  background: url("../FOTOEBI/SPIDOMETRI/FAREBI-CHARTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3222,7 +3222,7 @@ transform: scale(1.0);
 .ANIMACIEBI-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3285,7 +3285,7 @@ transform: scale(1.0);
 .ANIMACIEBI-XELEBIS-AWEVA-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-XELEBIS-AWEVA.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-XELEBIS-AWEVA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3377,7 +3377,7 @@ transform: scale(1.0);
 .ANIMACIEBI-SKAMZE-CHAMOJDOMA-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-SKAMZE-CHAMOJDOMA.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-SKAMZE-CHAMOJDOMA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3469,7 +3469,7 @@ transform: scale(1.0);
 .ANIMACIEBI-MOFSMA-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-MOFSMA.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-MOFSMA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3561,7 +3561,7 @@ transform: scale(1.0);
 .ANIMACIEBI-CEKVA-PIRVELI-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-CEKVA-PIRVELI.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-CEKVA-PIRVELI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3653,7 +3653,7 @@ transform: scale(1.0);
 .ANIMACIEBI-CEKVA-MEORE-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-CEKVA-MEORE.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-CEKVA-MEORE.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3745,7 +3745,7 @@ transform: scale(1.0);
 .ANIMACIEBI-GABRAZEBULI-PERSONAJI-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-GABRAZEBULI-PERSONAJI.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-GABRAZEBULI-PERSONAJI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3837,7 +3837,7 @@ transform: scale(1.0);
 .ANIMACIEBI-DZIRS-DAWOLA-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-DZIRS-DAWOLA.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-DZIRS-DAWOLA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3929,7 +3929,7 @@ transform: scale(1.0);
 .ANIMACIEBI-XELIS-CHAMORTMEVA-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-XELIS-CHAMORTMEVA.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-XELIS-CHAMORTMEVA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4021,7 +4021,7 @@ transform: scale(1.0);
 .ANIMACIEBI-XELIS-DAQNEVA-FOTO1 {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-XELIS-DAQNEVA.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-XELIS-DAQNEVA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4080,7 +4080,7 @@ transform: scale(1.0);
 .ANIMACIEBI-QVEDA-FOTO {
   width: 100%;
   height: 254px;
-  background: url("saitislinkiaq/FOTOEBI/ANIMACIEBI/ANIMACIEBI-QVEDA-FOTO.png");
+  background: url("../FOTOEBI/ANIMACIEBI/ANIMACIEBI-QVEDA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4128,7 +4128,7 @@ transform: scale(1.0);
 .TEORIA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4238,7 +4238,7 @@ transform: scale(1.0);
 .SAMWUXARODCHACHRA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4348,7 +4348,7 @@ transform: scale(1.0);
 .CHABAREBAPRAQTIKIS-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4458,7 +4458,7 @@ transform: scale(1.0);
 .BILETI1-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4679,7 +4679,7 @@ transform: scale(1.0);
 .BILETI2-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4900,7 +4900,7 @@ transform: scale(1.0);
 .BILETI3-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -5067,7 +5067,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .BILETI4-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -5234,7 +5234,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .BILETI5-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -5401,7 +5401,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .BILETI6-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -5640,7 +5640,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .REGISTRACIISAS-MARCXENA-FOTO {
   width: 75px;
   height: 75px;
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIISAS-MARCXENA-FOTO.png");
+  background: url("../FOTOEBI/REGISTRACIISAS-MARCXENA-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -5690,7 +5690,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .REGISTRACIISAS-MARJVENA-FOTO {
   width: 75px;
   height: 75px;
-  background: url("saitislinkiaq/FOTOEBI/REGISTRACIISAS-MARJVENA-FOTO.png");
+  background: url("../FOTOEBI/REGISTRACIISAS-MARJVENA-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -5780,7 +5780,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTI1-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -5802,7 +5802,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTEBI1-SHUA {
   width: 1238px;
   height: 372px;
-  background: url("saitislinkiaq/FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
+  background: url("../FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6042,7 +6042,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTI2-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6064,7 +6064,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTEBI2-SHUA {
   width: 1238px;
   height: 372px;
-  background: url("saitislinkiaq/FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
+  background: url("../FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6305,7 +6305,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTI3-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6327,7 +6327,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTEBI3-SHUA {
   width: 1238px;
   height: 372px;
-  background: url("saitislinkiaq/FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
+  background: url("../FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6569,7 +6569,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTI4-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6591,7 +6591,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTEBI4-SHUA {
   width: 1238px;
   height: 372px;
-  background: url("saitislinkiaq/FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
+  background: url("../FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6834,7 +6834,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTI5-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6856,7 +6856,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .QVESTEBI5-SHUA {
   width: 1238px;
   height: 372px;
-  background: url("saitislinkiaq/FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
+  background: url("../FOTOEBI/QVESTEBI/QVESTI-SHUA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7104,7 +7104,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-MENIU-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7373,7 +7373,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI-FOTO {
   width: 416px;
   height: 208px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/CHEMI-TRANSPORTI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/CHEMI-TRANSPORTI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7464,7 +7464,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-MENIU-CHEMI-SAXLI-FOTO {
   width: 416px;
   height: 186px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/CHEMI-SAXLI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/CHEMI-SAXLI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7591,7 +7591,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-FOTO {
   width: 397px;
   height: 479px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/CHEMI-BIZNESI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/CHEMI-BIZNESI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7719,7 +7719,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-MENIU-VIP-PERSONAJI-FOTO {
   width: 315px;
   height: 479px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/MTAVARI-MENIU/VIP-PERSONAJI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/MTAVARI-MENIU/VIP-PERSONAJI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7919,7 +7919,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-DONACIA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8282,7 +8282,7 @@ background: rgba(255,255,255,0.05000000074505806);
 .MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-FOTO {
   width: 540px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/DONACIA/PREMIUM-TRANSPORTI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/PREMIUM-TRANSPORTI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8392,7 +8392,7 @@ background: linear-gradient(rgba(90,184,236,0.25), rgba(90,184,236,0));
 .MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-FOTO {
   width: 410px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/DONACIA/PREMIUM-SKINEBI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/PREMIUM-SKINEBI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8502,7 +8502,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .MTAVARI-MENIU-DONACIA-BTC-GADACVLA-FOTO {
   width: 250px;
   height: 300px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/DONACIA/BTC-GADACVLA.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/BTC-GADACVLA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8633,7 +8633,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-FOTO {
   width: 420px;
   height: 600px;
-  background: url("saitislinkiaq/FOTOEBI/MTAVARI-MENIU/DONACIA/VIP-PERSONAJI.png");
+  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/VIP-PERSONAJI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8821,7 +8821,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .BANKOMATI-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9086,7 +9086,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .BANKOMATI-GANAGDEBA-FOTO {
   width: 540px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXIS-GATANA-BARATIDAN-FOTO.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXIS-GATANA-BARATIDAN-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9150,7 +9150,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .BANKOMATI-GANAGDEBA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9198,7 +9198,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .BANKOMATI-CARIELI-JERJEROBIT {
   width: 540px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/RAME.png");
+  background: url("../FOTOEBI/BANKOMATI/RAME.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9311,7 +9311,7 @@ transform: scale(0.95);
 .BANKOMATI-GADARICXVA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9324,7 +9324,7 @@ transform: scale(0.95);
 .BANKOMATI-GADARICXVA-FOTO {
   width: 540px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/GADARICXVA-TELEFONZE-FOTO.png");
+  background: url("../FOTOEBI/BANKOMATI/GADARICXVA-TELEFONZE-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9472,7 +9472,7 @@ transform: scale(0.95);
 .BANKOMATI-DAVALIANEBA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9539,7 +9539,7 @@ transform: scale(0.95);
 .BANKOMATI-GANAGDEBA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9848,7 +9848,7 @@ transform: scale(0.95);
 .BANKOMATI-GANAGDEBA-JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/arvici.png");
+  background: url("../FOTOEBI/BANKOMATI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9921,7 +9921,7 @@ transform: scale(0.95);
 .BANKOMATI-GANAGDEBA-GANAGDEBA-FOTO {
   width: 540px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXIS-GATANA-BARATIDAN-FOTO.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXIS-GATANA-BARATIDAN-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9985,7 +9985,7 @@ transform: scale(0.95);
 .BANKOMATI-GANAGDEBA-GANAGDEBA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10050,7 +10050,7 @@ transform: scale(0.95);
 .BANKOMATI-SAJARIMO-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10359,7 +10359,7 @@ transform: scale(0.95);
 .BANKOMATI-SAJARIMO-JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10495,7 +10495,7 @@ transform: scale(0.95);
 .BANKOMATI-SAJARIMO-GANAGDEBA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10550,7 +10550,7 @@ transform: scale(0.95);
 .JARIMEBI-TRANSPORTZE-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10563,7 +10563,7 @@ transform: scale(0.95);
 .JARIMEBI-TRANSPORTZE-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10585,7 +10585,7 @@ transform: scale(0.95);
 .SAXELI-GVARI {
   width: 380px;
   height: 55px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10622,7 +10622,7 @@ transform: scale(0.95);
 .DADONATEBA {
   width: 43px;
   height: 43px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10649,7 +10649,7 @@ transform: scale(0.95);
 .BTC {
   width: 105px;
   height: 37px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10686,7 +10686,7 @@ transform: scale(0.95);
 .LVL {
   width: 320px;
   height: 37px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10953,7 +10953,7 @@ transform: scale(0.95);
 .JARIMEBI-TRANSPORTZE-MARCXENA-DOLARIS-AIKONI1 {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11100,7 +11100,7 @@ transform: scale(0.95);
 .JARIMEBI-TRANSPORTZE-MARCXENA-DOLARIS-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11175,7 +11175,7 @@ transform: scale(0.95);
 .JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11239,7 +11239,7 @@ transform: scale(0.95);
 .BANKOMATI-TELEFONI-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11548,7 +11548,7 @@ transform: scale(0.95);
 .BANKOMATI-TELEFONI-JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/arvici.png");
+  background: url("../FOTOEBI/arvici.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11621,7 +11621,7 @@ transform: scale(0.95);
 .BANKOMATI-TELEFONI-GANAGDEBA-FOTO {
   width: 540px;
   height: 250px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/GADARICXVA-TELEFONZE-FOTO.png");
+  background: url("../FOTOEBI/BANKOMATI/GADARICXVA-TELEFONZE-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11685,7 +11685,7 @@ transform: scale(0.95);
 .BANKOMATI-TELEFONI-GANAGDEBA-AIKONI {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
+  background: url("../FOTOEBI/BANKOMATI/TANXA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13072,7 +13072,7 @@ transition-duration: 0.2s;
 .RECON-MARCXENA-GILAKI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/MARCXENA-GILAKI.png");
+  background: url("../FOTOEBI/MARCXENA-GILAKI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13141,7 +13141,7 @@ transition-duration: 0.2s;
 .RECON-MARJVENA-GILAKI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/MARJVENA-GILAKI.png");
+  background: url("../FOTOEBI/MARJVENA-GILAKI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13278,7 +13278,7 @@ transition-duration: 0.2s;
 .RECON-DAKOPIREBA-WINA-FOTO {
   width: 48px;
   height: 48px;
-  background: url("saitislinkiaq/FOTOEBI/DAKOPIREBA.png");
+  background: url("../FOTOEBI/DAKOPIREBA.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13536,7 +13536,7 @@ transition-duration: 0.2s;
 .MIKROFONI-FOTO {
   width: 46px;
   height: 39px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/MIKROFONI-GAMORTULI.png");
+  background: url("../FOTOEBI/HUD/MIKROFONI-GAMORTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13549,7 +13549,7 @@ transition-duration: 0.2s;
 .MIKROFONI-FOTO2 {
   width: 46px;
   height: 39px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/MIKROFONI-CHARTULI.png");
+  background: url("../FOTOEBI/HUD/MIKROFONI-CHARTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13628,7 +13628,7 @@ transition-duration: 0.2s;
 .RACIA-FOTO {
   width: 42px;
   height: 39px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/RACIA-GAMORTULI.png");
+  background: url("../FOTOEBI/HUD/RACIA-GAMORTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13642,7 +13642,7 @@ transition-duration: 0.2s;
 .RACIA-FOTO2 {
   width: 42px;
   height: 39px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/RACIA-CHARTULI.png");
+  background: url("../FOTOEBI/HUD/RACIA-CHARTULI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13800,7 +13800,7 @@ transition-duration: 0.2s;
 .MOTAMASHEEBIS-MACHVENEBELI-AIKONI {
   width: 25px;
   height: 25px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/MOTAMASHEEBIS-MACHVENEBELI-AIKONI.png");
+  background: url("../FOTOEBI/HUD/MOTAMASHEEBIS-MACHVENEBELI-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13849,7 +13849,7 @@ transition-duration: 0.2s;
 .BRONI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/BRONI-FOTO.png");
+  background: url("../FOTOEBI/HUD/BRONI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13898,7 +13898,7 @@ transition-duration: 0.2s;
 .SICOCLXE-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/SICOCXLE-FOTO.png");
+  background: url("../FOTOEBI/HUD/SICOCXLE-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13947,7 +13947,7 @@ transition-duration: 0.2s;
 .SACHMEL-SASMELI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/SACHMEL-SASMELI-FOTO.png");
+  background: url("../FOTOEBI/HUD/SACHMEL-SASMELI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13971,7 +13971,7 @@ transition-duration: 0.2s;
 .SERVER-LOGO {
   width: 117px;
   height: 95px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/SERVER-LOGO.png");
+  background: url("../FOTOEBI/HUD/SERVER-LOGO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14026,7 +14026,7 @@ transition-duration: 0.2s;
 .BARATZE-FOTO {
   width: 178px;
   height: 53px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/BARATZE-FOTO.png");
+  background: url("../FOTOEBI/HUD/BARATZE-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14105,7 +14105,7 @@ transition-duration: 0.2s;
 .FISHKEBI-FOTO {
   width: 178px;
   height: 53px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/FISHKEBI-FOTO.png");
+  background: url("../FOTOEBI/HUD/FISHKEBI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14184,7 +14184,7 @@ transition-duration: 0.2s;
 .XELZE-FOTO {
   width: 178px;
   height: 53px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/XELZE-FOTO.png");
+  background: url("../FOTOEBI/HUD/XELZE-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14341,7 +14341,7 @@ transition-duration: 0.2s;
 .CIXIDAN-GASVLA-AIKONI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/CIXIDAN-GASVLA-AIKONI.png");
+  background: url("../FOTOEBI/HUD/CIXIDAN-GASVLA-AIKONI.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14469,7 +14469,7 @@ transition-duration: 0.2s;
 .IDZEBNEBI-SHTATSHI-AIKONI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/IDZEBNEBI-SHTATSHI-AIKONI-FOTO.png");
+  background: url("../FOTOEBI/HUD/IDZEBNEBI-SHTATSHI-AIKONI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14586,7 +14586,7 @@ transition-duration: 0.2s;
 .TEST-DRAIVI-AIKONI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/TEST-DRAIVI-AIKONI-FOTO.png");
+  background: url("../FOTOEBI/HUD/TEST-DRAIVI-AIKONI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14702,7 +14702,7 @@ transition-duration: 0.2s;
 .MIUTI-CHATZE-AIKONI-FOTO {
   width: 40px;
   height: 40px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/MIUTI-CHATZE-FOTO.png");
+  background: url("../FOTOEBI/HUD/MIUTI-CHATZE-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14746,7 +14746,7 @@ transition-duration: 0.2s;
 .INVENTARI-FOTO {
   width: 70px;
   height: 45px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/CHANTA-FOTO.png");
+  background: url("../FOTOEBI/HUD/CHANTA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14816,7 +14816,7 @@ transition-duration: 0.2s;
 .TELEFONI-FOTO {
   width: 70px;
   height: 45px;
-  background: url("saitislinkiaq/FOTOEBI/HUD/TELEFONI-FOTO.png");
+  background: url("../FOTOEBI/HUD/TELEFONI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15232,7 +15232,7 @@ transition-duration: 0.2s;
 .B5-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15397,7 +15397,7 @@ transition-duration: 0.2s;
 .CHAWRA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15505,7 +15505,7 @@ transition-duration: 0.2s;
 .TEORIA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15613,7 +15613,7 @@ transition-duration: 0.2s;
 .PRAKTIKA-BG2 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15751,7 +15751,7 @@ transition-duration: 0.2s;
 .SAPIRPARESHO-SHUA-FOTO {
   width: 802px;
   height: 341px;
-  background: url("saitislinkiaq/FOTOEBI/SAPIRFARESHO/NOTTIFICATION-EFFECT.png");
+  background: url("../FOTOEBI/SAPIRFARESHO/NOTTIFICATION-EFFECT.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15840,7 +15840,7 @@ transition-duration: 0.2s;
 .SAPIRPARESHO-CHARCHO-MARCXENA-FOTO {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/SAPIRFARESHO/PERSONAJS-ESACHIROEBA-SAPIRPARESHO.png");
+  background: url("../FOTOEBI/SAPIRFARESHO/PERSONAJS-ESACHIROEBA-SAPIRPARESHO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15914,7 +15914,7 @@ transition-duration: 0.2s;
 .AVTOASISTENTI-SHUA-FOTO {
   width: 802px;
   height: 341px;
-  background: url("saitislinkiaq/FOTOEBI/AVTOASISTENTI/NOTTIFICATION-EFFECT.png");
+  background: url("../FOTOEBI/AVTOASISTENTI/NOTTIFICATION-EFFECT.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -15965,7 +15965,7 @@ transition-duration: 0.2s;
 .AVTOASISTENTI-CHARCHO-MARCXENA-FOTO {
   width: 66px;
   height: 66px;
-  background: url("saitislinkiaq/FOTOEBI/AVTOASISTENTI/AVTOASISTENTI-AVTOBAZROBA-FOTO.png");
+  background: url("../FOTOEBI/AVTOASISTENTI/AVTOASISTENTI-AVTOBAZROBA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -16051,7 +16051,7 @@ transition-duration: 0.2s;
 .MAGAZIA-BG1 {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -16067,7 +16067,7 @@ transition-duration: 0.2s;
   top: 0;
   width: 1255px;
   height: 310px;
-  background: url("saitislinkiaq/FOTOEBI/MAGAZIA/MAGAZIA-MARJVENA-FOTO.png");
+  background: url("../FOTOEBI/MAGAZIA/MAGAZIA-MARJVENA-FOTO.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16156,7 +16156,7 @@ transition-duration: 0.2s;
 .MAGAZIA-PRODUQTI-1-FOTO {
   width: 415px;
   height: 127px;
-  background: url("saitislinkiaq/FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-1-FOTO.png");
+  background: url("../FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-1-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -16251,7 +16251,7 @@ transition-duration: 0.2s;
 .MAGAZIA-PRODUQTI-2-FOTO {
   width: 415px;
   height: 127px;
-  background: url("saitislinkiaq/FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-2-FOTO.png");
+  background: url("../FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-2-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -16346,7 +16346,7 @@ transition-duration: 0.2s;
 .MAGAZIA-PRODUQTI-3-FOTO {
   width: 415px;
   height: 127px;
-  background: url("saitislinkiaq/FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-3-FOTO.png");
+  background: url("../FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-3-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -16442,7 +16442,7 @@ transition-duration: 0.2s;
 .MAGAZIA-PRODUQTI-4-FOTO {
   width: 415px;
   height: 127px;
-  background: url("saitislinkiaq/FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-4-FOTO.png");
+  background: url("../FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-4-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -16538,7 +16538,7 @@ transition-duration: 0.2s;
 .MAGAZIA-PRODUQTI-5-FOTO {
   width: 415px;
   height: 127px;
-  background: url("saitislinkiaq/FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-5-FOTO.png");
+  background: url("../FOTOEBI/MAGAZIA/MAGAZIA-PRODUQTI-5-FOTO.png");
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -16630,7 +16630,7 @@ transition-duration: 0.2s;
 .GUSRT-SHEDZENA-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -16781,7 +16781,7 @@ transition-duration: 0.2s;
 .ALOGIN-BG {
   width: 100%;
   height: 100%;
-  background: url("saitislinkiaq/FOTOEBI/BG.png");
+  background: url("../FOTOEBI/BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -17111,7 +17111,7 @@ cursor: pointer;
 .TRANSPORTIS-PANELI-GAGEBA-1-BG-FOTO-1 {
   width: 55px;
   height: 55px;
-  background: url("saitislinkiaq/FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-GAGEBA-FOTO.png");
+  background: url("../FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-GAGEBA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -17223,7 +17223,7 @@ transition-duration: 0.3s;
 .TRANSPORTIS-PANELI-GAGEBA-2-BG-FOTO-1 {
   width: 55px;
   height: 55px;
-  background: url("saitislinkiaq/FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-DAKETVA-FOTO.png");
+  background: url("../FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-DAKETVA-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -17335,7 +17335,7 @@ transition-duration: 0.3s;
 .TRANSPORTIS-PANELI-GAGEBA-3-BG-FOTO-1 {
   width: 55px;
   height: 55px;
-  background: url("saitislinkiaq/FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-BENZINISBAKI-FOTO.png");
+  background: url("../FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-BENZINISBAKI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -17448,7 +17448,7 @@ transition-duration: 0.3s;
 .TRANSPORTIS-PANELI-GAGEBA-4-BG-FOTO-1 {
   width: 55px;
   height: 55px;
-  background: url("saitislinkiaq/FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-KLUCHI-FOTO.png");
+  background: url("../FOTOEBI/TRANSPORTIS-PANELI/TRANSPORTIS-PANELI-KLUCHI-FOTO.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

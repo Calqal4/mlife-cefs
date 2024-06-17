@@ -37,6 +37,7 @@ const CEF = {
     TAXI_PROGRESS: 34,
     SHAXTA_PROGRESS: 35,
     MSHENEBLOBA_PROGRESS: 36,
+    
     MART: 37,
     DASTUR: 38,
     GUNSHOP: 39,
@@ -56,9 +57,6 @@ const CEF = {
     MAINMENU: 52,
     IPHONE: 53,
     IPHONET: 54,
-    IPHONEA: 55,
-    IPHONEC: 56,
-    IPHONEG: 57
 };
 
 
@@ -142,9 +140,6 @@ function hideAllCefPackets(){
     document.getElementById("MainMenu-Section").style.display = "none";
     document.getElementById("iphone-container").style.display = "none";
     document.getElementById("iphone-taqsi").style.display = "none";
-    document.getElementById("iphone-apps").style.display = "none";
-    document.getElementById("iphone-call").style.display = "none";
-    document.querySelector('.iphone-gps').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -370,18 +365,6 @@ function sendCefPacket(response) {
         case CEF.IPHONET:
             document.getElementById("iphone-taqsi").style.display = "block";
             break
-
-        case CEF.IPHONEA:
-            document.getElementById("iphone-apps").style.display = "block";
-            break
-            
-        case CEF.IPHONEC:
-            document.querySelector('.iphone-call').style.display = "block";
-            break
-
-        case CEF.IPHONEG:
-            document.querySelector('.iphone-gps').style.display = "block";
-            break
     }
 }
 
@@ -604,18 +587,6 @@ function hideCefPacket(response) {
 
         case CEF.IPHONET:
             document.getElementById("iphone-taqsi").style.display = "none";
-            break
-
-        case CEF.IPHONEA:
-            document.getElementById("iphone-apps").style.display = "none";
-            break
-
-        case CEF.IPHONEC:
-            document.querySelector('.iphone-call').style.display = "none";
-            break
-
-        case CEF.IPHONEG:
-            document.querySelector('.iphone-gps').style.display = "none";
             break
     }
 }
