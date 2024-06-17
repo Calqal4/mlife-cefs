@@ -55,8 +55,7 @@ const CEF = {
     CASE: 50,
     CASEO: 51,
     MAINMENU: 52,
-    IPHONE: 53,
-    IPHONET: 54,
+    IPHONE: 53
 };
 
 
@@ -138,8 +137,7 @@ function hideAllCefPackets(){
     document.getElementById('case-open-container').style.display = "none";
     document.getElementById('case-opening-container').style.display = "none";
     document.getElementById("MainMenu-Section").style.display = "none";
-    document.getElementById("iphone-container").style.display = "none";
-    document.getElementById("iphone-taqsi").style.display = "none";
+    document.getElementById("iphone-container").style.display = "none"; 
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -361,10 +359,6 @@ function sendCefPacket(response) {
         case CEF.IPHONE:
             document.getElementById("iphone-container").style.display = "block";
             break
-
-        case CEF.IPHONET:
-            document.getElementById("iphone-taqsi").style.display = "block";
-            break
     }
 }
 
@@ -583,10 +577,6 @@ function hideCefPacket(response) {
             
         case CEF.IPHONE:
             document.getElementById("iphone-container").style.display = "none";
-            break
-
-        case CEF.IPHONET:
-            document.getElementById("iphone-taqsi").style.display = "none";
             break
     }
 }
