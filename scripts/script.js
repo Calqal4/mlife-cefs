@@ -54,8 +54,7 @@ const CEF = {
     IPANTI: 49,
     CASE: 50,
     CASEO: 51,
-    MAINMENU: 52,
-    IPHONE: 53
+    MAINMENU: 52
 };
 
 
@@ -575,10 +574,6 @@ function hideCefPacket(response) {
         case CEF.MAINMENU:
             document.getElementById('MainMenu-Section').style.display = "none";
             break  
-
-        case CEF.IPHONE:
-            document.getElementById("iphone-container").style.display = "none";
-            break
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
