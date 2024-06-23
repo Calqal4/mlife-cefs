@@ -44,7 +44,6 @@ function hideAllCefPackets(){
     document.getElementById('alogini').style.display = "none";
     document.getElementById('AVTOBAZROBA-Section').style.display = "none";
     document.getElementById('MANQANA-PANEL').style.display = "none";
-    document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById("ANIMACIEBI-Section").style.display = "none";
     document.getElementById("MAP-CONTAINER").style.display = "none";
     document.getElementById("NOTIFICATION-CONTAINER").style.display = "none";
