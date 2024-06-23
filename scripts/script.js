@@ -55,8 +55,6 @@ function hideAllCefPackets(){
     document.getElementById("NPC-SAPATRULO").style.display = "none";
     document.getElementById("MERIA-NPC").style.display = "none";
     document.getElementById("DIALOG-CONTAINER").style.display = "none";
-    document.getElementById('MainMenu-Section').style.display = "none";
-    document.getElementById('MainMenu-DonateSection').style.display = "none";
     document.getElementById('hud-container').style.display = "none";
 }
 function sendCefPacket(response) {

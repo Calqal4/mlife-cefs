@@ -90,6 +90,266 @@
 #hud-container{
   display: none;
 }
+
+.AVTORIZACIA-BG {
+  width: 100%;
+  height: 100%;
+  background: url("../FOTOEBI/AVTORIZACIA/BG.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.AVTORIZACIA-CHARCHO {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 514px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.AVTORIZACIA-SHESVLA {
+  width: 292px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 434px;
+  left: 75px;
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.AVTORIZACIA-SHESVLA:hover {
+  width: 292px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 434px;
+  left: 75px;
+  overflow: hidden;
+  transition-duration: 0.2s;
+  transform: scale(0.95);
+}
+.AVTORIZACIA-SHESVLA:active {
+  width: 292px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 434px;
+  left: 75px;
+  overflow: hidden;
+  transition-duration: 0.2s;
+  transform: scale(1.0);
+}
+.AVTORIZACIA-SHESVLA-BG {
+  width: 292px;
+  height: 80px;
+  background: linear-gradient(rgba(62,139,255,1), rgba(115,171,255,1));
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SHESVLA-TEXT {
+  width: 292px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  font-family: 'TBC Contracticabold';
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.AVTORIZACIA-AVTORIZACIA-TEXT {
+  width: 400px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  font-family: 'TBC Contracticabold';
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.AVTORIZACIA-LOGO {
+  width: 224px;
+  height: 171px;
+  background: url("../FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 105px;
+  overflow: hidden;
+    transition-duration: 0.5s;
+}
+.AVTORIZACIA-LOGO:hover {
+  width: 224px;
+  height: 171px;
+  background: url("../FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 105px;
+  overflow: hidden;
+    transition-duration: 0.5s;
+  transform: scale(1.05);
+}
+.AVTORIZACIA-SHEIYVANE-PAROLI {
+  width: 400px;
+  height: 77px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 297px;
+  left: 20px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SHEIYVANE-PAROLI-BG {
+  width: 400px;
+  height: 77px;
+  background: rgba(0,0,0,0.15000000596046448);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+#AVTORIZACIA-SHEIYVANE-PAROLI-INPUT {
+  height: 100%;
+  width: 300px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+  left: 75px;
+  font-family: 'TBC Contracticalight';
+  font-size: 15px;
+}
+#AVTORIZACIA-SHEIYVANE-PAROLI-INPUT::placeholder {
+  color: #ffffff50; /* Adjust the color to your preference */
+}
+.AVTORIZACIA-SHEIYVANE-PAROLI-ICON {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SHEIYVANE-PAROLI-ICON2 {
+  width: 40px;
+  background: url("../FOTOEBI/AVTORIZACIA/SHEIYVANE-PAROLI-ICON.png");
+  height: 40px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SAXELI-GVARI {
+  width: 400px;
+  height: 77px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 205px;
+  left: 20px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SAXELI-GVARI-BG {
+  width: 400px;
+  height: 77px;
+  background: rgba(0,0,0,0.15000000596046448);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SAXELI-GVARI-ICON {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SAXELI-GVARI-ICON2 {
+  width: 40px;
+  height: 40px;  
+  background: url("../FOTOEBI/AVTORIZACIA/SAXELI-GVARI-ICON.png");
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+.AVTORIZACIA-SAXELI-GVARI-TEXT {
+  width: 300px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 31px;
+  left: 85px;
+  font-family: 'TBC Contracticabold';
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
 /* ოვტობოზრობო */
 .AVTOBAZROBA-BG1 {
   width: 100%;
