@@ -18,8 +18,12 @@ const CEF = {
     MERIANPC: 15,
     DIALOG: 16,
     MAINMENU: 17,
-    DONATE: 18,
-    HUD: 19
+    HUD: 18,
+    SANOMRE: 19,
+    DONATE: 20,
+    STANDART: 21,
+    MEORE: 22,
+    MESAME: 23
 };
 
 
@@ -56,6 +60,11 @@ function hideAllCefPackets(){
     document.getElementById("MERIA-NPC").style.display = "none";
     document.getElementById("DIALOG-CONTAINER").style.display = "none";
     document.getElementById('hud-container').style.display = "none";
+    document.getElementById('choose-sanomre-container').style.display = "none";
+    document.getElementById('DONATE-SANOMRE-CONTAINER').style.display = "none";
+    document.getElementById('standart-etapi-erti').style.display = "none";
+    document.getElementById('etapi-ori-container').style.display = "none";
+    document.getElementById('mesame-etapi-container').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -134,13 +143,29 @@ function sendCefPacket(response) {
             document.getElementById('MainMenu-Section').style.display = "block";
             break
 
-        case CEF.DONATE:
-            document.getElementById('MainMenu-DonateSection').style.display = "block";
-            break
-
         case CEF.HUD:
             document.getElementById('hud-container').style.display = "block";
-            break           
+            break
+            
+        case CEF.SANOMRE:
+            document.getElementById('choose-sanomre-container').style.display = "block";
+            break   
+            
+        case CEF.DONATE:
+            document.getElementById('DONATE-SANOMRE-CONTAINER').style.display = "block";
+            break 
+            
+        case CEF.STANDART:
+            document.getElementById('standart-etapi-erti').style.display = "block";
+            break 
+
+        case CEF.MEORE:
+            document.getElementById('etapi-ori-container').style.display = "block";
+            break 
+
+        case CEF.MESAME:
+            document.getElementById('mesame-etapi-container').style.display = "block";
+            break 
     }
 }
 
@@ -218,13 +243,29 @@ function hideCefPacket(response) {
             document.getElementById('MainMenu-Section').style.display = "none";
             break
 
-        case CEF.DONATE:
-            document.getElementById('MainMenu-DonateSection').style.display = "none";
-            break
-
         case CEF.HUD:
             document.getElementById('hud-container').style.display = "none";
             break    
+
+        case CEF.SANOMRE:
+            document.getElementById('choose-sanomre-container').style.display = "none";
+            break 
+            
+        case CEF.DONATE:
+            document.getElementById('DONATE-SANOMRE-CONTAINER').style.display = "none";
+            break 
+
+        case CEF.STANDART:
+            document.getElementById('standart-etapi-erti').style.display = "none";
+            break 
+
+        case CEF.MEORE:
+            document.getElementById('etapi-ori-container').style.display = "none";
+            break 
+
+        case CEF.MESAME:
+            document.getElementById('mesame-etapi-container').style.display = "none";
+            break 
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {

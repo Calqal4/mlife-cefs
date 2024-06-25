@@ -906,6 +906,7 @@
                         // Start the timer to change opacity after 3 seconds
                         setTimeout(() => {
                             mainframe.style.opacity = 0;
+                            // document.getElementById('hud-container').style.display = 'block';
                         }, 3000);
                     }
                     switch(id)
@@ -2023,73 +2024,139 @@
                 }
             }
         </script>
-        <div id="DIALOG-CONTAINER">
-            <div class="main-frame-dialog" id="dialog">
-                <div class="dialog-backgroundDialog"></div>
-                <div class="dialog-bgeffect"></div>
-                <div class="dialog-satauri-frame">
-                    <div class="dialog-satauri" id="dialog-title">??????</div>
-                </div>
-                <div class="dialog-buttons-container" id="dialog-buttons-container"></div>
-                <div class="dialog-exit" onclick="closeDialog()">
-                    <svg preserveAspectRatio="none" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="dialog-icon">
-                        <g opacity="0.5">
-                            <g opacity="0.6" filter="url(#filter0_b_2697_112)">
-                                <path d="M0 0H25C38.8071 0 50 11.1929 50 25V50H0V0Z" fill="#CE4646" fill-opacity="0.5"></path>
-                            </g>
-                            <path d="M17 33L32.92 17M33 33L17.08 17" stroke="#CE4646" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <div id="DIALOG-CONTAINER">
+        <!-- List Dialog -->
+        <div class="main-frame-dialog" id="dialog-list">
+            <div class="dialog-backgroundDialog"></div>
+            <div class="dialog-bgeffect"></div>
+            <div class="dialog-satauri-frame">
+                <div class="dialog-satauri" id="dialog-title-list">??????</div>
+                <div class="dialog-content" id="dialog-content-list">?????? ?????????</div>
+            </div>
+            <div class="dialog-buttons-container" id="dialog-buttons-container"></div>
+            <div class="dialog-exit" onclick="closeDialog()">
+                <svg preserveAspectRatio="none" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="dialog-icon">
+                    <g opacity="0.5">
+                        <g opacity="0.6" filter="url(#filter0_b_2697_112)">
+                            <path d="M0 0H25C38.8071 0 50 11.1929 50 25V50H0V0Z" fill="#CE4646" fill-opacity="0.5"></path>
                         </g>
-                        <defs>
-                            <filter id="filter0_b_2697_112" x="-25" y="-25" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur>
-                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2697_112"></feComposite>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2697_112" result="shape"></feBlend>
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
+                        <path d="M17 33L32.92 17M33 33L17.08 17" stroke="#CE4646" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_2697_112" x="-25" y="-25" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2697_112"></feComposite>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2697_112" result="shape"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </div>
         </div>
-        <script>
-            function showDialog(title, content, buttons) {
-                const dialog = document.getElementById('dialog');
-                dialog.style.display = 'block'; // Show the dialog
-                document.getElementById('dialog-title').innerText = title;
-                const buttonsContainer = document.getElementById('dialog-buttons-container');
-                buttonsContainer.innerHTML = ''; // Clear previous buttons
-                buttons.split('\n').forEach((buttonText, index) => {
-                    const buttonFrame = document.createElement('div');
-                    buttonFrame.className = 'dialog-button-frame';
-                    
-                    const button = document.createElement('div');
-                    button.className = 'dialog-button';
-                    button.onclick = () => handleButtonClick(index + 1);
-                    
-                    const buttonTextDiv = document.createElement('div');
-                    buttonTextDiv.className = 'dialog-buttontext';
-                    buttonTextDiv.innerText = buttonText.trim();
-                    
-                    buttonFrame.appendChild(button);
-                    buttonFrame.appendChild(buttonTextDiv);
-                    buttonsContainer.appendChild(buttonFrame);
+
+        <!-- Input Dialog -->
+        <div class="frame7920 animate__animated animate__fadeIn" id="dialog-input">
+            <div class="backgroundDialog"></div>
+            <div class="mLIFEDIALOGBGEFFECT"></div>
+            <div class="buttonOne">
+                <div class="buttonOneButt"></div>
+                <label for="buttonOneText"></label>
+                <input type="text" id="buttonOneText" name="buttonOneText" placeholder="????????? ??????"/>
+            </div>
+            <div class="buttonOne2" onclick="submitInput()">
+                <div class="buttonOneButt2"></div>
+                <div class="buttonOneText2">????????</div>
+            </div>
+            <div class="frame7919">
+                <div class="avtosaloni" id="dialog-title-input">??????</div>
+            </div>
+            <div class="mLIFEDIALOGEXIT" onclick="closeDialog()">
+                <svg preserveAspectRatio="none" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"><g opacity="1"><g opacity="0.6" filter="url(#filter0_b_2717_44)"><path d="M0 0H25C38.8071 0 50 11.1929 50 25V50H0V0Z" fill="#CE4646" fill-opacity="0.5"></path></g><path d="M17 33L32.92 17M33 33L17.08 17" stroke="#CE4646" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><filter id="filter0_b_2717_44" x="-25" y="-25" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2717_44"></feComposite><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2717_44" result="shape"></feBlend></filter></defs></svg>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentDialogId = null; // Store the current dialog ID
+
+        // Function to display the list dialog
+        function showDialogList(dialogId, title, content, buttons) {
+            currentDialogId = dialogId;
+            const dialogList = document.getElementById('dialog-list');
+            const dialogTitleList = document.getElementById('dialog-title-list');
+            const dialogContentList = document.getElementById('dialog-content-list');
+            const dialogButtonsContainer = document.getElementById('dialog-buttons-container');
+
+            dialogTitleList.textContent = title;
+            dialogContentList.innerHTML = content.replace(/\\n/g, '<br>');
+
+            dialogButtonsContainer.innerHTML = ''; // Clear existing buttons
+            const buttonsArray = buttons.split('\n');
+            buttonsArray.forEach((button, index) => {
+                const buttonFrame = document.createElement('div');
+                buttonFrame.className = 'dialog-button-frame';
+
+                const btn = document.createElement('button');
+                btn.className = 'dialog-button';
+                btn.style.border = 'none'; // Remove border
+                btn.addEventListener('click', () => {
+                    console.log(`Button ${index + 1} clicked on dialog ${dialogId}`);
+                    cef.emit('buttonClicked', dialogId, index + 1);
+                    closeDialog(); // Close the dialog after button click
                 });
-            }
-    
-            function closeDialog() {
-                document.getElementById('dialog').style.display = 'none';
-            }
-    
-            function handleButtonClick(buttonId) {
-                cef.emit('buttonClicked', buttonId);
-                closeDialog();
-            }
-    
-            // Listen for events from the server
-            cef.on('showDialog', function(title, content, buttons) {
-                showDialog(title, content, buttons);
+
+                const btnText = document.createElement('div');
+                btnText.className = 'dialog-buttontext';
+                btnText.textContent = button;
+
+                buttonFrame.appendChild(btn);
+                buttonFrame.appendChild(btnText);
+                dialogButtonsContainer.appendChild(buttonFrame);
             });
-        </script>
+
+            dialogList.style.display = 'flex'; // Show the list dialog
+            document.getElementById('dialog-input').style.display = 'none'; // Hide the input dialog
+        }
+
+        // Function to display the input dialog
+        function showDialogInput(dialogId, title, content) {
+            currentDialogId = dialogId;
+            const dialogInput = document.getElementById('dialog-input');
+            const dialogTitleInput = document.getElementById('dialog-title-input');
+            const dialogContentInput = document.getElementById('buttonOneText');
+
+            dialogTitleInput.textContent = title;
+            dialogContentInput.placeholder = content;
+
+            dialogInput.style.display = 'flex'; // Show the input dialog
+            document.getElementById('dialog-list').style.display = 'none'; // Hide the list dialog
+        }
+
+        // Function to close the dialog
+        function closeDialog() {
+            document.getElementById('dialog-list').style.display = 'none';
+            document.getElementById('dialog-input').style.display = 'none';
+        }
+
+        // Function to submit the input
+        function submitInput() {
+            const input = document.getElementById('buttonOneText').value;
+            console.log(`Input submitted: ${input}`);
+            cef.emit('inputSubmitted', currentDialogId, input);
+            closeDialog(); // Close the dialog after input submission
+        }
+
+        // Listen for the showDialogList event
+        cef.on('showDialogList', function(dialogId, title, content, buttons) {
+            showDialogList(dialogId, title, content, buttons);
+        });
+
+        // Listen for the showDialogInput event
+        cef.on('showDialogInput', function(dialogId, title, content) {
+            showDialogInput(dialogId, title, content);
+        });
+
+    </script>
         <div id="hud-container">
             <div class="mLIFEHUDEFFECTRIGHT animate__animated animate__fadeIn"></div>
             <div class="mLIFEHUDEFFECTLEFT animate__animated animate__fadeIn"></div>
@@ -2771,6 +2838,336 @@
                     document.getElementById("gun-frame").style = "display: block";
                 }
         });
+        </script>
+        <div id="choose-sanomre-container">
+            <div class="animation-choose animate__animated animate__fadeIn">
+                <div class="sanomre-choose-bG"></div>
+                <div class="sanomre-choose-lURJIEFFECT"></div>
+                <div class="sANOMREFRAME">
+                    <div class="sANOMRELEFT" onclick="ChooseNomeri(0)">
+                        <div class="sANOMRELEFTFRAM">
+                            <div class="sANOMREBG"></div>
+                            <div class="sANOMRELEFT2"></div>
+                            <div class="sANOMRELEFTFASI">
+                                <div class="sANOMRELEFTFASITEXT2">????</div>
+                                <div class="sANOMRELEFTFASITEXT1">150 000 ??????</div>
+                            </div><div class="sANOMRELEFTMONEYPIC"></div>
+                            <div class="sANOMRELEFTFRAMTEXT">
+                                <div class="sANOMRELEFTFRAMTEXT2">???????</div>
+                                <div class="sANOMRELEFTFRAMTEXT1">???????????</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sANOMRERIGHT" onclick="ChooseNomeri(1)">
+                        <div class="sANOMRERIGHTFRAM">
+                            <div class="sANOMREBG2"></div>
+                            <div class="sANOMRERIGHT2"></div>
+                            <div class="sANOMRELEFTFASI2">
+                                <div class="sANOMRELEFTFASI1">????</div>
+                                <div class="sANOMRELEFTFASI12">50 ????????</div>
+                            </div><div class="sANOMRELEFTMONEY"></div>
+                            <div class="sANOMRERIGHTFRAMTEXT">
+                                <div class="sANOMRERIGHTFRAMTEXT2">???????</div>
+                                <div class="sANOMRERIGHTFRAMTEXT1">?????</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <script>
+                function ChooseNomeri(id){
+                    console.log(id);
+                    switch(id)
+                    {
+                        case 0:{
+                            const container = document.getElementById('choose-sanomre-container');
+                            container.classList.add('fade-out');
+                            setTimeout(() => {
+                                hideCefPacket(CEF.SANOMRE)
+                                container.classList.remove('fade-out');
+                                container.style.opacity = 1;
+                            }, 5000);
+                            setTimeout(() => {
+                                sendCefPacket(CEF.STANDART);
+                            }, 850);                      
+                            break;
+                        }
+                        case 1:{
+                            const container = document.getElementById('choose-sanomre-container');
+                            container.classList.add('fade-out');
+                            setTimeout(() => {
+                                hideCefPacket(CEF.SANOMRE)
+                                container.classList.remove('fade-out');
+                                container.style.opacity = 1;
+                            }, 5000);
+                            setTimeout(() => {
+                                sendCefPacket(CEF.DONATE);
+                            }, 850);
+                            break;
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <div id="DONATE-SANOMRE-CONTAINER">
+            <div class="animation-donate animate__animated animate__fadeIn">
+            <div class="donate-sanomre-bg"></div>
+                <div class="donate-sanomre-effect"></div>
+                    <div class="sANOMREDONATE">
+                        <div class="sANOMREDONATEYIDVA" onclick="BuyDonateNumber()">
+                            <div class="sANOMREDONATEYIDVA2"></div>
+                            <div class="sANOMREDONATEYIDVA1">?????</div>
+                        </div>
+                        <div class="sANOMREDONATEFRAM">
+                            <div class="sANOMREBG"></div>
+                            <div class="sANOMREDONATE2"></div>
+                            <div class="sANOMREDONATECHASAWERIJS" id="enter-text">IM RICH</div>
+                            <div class="sANOMREDONATEFRAMTEXT">
+                                <div class="sANOMREDONATEFRAMTEXT2">???????</div>
+                                <div class="sANOMREDONATEFRAMTEXT1">?????</div>
+                            </div>
+                            <div class="sANOMREDONATECHASAWERI">
+                                <input class="sANOMREDONATECHASAWERI2" id="input-nomeri" maxlength="9" placeholder="????????? ??????" oninput="updateText()"></input>
+                            </div>
+                        </div>
+                        <script>
+                            function updateText() {
+                                const input = document.getElementById('input-nomeri').value;
+                                document.getElementById('enter-text').textContent = input;
+                            }
+                    
+                            setInterval(updateText, 100);
+                            
+                            function BuyDonateNumber(){
+                                const input = document.getElementById('input-nomeri').value;
+                                cef.emit("Buydonate:number", input);
+                                const container = document.getElementById('DONATE-SANOMRE-CONTAINER');
+                                container.classList.add('fade-out');
+                                setTimeout(() => {
+                                    hideCefPacket(CEF.DONATE);
+                                    container.classList.remove('fade-out');
+                                    container.style.opacity = 1;
+                                }, 5000);
+                            }
+                        </script>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="standart-etapi-erti">
+            <div class="standart-sanomre-animation animate__animated animate__fadeIn">
+                <div class="standart-bG"></div>
+                <div class="standart-lURJIEFFECT"></div>
+                <div class="sANOMRESTANDARTI1">
+                    <div class="sANOMRESTANDARTI1ASARCHEVI">
+                        <div class="sANOMRESTANDARTI1ASARCHEV1"></div>
+                        <div class="sANOMRESTANDARTI1ASARCHEV2"></div>
+                        <div class="sANOMRESTANDARTI1ASARCHEVI3"></div>
+                    </div>
+                    <div class="sANOMRESTANDARTISHEMDEGI" onclick="NextNumberStandard()">
+                        <div class="sANOMRESTANDARTISHEMDEGI2"></div>
+                        <div class="sANOMRESTANDARTISHEMDEGI1" id="standart-next">???????</div>
+                    </div>
+                    <div class="sANOMRESTANDARTIFRAM">
+                        <div class="sANOMREBG"></div>
+                        <div class="sANOMRESTANDARTI"></div>
+                        <div id="sanomre-text" class="sANOMREDONATECHASAWERIJS">MM</div>
+                        <div class="sANOMRESTANDARTIFRAMTEXT">
+                            <div class="sANOMRESTANDARTIFRAMTEXT2">???????</div>
+                            <div class="sANOMRESTANDARTIFRAMTEXT1">???????????</div>
+                        </div>
+                        <div class="sANOMRESTANDARTI1CHASAWERI">
+                            <input class="sANOMRESTANDARTI1CHASAWERI2" maxlength="2" placeholder="????????? 2 ???" id="first-input"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div id="etapi-ori-container">
+            <div class="etapi-ori-animacia animate__animated animate__fadeIn">
+                <div class="etapi-ori-bG"></div>
+                <div class="etapi-ori-lURJIEFFECT"></div>
+                <div class="sANOMRESTANDARTI2">
+                    <div class="sANOMRESTANDARTI2ASARCHEVI">
+                        <div class="sANOMRESTANDARTI2ASARCHEV1"></div>
+                        <div class="sANOMRESTANDARTI2ASARCHEV2"></div>
+                        <div class="sANOMRESTANDARTI2ASARCHEVI3"></div>
+                    </div>
+                    <div class="sANOMRESTANDARTISHEMDEGI" id="etapi-ori-gilaki" onclick="validateSecondInput()">
+                        <div class="sANOMRESTANDARTISHEMDEGI2"></div>
+                        <div class="sANOMRESTANDARTISHEMDEGI1">???????</div>
+                    </div>
+                    <div class="sANOMRESTANDARTIFRAM">
+                        <div class="sANOMREBG"></div>
+                        <div class="sANOMRESTANDARTI"></div>
+                        <div class="sANOMREDONATECHASAWERIJS" id="etapi-ori-text">MM 888 </div>
+                        <div class="sANOMRESTANDARTIFRAMTEXT">
+                            <div class="sANOMRESTANDARTIFRAMTEXT2">???????</div>
+                            <div class="sANOMRESTANDARTIFRAMTEXT1">???????????</div>
+                        </div>
+                        <div class="sANOMRESTANDARTI2CHASAWERI">
+                            <input class="sANOMRESTANDARTI2CHASAWERI2" id="input-ori-etapi" maxlength="3" placeholder="????????? 3 ?????"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div>
+        <div id="mesame-etapi-container">
+            <div class="mesame-etapi-anim animate__animated animate__fadeIn">
+                <div class="bG"></div>
+                <div class="lURJIEFFECT"></div>
+                <div class="sANOMRESTANDARTI1">
+                    <div class="sANOMRESTANDARTI3ASARCHEVI">
+                        <div class="sANOMRESTANDARTI3ASARCHEVI1"></div>
+                        <div class="sANOMRESTANDARTI3ASARCHEV2"></div>
+                        <div class="sANOMRESTANDARTI3ASARCHEV3"></div>
+                    </div>
+                    <div class="sANOMRESTANDARTISHEMDEGI" id="mesame-etapi-dasruleba">
+                        <div class="sANOMRESTANDARTISHEMDEGI2"></div>
+                        <div class="sANOMRESTANDARTISHEMDEGI1">???????</div>
+                    </div>
+                    <div class="sANOMRESTANDARTIFRAM">
+                        <div class="sANOMREBG"></div>
+                        <div class="sANOMRESTANDARTI"></div>
+                        <div class="sANOMREDONATECHASAWERIJS" id="etapi-sami-text">MM 888 LF</div>
+                        <div class="sANOMRESTANDARTIFRAMTEXT">
+                            <div class="sANOMRESTANDARTIFRAMTEXT2">???????</div>
+                            <div class="sANOMRESTANDARTIFRAMTEXT1">???????????</div>
+                        </div>
+                        <div class="sANOMRESTANDARTI3CHASAWERI">
+                            <input class="sANOMRESTANDARTI3CHASAWERI2" id="mesame-etapi-input" maxlength="2" placeholder="????????? 2 ???"></input>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script>
+            let firstInputValue = '';
+            let secondInputValue = '';
+
+            function updateText() {
+                const input = document.getElementById('first-input').value.toUpperCase();
+                const displayText = document.getElementById('sanomre-text');
+                displayText.textContent = input;
+            }
+
+            setInterval(updateText, 100);
+
+            function NextNumberStandard() {
+                const input = document.getElementById('first-input').value.toUpperCase();
+                const regex = /^[A-Za-z]{2}$/;
+
+                if (input.length === 0) {
+                    console.log("nothing is written in the input");
+                } else if (regex.test(input)) {
+                    const container = document.getElementById('standart-etapi-erti');
+                    container.classList.add('fade-out');
+
+                    firstInputValue = input;
+                    setTimeout(() => {
+                        hideCefPacket(CEF.STANDART);
+                        container.classList.remove('fade-out');
+                        container.style.opacity = 1;
+                        document.getElementById('etapi-ori-text').textContent = `${firstInputValue} `;
+                    }, 5000);
+                    setTimeout(() => {
+                        sendCefPacket(CEF.MEORE);
+                        meoreupdateText(firstInputValue);
+                    }, 800);
+                } else {
+                    console.log("input contains a number");
+                }
+            }
+
+            function meoreupdateText(first) {
+                const secondInput = document.getElementById('input-ori-etapi').value;
+                const etapiOriText = document.getElementById('etapi-ori-text');
+                secondInputValue = secondInput;
+                etapiOriText.textContent = `${first} ${secondInput}`;
+            }
+
+            function validateSecondInput() {
+                const input = document.getElementById('input-ori-etapi').value;
+                const regex = /^\d{3}$/; // Regex to match exactly 3 digits
+
+                secondInputValue = input;
+
+                if (regex.test(input)) {
+                    console.log("correct");
+                    document.getElementById('etapi-ori-gilaki').disabled = false;
+                } else {
+                    document.getElementById('etapi-ori-gilaki').disabled = true;
+                }
+            }
+
+            function mesameupdateText(first, second) {
+                const thirdInput = document.getElementById('mesame-etapi-input').value.toUpperCase();
+                const etapiSamiText = document.getElementById('etapi-sami-text');
+                etapiSamiText.textContent = `${first} ${second} ${thirdInput}`;
+            }
+
+            function combineAndPrint() {
+                const thirdInput = document.getElementById('mesame-etapi-input').value.toUpperCase();
+                const regex = /^[A-Za-z]{2}$/;
+                if (regex.test(thirdInput)) {
+                    const finalResult = `${firstInputValue}-${secondInputValue}-${thirdInput}`;
+                    console.log(finalResult);
+                    cef.emit("Final:number", finalResult);
+                    hideCefPacket(CEF.MESAME);
+                } else {
+                    console.log("The third input is invalid.");
+                }
+            }
+
+            // Ensure only digits are entered in the second input
+            document.getElementById('input-ori-etapi').addEventListener('input', (event) => {
+                event.target.value = event.target.value.replace(/\D/g, ''); // Remove non-digit characters
+                meoreupdateText(firstInputValue); // Update the second stage text in real-time
+                validateSecondInput(); // Validate the second input in real-time
+            });
+
+            document.getElementById('first-input').addEventListener('input', (event) => {
+                event.target.value = event.target.value.replace(/[^a-zA-Z]/g, '').toUpperCase();
+                updateText();
+            });
+
+            document.getElementById('mesame-etapi-input').addEventListener('input', (event) => {
+                event.target.value = event.target.value.replace(/[^a-zA-Z]/g, '').toUpperCase();
+                mesameupdateText(firstInputValue, secondInputValue);
+            });
+
+            // Initial input text update
+            document.getElementById('first-input').addEventListener('input', updateText);
+
+            // Transition to third stage on button click
+            document.getElementById('etapi-ori-gilaki').addEventListener('click', () => {
+                const container = document.getElementById('etapi-ori-container');
+                container.classList.add('fade-out');
+
+                setTimeout(() => {
+                    hideCefPacket(CEF.MEORE);
+                    container.classList.remove('fade-out');
+                    container.style.opacity = 1;
+                    document.getElementById('mesame-etapi-container').style.display = 'block';
+                    mesameupdateText(firstInputValue, secondInputValue);
+                }, 800);
+            });
+
+            // Combine and print on final button click
+            document.getElementById('mesame-etapi-dasruleba').addEventListener('click', combineAndPrint);
         </script>
         <script src="./scripts/script.js"></script>
         <script src="./scripts/app.js"></script>
