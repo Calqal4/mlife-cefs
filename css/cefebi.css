@@ -1,9 +1,5 @@
 
 /* ოვტორიზოციო */
-body{
-  overflow-x: hidden;
-  user-select: none;
-}
 
 #Authorization-Section{
   display: none;
@@ -12,6 +8,76 @@ body{
   display: none;
 }
 
+@font-face {
+  font-family: "EXTRA";
+  src: url(../fonts/bpg_extrasquare_mtavruli_2009.ttf);
+}
+@font-face {
+  font-family: "NinoMtavruliBold";
+  src: url(../fonts/bpg_nino_mtavruli_bold.ttf);
+}
+@font-face {
+  font-family: "NinoMtavruliRegular";
+  src: url(../fonts/bpg_nino_mtavruli_regular.ttf);
+}
+@font-face {
+  font-family: "Eurostile"; 
+  src: url(../fonts/eurostile-lt-std-geo-mt-demi.ttf);
+}
+
+
+
+@font-face {
+  font-family: "TBCContracticaBlack";
+  src: url(../fonts/TBCContractica-Black.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaBold";
+  src: url(../fonts/TBCContractica-Black.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaBook";
+  src: url(../fonts/TBCContractica-Black.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaLight";
+  src: url(../fonts/TBCContractica-Light.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaMedium";
+  src: url(../fonts/TBCContractica-Medium.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaRegular";
+  src: url(../fonts/TBCContractica-Regular.ttf);
+}
+
+
+
+@font-face {
+  font-family: "TBCContracticaCapsBlack";
+  src: url(../fonts/TBCContracticaCAPS-Black.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaCapsBold";
+  src: url(../fonts/TBCContracticaCAPS-Bold.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaCapsBook";
+  src: url(../fonts/TBCContracticaCAPS-Book.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaCapsLight";
+  src: url(../fonts/TBCContracticaCAPS-Light.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaCapsMedium";
+  src: url(../fonts/TBCContracticaCAPS-Medium.ttf);
+}
+@font-face {
+  font-family: "TBCContracticaCapsRegular";
+  src: url(../fonts/TBCContracticaCAPS-Regular.ttf);
+}
 
 /* #AVTOBAZROBA-Section{
   display: block;
@@ -19,80 +85,118 @@ body{
 
 #AVTOBAZROBA-Section{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 
 #SKINIS-ARCHEVA{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #Police-NPC{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #ANIMACIEBI-Section{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 
 #alogini{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #MANQANA-PANEL{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #MAP-CONTAINER{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #NOTIFICATION-CONTAINER{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #SAXLI-CONTAINER{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #BARIGA-NPC{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #DEFAULT-NPC{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #NPC-DEFAULT2{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #NPC-POLICE{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #NPC-SAPATRULO{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #MERIA-NPC{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #DIALOG-CONTAINER{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #MainMenu-Section{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #MainMenu-DonateSection{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #hud-container{
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 #choose-sanomre-container{
@@ -114,266 +218,6 @@ body{
 #mesame-etapi-container{
   display: none;
 }
-
-.AVTORIZACIA-BG {
-  width: 100%;
-  height: 100%;
-  background: url("../FOTOEBI/AVTORIZACIA/BG.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.AVTORIZACIA-CHARCHO {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 400px;
-  height: 514px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.AVTORIZACIA-SHESVLA {
-  width: 292px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 434px;
-  left: 75px;
-  overflow: hidden;
-  cursor: pointer;
-  transition-duration: 0.2s;
-}
-.AVTORIZACIA-SHESVLA:hover {
-  width: 292px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 434px;
-  left: 75px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-  transform: scale(0.95);
-}
-.AVTORIZACIA-SHESVLA:active {
-  width: 292px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 434px;
-  left: 75px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-  transform: scale(1.0);
-}
-.AVTORIZACIA-SHESVLA-BG {
-  width: 292px;
-  height: 80px;
-  background: linear-gradient(rgba(62,139,255,1), rgba(115,171,255,1));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SHESVLA-TEXT {
-  width: 292px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: 'TBC Contracticabold';
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
-}
-.AVTORIZACIA-AVTORIZACIA-TEXT {
-  width: 400px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 110px;
-  left: 20px;
-  font-family: 'TBC Contracticabold';
-  font-size: 40px;
-  opacity: 1;
-  text-align: center;
-}
-.AVTORIZACIA-LOGO {
-  width: 224px;
-  height: 171px;
-  background: url("../FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 105px;
-  overflow: hidden;
-    transition-duration: 0.5s;
-}
-.AVTORIZACIA-LOGO:hover {
-  width: 224px;
-  height: 171px;
-  background: url("../FOTOEBI/AVTORIZACIA/AVTORIZACIA-LOGO.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 105px;
-  overflow: hidden;
-    transition-duration: 0.5s;
-  transform: scale(1.05);
-}
-.AVTORIZACIA-SHEIYVANE-PAROLI {
-  width: 400px;
-  height: 77px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 297px;
-  left: 20px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SHEIYVANE-PAROLI-BG {
-  width: 400px;
-  height: 77px;
-  background: rgba(0,0,0,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-#AVTORIZACIA-SHEIYVANE-PAROLI-INPUT {
-  height: 100%;
-  width: 300px;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 15px;
-  padding: 0 10px;
-  position: relative;
-  z-index: 2;
-  left: 75px;
-  font-family: 'TBC Contracticalight';
-  font-size: 15px;
-}
-#AVTORIZACIA-SHEIYVANE-PAROLI-INPUT::placeholder {
-  color: #ffffff50; /* Adjust the color to your preference */
-}
-.AVTORIZACIA-SHEIYVANE-PAROLI-ICON {
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 18px;
-  left: 20px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SHEIYVANE-PAROLI-ICON2 {
-  width: 40px;
-  background: url("../FOTOEBI/AVTORIZACIA/SHEIYVANE-PAROLI-ICON.png");
-  height: 40px;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SAXELI-GVARI {
-  width: 400px;
-  height: 77px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 205px;
-  left: 20px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SAXELI-GVARI-BG {
-  width: 400px;
-  height: 77px;
-  background: rgba(0,0,0,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SAXELI-GVARI-ICON {
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 18px;
-  left: 20px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SAXELI-GVARI-ICON2 {
-  width: 40px;
-  height: 40px;  
-  background: url("../FOTOEBI/AVTORIZACIA/SAXELI-GVARI-ICON.png");
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  overflow: hidden;
-}
-.AVTORIZACIA-SAXELI-GVARI-TEXT {
-  width: 300px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 31px;
-  left: 85px;
-  font-family: 'TBC Contracticabold';
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
-}
-
 /* ოვტობოზრობო */
 .AVTOBAZROBA-BG1 {
   width: 100%;
@@ -456,7 +300,7 @@ body{
   position: absolute;
   top: 27px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 23px;
   opacity: 1;
@@ -513,7 +357,7 @@ body{
   position: absolute;
   top: 21px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 17px;
   opacity: 1;
@@ -561,7 +405,7 @@ body{
   position: absolute;
   top: 20px;
   left: 31px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 14px;
   opacity: 1;
@@ -586,7 +430,7 @@ body{
   position: absolute;
   top: 38px;
   left: 31px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 20px;
   opacity: 1;
@@ -610,7 +454,7 @@ body{
   position: absolute;
   top: 20px;
   left: 21px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 14px;
   opacity: 1;
@@ -635,7 +479,7 @@ body{
   position: absolute;
   top: 38px;
   left: 21px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 20px;
   opacity: 1;
@@ -672,7 +516,7 @@ body{
   position: absolute;
   top: 20px;
   left: 26px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 14px;
   opacity: 1;
@@ -684,7 +528,7 @@ body{
   position: absolute;
   top: 38px;
   left: 26px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 20px;
   opacity: 1;
@@ -708,7 +552,7 @@ body{
   position: absolute;
   top: 20px;
   left: 22px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 14px;
   opacity: 1;
@@ -720,7 +564,7 @@ body{
   position: absolute;
   top: 38px;
   left: 22px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 20px;
   opacity: 1;
@@ -757,7 +601,7 @@ body{
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 40px;
   opacity: 1;
@@ -769,7 +613,7 @@ body{
   position: absolute;
   top: 46px;
   left: 335px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 20px;
   opacity: 1;
@@ -781,7 +625,7 @@ body{
   position: absolute;
   top: 46px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 20px;
   opacity: 1;
@@ -881,7 +725,7 @@ transform: scale(1.0);
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 20px;
   opacity: 1;
   text-align: center;
@@ -937,7 +781,7 @@ transform: scale(1.0);
   position: absolute;
   top: 22px;
   left: 0px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 15px;
   opacity: 1;
   text-align: center;
@@ -991,7 +835,7 @@ transform: scale(1.0);
   position: absolute;
   top: 22px;
   left: 0px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 15px;
   opacity: 1;
   text-align: center;
@@ -1034,7 +878,7 @@ transform: scale(1.0);
   position: relative;
   z-index: 2;
   left: 75px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 15px;
 }
 #SHEIYVANE-PAROLI-INPUT::placeholder {
@@ -1100,7 +944,7 @@ transform: scale(1.0);
   padding: 0 10px;
   position: relative;
   left: 75px;
-  font-family: 'TBC Contracticalight';
+  font-family: "TBCContracticaLight";
   font-size: 15px;
 }
 #REGISTRACIA-SHEIYVANE-MEILI-INPUT::placeholder {
@@ -1188,7 +1032,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 85px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 15px;
   opacity: 1;
   text-align: left;
@@ -1228,7 +1072,7 @@ transform: scale(1.0);
   position: absolute;
   top: 110px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 40px;
   opacity: 1;
   text-align: center;
@@ -1262,7 +1106,7 @@ transform: scale(1.0);
   position: absolute;
   top: 84px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 16px;
   opacity: 1;
@@ -1304,7 +1148,7 @@ transform: scale(1.0);
   position: relative;
   top: -71px;
   left: 25px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 15px;
 }
@@ -1361,7 +1205,7 @@ transform: scale(1.0);
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 12px;
   opacity: 1;
   text-align: center;
@@ -1372,7 +1216,7 @@ transform: scale(1.0);
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 40px;
   opacity: 1;
   text-align: left;
@@ -1383,7 +1227,7 @@ transform: scale(1.0);
   position: absolute;
   top: 41px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -1499,7 +1343,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -1511,7 +1355,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -1591,7 +1435,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -1603,7 +1447,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -1683,7 +1527,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -1695,7 +1539,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -1775,7 +1619,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -1787,7 +1631,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -1867,7 +1711,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -1879,7 +1723,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 96px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -1959,7 +1803,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -1971,7 +1815,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -2051,7 +1895,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -2063,7 +1907,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -2143,7 +1987,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -2155,7 +1999,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -2235,7 +2079,7 @@ transform: scale(1.0);
   position: absolute;
   top: 53px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Medium;
   font-size: 12px;
   opacity: 1;
@@ -2247,7 +2091,7 @@ transform: scale(1.0);
   position: absolute;
   top: 32px;
   left: 32px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -2280,7 +2124,7 @@ transform: scale(1.0);
   position: absolute;
   top: 153px;
   left: 934px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 40px;
   opacity: 1;
@@ -2316,7 +2160,7 @@ transform: scale(1.0);
   position: absolute;
   top: 45px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 20px;
   opacity: 1;
   text-align: center;
@@ -2327,7 +2171,7 @@ transform: scale(1.0);
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 40px;
   opacity: 1;
   text-align: center;
@@ -2475,7 +2319,7 @@ transform: scale(1.0);
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 25px;
   opacity: 1;
   text-align: center;
@@ -2620,7 +2464,7 @@ transform: scale(1.0);
   position: absolute;
   top: 7px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 14px;
   opacity: 1;
   text-align: center;
@@ -2643,7 +2487,7 @@ transform: scale(1.0);
   position: absolute;
   top: 21px;
   left: 0px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 12px;
   opacity: 1;
   text-align: left;
@@ -2654,7 +2498,7 @@ transform: scale(1.0);
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 18px;
   opacity: 1;
   text-align: left;
@@ -2734,7 +2578,7 @@ transform: scale(1.0);
   position: absolute;
   top: 11px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 16px;
   opacity: 1;
   text-align: left;
@@ -2746,7 +2590,7 @@ transform: scale(1.0);
   top: 0px;
   left: 124px;
   text-shadow: 0px 0px 15px rgba(1, 1, 1, 0.25);
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 28px;
   opacity: 1;
   text-align: center;
@@ -2758,7 +2602,7 @@ transform: scale(1.0);
   top: 11px;
   left: 147px;
   text-shadow: 0px 0px 15px rgba(1, 1, 1, 0.25);
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 16px;
   opacity: 1;
   text-align: left;
@@ -2769,7 +2613,7 @@ transform: scale(1.0);
   position: absolute;
   top: 11px;
   left: 120px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 16px;
   opacity: 1;
   text-align: left;
@@ -2810,7 +2654,7 @@ transform: scale(1.0);
   position: absolute;
   left: 25px;
   top: -8.5px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 15px;
 }
 #ALOGIN-SHEIYVANE-ADMINPAROLI-INPUT::placeholder {
@@ -2866,7 +2710,7 @@ cursor: pointer;
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 12px;
   opacity: 1;
   text-align: center;
@@ -2877,7 +2721,7 @@ cursor: pointer;
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 40px;
   opacity: 1;
   text-align: left;
@@ -2888,7 +2732,7 @@ cursor: pointer;
   position: absolute;
   top: 41px;
   left: 0px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -3009,7 +2853,7 @@ cursor: pointer;
   position: absolute;
   top: 42px;
   left: 79px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 10px;
   opacity: 1;
   text-align: left;
@@ -3020,7 +2864,7 @@ cursor: pointer;
   position: absolute;
   top: 24px;
   left: 79px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 14px;
   opacity: 1;
   text-align: left;
@@ -3121,7 +2965,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 42px;
   left: 79px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 10px;
   opacity: 1;
   text-align: left;
@@ -3132,7 +2976,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 24px;
   left: 79px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 14px;
   opacity: 1;
   text-align: left;
@@ -3233,7 +3077,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 42px;
   left: 79px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 10px;
   opacity: 1;
   text-align: left;
@@ -3244,7 +3088,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 24px;
   left: 79px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 14px;
   opacity: 1;
   text-align: left;
@@ -3346,7 +3190,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 42px;
   left: 79px;
-  font-family: 'TBC Contracticamedium';
+  font-family: "TBCContracticaMedium";
   font-size: 10px;
   opacity: 1;
   text-align: left;
@@ -3357,56 +3201,10 @@ transition-duration: 0.3s;
   position: absolute;
   top: 24px;
   left: 79px;
-  font-family: 'TBC Contracticabold';
+  font-family: "TBCContracticaBold";
   font-size: 14px;
   opacity: 1;
   text-align: left;
-}
-
-
-@font-face {
-  font-family: BPG NinoMtavrulibold;
-  src: url(../fonts/bpg_nino_mtavruli_bold.ttf);
-}
-
-@font-face {
-  font-family: BPG NinoMtavrulinormal;
-  src: url(../fonts/bpg_nino_mtavruli_normal.ttf);
-}
-
-@font-face {
-  font-family: TBC Contracticablack;
-  src: url(../fonts/TBCContracticaCAPS-Black.ttf);
-}
-
-@font-face {
-  font-family: TBC Contracticabold;
-  src: url(../fonts/TBCContracticaCAPS-Bold.ttf);
-}
-
-@font-face {
-  font-family: TBC Contracticabook;
-  src: url(../fonts/TBCContracticaCAPS-Book.ttf);
-}
-
-@font-face {
-  font-family: TBC Contracticalight;
-  src: url(../fonts/TBCContracticaCAPS-Light.ttf);
-}
-
-@font-face {
-  font-family: "Medium";
-  src: url(../fonts/TBCContracticaCAPS-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Regular";
-  src: url(../fonts/TBCContracticaCAPS-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Regular";
-  src: url(../fonts/bpg_extrasquare_mtavruli_2009.ttf);
 }
 
 .bG {
@@ -5610,7 +5408,7 @@ transition-duration: 0.3s;
 .mAPBARITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -5667,7 +5465,7 @@ transition-duration: 0.3s;
 .mAPPICERIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -5724,7 +5522,7 @@ transition-duration: 0.3s;
 .mAPSABURGERETEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -5781,7 +5579,7 @@ transition-duration: 0.3s;
 .mAPKAZINOTEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -5848,7 +5646,7 @@ transition-duration: 0.3s;
 .mAPBANKITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -5905,7 +5703,7 @@ transition-duration: 0.3s;
 .mAPMEDIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -5962,7 +5760,7 @@ transition-duration: 0.3s;
 .mAPSAMXEDROTEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6019,7 +5817,7 @@ transition-duration: 0.3s;
 .mAPHOSPITALTEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6076,7 +5874,7 @@ transition-duration: 0.3s;
 .mAPPOLICIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6133,7 +5931,7 @@ transition-duration: 0.3s;
 .mAPMERIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6200,7 +5998,7 @@ transition-duration: 0.3s;
 .mAPBENZINKALONKATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6257,7 +6055,7 @@ transition-duration: 0.3s;
 .mAPPARKINGITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6314,7 +6112,7 @@ transition-duration: 0.3s;
 .mAPMTUNINGITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6371,7 +6169,7 @@ transition-duration: 0.3s;
 .mAPAVTOBAZROBATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6438,7 +6236,7 @@ transition-duration: 0.3s;
 .mAPIARAGEBISMAGAZIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6495,7 +6293,7 @@ transition-duration: 0.3s;
 .mAPTANSACMLISMAGAZIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6552,7 +6350,7 @@ transition-duration: 0.3s;
 .mAPMAGAZIATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6619,7 +6417,7 @@ transition-duration: 0.3s;
 .mAPTAQSITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6676,7 +6474,7 @@ transition-duration: 0.3s;
 .mAPPRAVATEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6733,7 +6531,7 @@ transition-duration: 0.3s;
 .mAPBANKOMATITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6790,7 +6588,7 @@ transition-duration: 0.3s;
 .mAPMOPEDISCENTRITEXT {
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: calc(50% - -14.5px);
@@ -6927,7 +6725,7 @@ transition-duration: 0.3s;
 .mAPUAXLOESITEXT {
   color: #fffc;
   font-size: 24px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
@@ -6990,7 +6788,7 @@ transition-duration: 0.3s;
 .mAPUAXLOESIDIAXTEXT {
   color: #fffc;
   font-size: 18px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
@@ -7028,7 +6826,7 @@ transition-duration: 0.3s;
 .mAPUAXLOESIUARITEXT {
   color: #ffffff80;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
@@ -7070,7 +6868,7 @@ transition-duration: 0.3s;
 .mAPKONKRETULITEXT {
   color: #fffc;
   font-size: 24px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
@@ -7133,7 +6931,7 @@ transition-duration: 0.3s;
 .mAPKONKRETULIDIAXTEXT {
   color: #fffc;
   font-size: 18px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
@@ -7171,7 +6969,7 @@ transition-duration: 0.3s;
 .mAPKONKRETULIUARITEXT {
   color: #ffffff80;
   font-size: 12px;
-  font-family: 'BPG ExtraSquare Mtavruli';
+  font-family: "EXTRA";
   letter-spacing: 0.03em;
   position: absolute;
   left: 50%;
@@ -7284,8 +7082,7 @@ transition-duration: 0.3s;
   font-size: 14px;
   line-height: 67.5%;
   font-weight: bold;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 0;
   right: 0;
@@ -7309,8 +7106,7 @@ transition-duration: 0.3s;
   color: #fffc;
   font-size: 12px;
   font-weight: 500;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 0;
@@ -7323,8 +7119,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 0;
@@ -7408,8 +7203,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 15px;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 0;
   top: 15px;
@@ -7425,8 +7219,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 15px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 160px;
   top: 15px;
@@ -7457,8 +7250,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 15px;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 0;
   top: 15px;
@@ -7474,8 +7266,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 15px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 217px;
   top: 15px;
@@ -7506,8 +7297,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 15px;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 0;
   top: 15px;
@@ -7523,8 +7313,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 15px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 168px;
   top: 15px;
@@ -7562,8 +7351,7 @@ transition-duration: 0.3s;
   color: #fffc;
   font-size: 15px;
   font-weight: 500;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 0;
   top: 15px;
@@ -7603,8 +7391,7 @@ transition-duration: 0.3s;
   color: #fffc;
   font-size: 15px;
   font-weight: 500;
-  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "TBCContracticaCapsBold";
   position: absolute;
   left: 0;
   top: 15px;
@@ -7629,8 +7416,7 @@ transition-duration: 0.3s;
   color: #ffffff80;
   font-size: 20px;
   font-weight: bold;
-  font-family: BPG Nino Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -7647,8 +7433,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: BPG Nino Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -7689,7 +7474,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -7706,7 +7491,7 @@ transition-duration: 0.3s;
   color: #73abff;
   font-size: 20px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -7757,7 +7542,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -7808,7 +7593,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -7848,7 +7633,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -7865,7 +7650,7 @@ transition-duration: 0.3s;
   color: #73abff;
   font-size: 20px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -7916,7 +7701,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -7967,7 +7752,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8018,7 +7803,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8057,7 +7842,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8074,7 +7859,7 @@ transition-duration: 0.3s;
   color: #73abff;
   font-size: 20px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8125,7 +7910,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8176,7 +7961,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8227,7 +8012,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8268,7 +8053,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8285,7 +8070,7 @@ transition-duration: 0.3s;
   color: #73abff;
   font-size: 20px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8336,7 +8121,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8387,7 +8172,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8428,7 +8213,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8445,7 +8230,7 @@ transition-duration: 0.3s;
   color: #73abff;
   font-size: 20px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8496,7 +8281,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8547,7 +8332,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8588,7 +8373,7 @@ transition-duration: 0.3s;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8605,7 +8390,7 @@ transition-duration: 0.3s;
   color: #73abff;
   font-size: 20px;
   font-weight: bold;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   letter-spacing: 0.03em;
   position: absolute;
   left: 0;
@@ -8656,7 +8441,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8707,7 +8492,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -8758,7 +8543,7 @@ transition-duration: 0.3s;
   transform-origin: top left;
   color: #fffc;
   font-size: 12px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   letter-spacing: 0.035em;
   position: absolute;
   left: 25px;
@@ -9150,7 +8935,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 37px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Book;
   font-size: 20px;
   opacity: 1;
@@ -9162,7 +8947,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Bold;
   font-size: 35px;
   opacity: 1;
@@ -9212,7 +8997,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 22px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 17px;
   opacity: 1;
@@ -9224,7 +9009,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Bold;
   font-size: 20px;
   opacity: 1;
@@ -9276,7 +9061,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 2px;
   left: 147px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 17px;
   opacity: 1;
@@ -9288,7 +9073,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 2px;
   left: 215px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 17px;
   opacity: 1;
@@ -9300,7 +9085,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 100px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -9311,7 +9096,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -9410,7 +9195,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -9422,7 +9207,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: left;
@@ -9513,7 +9298,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 15px;
   opacity: 1;
@@ -9537,7 +9322,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -9549,7 +9334,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: left;
@@ -9640,7 +9425,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 15px;
   opacity: 1;
@@ -9664,7 +9449,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -9676,7 +9461,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: center;
@@ -9768,7 +9553,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 15px;
   opacity: 1;
@@ -9792,7 +9577,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -9804,7 +9589,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: center;
@@ -9869,7 +9654,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 30px;
   opacity: 1;
@@ -9914,7 +9699,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 5px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Book;
   font-size: 20px;
   opacity: 1;
@@ -9975,7 +9760,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 37px;
   left: 0px;
-  font-family: TBC Contractica CAPS;
+    font-family: "TBCContracticaBold";
   font-weight: Book;
   font-size: 20px;
   opacity: 1;
@@ -9987,7 +9772,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 35px;
   opacity: 1;
   text-align: left;
@@ -10036,7 +9821,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 22px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 17px;
   opacity: 1;
@@ -10048,7 +9833,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -10099,7 +9884,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 2px;
   left: 147px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 17px;
   opacity: 1;
@@ -10111,7 +9896,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 2px;
   left: 215px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 17px;
   opacity: 1;
@@ -10123,7 +9908,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 100px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -10134,7 +9919,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 20px;
   opacity: 1;
   text-align: left;
@@ -10199,7 +9984,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 30px;
   opacity: 1;
@@ -10329,7 +10114,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 78px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10341,7 +10126,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 46px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10353,7 +10138,7 @@ transition-duration: 0.3s;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: left;
@@ -10439,7 +10224,7 @@ background: linear-gradient(rgba(90,184,236,0.25), rgba(90,184,236,0));
   position: absolute;
   top: 78px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10451,7 +10236,7 @@ background: linear-gradient(rgba(90,184,236,0.25), rgba(90,184,236,0));
   position: absolute;
   top: 46px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10463,7 +10248,7 @@ background: linear-gradient(rgba(90,184,236,0.25), rgba(90,184,236,0));
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: left;
@@ -10559,7 +10344,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 15px;
   opacity: 1;
   text-align: center;
@@ -10582,7 +10367,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10594,7 +10379,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: center;
@@ -10680,7 +10465,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 185px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10692,7 +10477,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 148px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10704,7 +10489,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 111px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10716,7 +10501,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 74px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10728,7 +10513,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 37px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10740,7 +10525,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10776,7 +10561,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 16px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 15px;
   opacity: 1;
@@ -10800,7 +10585,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 31px;
   left: 0px;
-  font-family: BPG Nino Mtavruli;
+  font-family: "NinoMtavruliRegular";
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
@@ -10812,23 +10597,13 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   position: absolute;
   top: 0px;
   left: 0px;
-  font-family: 'BPG NinoMtavrulibold';
+  font-family: "NinoMtavruliBold";
   font-size: 30px;
   opacity: 1;
   text-align: center;
 }
 
 /* hud */
-
-@font-face {
-  font-family: "Extra";
-  src: url(./fonts/extra.ttf);
-}
-
-@font-face {
-  font-family: "Regularcaps";
-  src: url(./fonts/regularcaps.ttf);
-}
 
 
 .mLIFEHUDEFFECTRIGHT {
@@ -10837,7 +10612,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 384px;
   height: 384px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/mLIFEHUDEFFECTRIGHT.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/mLIFEHUDEFFECTRIGHT.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10849,7 +10624,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   bottom: 0;
   width: 392px;
   height: 392px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/mLIFEHUDEFFECTLEFT.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/mLIFEHUDEFFECTLEFT.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11037,7 +10812,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .hUDLOKACIATEXT2 {
   color: #ffffff80;
   font-size: 10px;
-  font-family: "Regularcaps";
+  font-family: "TBCContracticaCapsRegular";
   position: absolute;
   left: 50%;
   top: calc(50% - -7.5px);
@@ -11061,7 +10836,8 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 24px;
   width: 268px;
   height: 75px;
-  background-image: linear-gradient(-90deg, #00000080 0%, #0000 100%);
+  border-radius: 10px 0 0 10px;
+  background-image: linear-gradient(-90deg, #00000090 0%, #0000 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11073,7 +10849,8 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 24px;
   width: 268px;
   height: 75px;
-  background-image:/* webpackIgnore: tfrue */ url('./FOTOEBI/mlifehud/hUDIARAGIEFFECTPIC.png');
+  border-radius: 10px 0 0 10px;
+  background-image:/* webpackIgnore: tfrue */ url('../FOTOEBI/HUD/hUDIARAGIEFFECTPIC.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11093,7 +10870,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 101px;
   height: 99px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/30.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/30.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11104,7 +10881,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 112px;
   height: 99px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/31.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/31.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11115,7 +10892,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 7px;
   width: 89px;
   height: 92px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/29.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/29.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11126,7 +10903,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 8px;
   width: 77px;
   height: 91px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/23.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/23.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11137,7 +10914,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 2px;
   width: 78px;
   height: 97px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/24.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/24.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11148,7 +10925,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 101px;
   height: 99px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/25.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/25.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11159,7 +10936,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 101px;
   height: 99px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/28.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/28.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11167,7 +10944,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .hUDIARAGITEXT {
   color: #ffffff80;
   font-size: 12px;
-  font-family: "Regularcaps";
+  font-family: "TBCContracticaCapsRegular";
   position: absolute;
   left: calc(50% - -79px);
   top: calc(50% - -24px);
@@ -11184,7 +10961,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   font-family: "Extra";
   position: absolute;
   left: calc(50% - -79px);
-  top: calc(50% - -4px);
+  top: calc(50% - 0px);
   width: 60px;
   height: 19px;
   text-align: end;
@@ -11290,7 +11067,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .hUDTANXANOTIFIKACIA {
   color: #ffffff80;
   font-size: 14px;
-  font-family: "Regularcaps";
+  font-family: "TBCContracticaCapsRegular";
   letter-spacing: 0.14em;
   position: absolute;
   left: 50%;
@@ -11358,7 +11135,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   width: 254px;
   height: 70px;
   border-radius: 10px 0 0 10px;
-  background-image: linear-gradient(-90deg, #0009 0%, #0000 100%);
+  background-color: #00000060;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11370,7 +11147,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 109px;
   height: 70px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/hUDSACHUQARIPIC.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/hUDSACHUQARIPIC.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11401,7 +11178,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .hUDSACHUQARIRIGHTTEXT1 {
   color: #ffffff80;
   font-size: 10px;
-  font-family: "Regularcaps";
+  font-family: "TBCContracticaCapsRegular";
   position: absolute;
   left: calc(50% - 7.5px);
   top: calc(50% - -6.5px);
@@ -11487,16 +11264,21 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 }
 
 #timer-gift{
-  font-size: 12px;
-  font-family: "Extra";
-  letter-spacing: 11.1px;
-  margin-top: 10px;
-  margin-left: 4px;
   color: #fff;
+  font-size: 14px;
+  font-family: "Extra";
+  font-weight: 100;
+  letter-spacing: 0.61em;
   position: absolute;
-  text-shadow: 0px 0px 25px #ffffff80;
+  left: 55%;
+  top: 38%;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-
+  transform: translate(-50%, -50%);
 }
 .hUDSACHUQARITIME1 {
   position: absolute;
@@ -11533,7 +11315,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   width: 285px;
   height: 84px;
   border-radius: 10px 0 0 10px;
-  background-image: linear-gradient(-90deg, #00000080 0%, #0000 100%);
+  background-color: #00000060;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11545,7 +11327,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 285px;
   height: 84px;
-  background-image:/* webpackIgnore: true */ url('./FOTOEBI/mlifehud/hUDFRAMELVLPIC.png');
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/HUD/hUDFRAMELVLPIC.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11649,7 +11431,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
 .hUDFRAMELVLXPTEXT2 {
   color: #ffffff80;
   font-size: 10px;
-  font-family: "Regularcaps";
+  font-family: "TBCContracticaCapsRegular";
   position: absolute;
   left: calc(50% - -101.5px);
   top: calc(50% - 2.5px);
@@ -11664,7 +11446,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   font-family: "Extra";
   position: absolute;
   left: calc(50% - 78.5px);
-  top: calc(10% - 16px);
+  top: calc(10% - 25px);
   width: 98px;
   height: 36px;
   justify-content: center;
@@ -11677,7 +11459,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   font-family: "Extra";
   position: absolute;
   left: calc(50% - 73.5px);
-  top: calc(32% - 7.5px);
+  top: calc(32% - 12.5px);
   width: 88px;
   height: 19px;
   justify-content: center;
@@ -11729,9 +11511,10 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   color: #fff;
   font-size: 11px;
   font-family: "Extra";
+  font-weight: bold;
   position: absolute;
-  left: 42.5%;
-  top: 42.5%;
+  left: 45%;
+  top: 40.5%;
   width: 30px;
   height: 8px;
   text-align: center;
@@ -11787,9 +11570,10 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   color: #fff;
   font-size: 11px;
   font-family: "Extra";
+  font-weight: bold;
   position: absolute;
-  left: 42.5%;
-  top: 15.5%;
+  left: 48%;
+  top: 11.5%;
   width: 30px;
   height: 8px;
   text-align: center;
@@ -11822,7 +11606,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transform: translateY(-50%);
 }
 .hUDINV {
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
   left: 0;
   top: 212px;
@@ -11833,7 +11617,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transition-duration: 0.4s;
 }
 .hUDINV:hover {
-  opacity: 1;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 212px;
@@ -11849,7 +11633,9 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 134px;
   height: 43px;
-  background-image: linear-gradient(90deg, #00000080 0%, #0000 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11882,7 +11668,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
 }
 .hUDRUKA {
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
   left: 0;
   top: 159px;
@@ -11893,7 +11679,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transition-duration: 0.4s;
 }
 .hUDRUKA:hover {
-  opacity: 1;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 159px;
@@ -11909,7 +11695,9 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 87px;
   height: 43px;
-  background-image: linear-gradient(90deg, #00000080 0%, #0000 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11942,7 +11730,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
 }
 .hUDANIMACIA {
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
   left: 0;
   top: 106px;
@@ -11953,7 +11741,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transition-duration: 0.4s;
 }
 .hUDANIMACIA:hover {
-  opacity: 1;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 106px;
@@ -11969,7 +11757,9 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 120px;
   height: 43px;
-  background-image: linear-gradient(90deg, #00000080 0%, #0000 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11990,6 +11780,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
 }
 .hUDTELEFONI {
+  opacity: 0.4;
   position: absolute;
   left: 0;
   top: 53px;
@@ -11997,6 +11788,18 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   height: 43px;
   flex-direction: column;
   align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.hUDTELEFONI:hover {
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 53px;
+  width: 139px;
+  height: 43px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
 }
 .hUDTELEFONIBG {
   position: absolute;
@@ -12004,7 +11807,9 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 139px;
   height: 43px;
-  background-image: linear-gradient(90deg, #00000080 0%, #0000 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -12037,7 +11842,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
 }
 .hUDMENIU {
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
   left: 0;
   top: 0;
@@ -12048,7 +11853,7 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   transition-duration: 0.4s;
 }
 .hUDMENIU:Hover {
-  opacity: 1;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 0;
@@ -12064,7 +11869,9 @@ background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
   top: 0;
   width: 92px;
   height: 43px;
-  background-image: linear-gradient(90deg, #00000080 0%, #0000 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
