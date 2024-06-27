@@ -23,7 +23,11 @@ const CEF = {
     DONATE: 20,
     STANDART: 21,
     MEORE: 22,
-    MESAME: 23
+    MESAME: 23,
+    MEQANIKOSI: 24,
+    STAGE: 25,
+    MDONATE: 26,
+    CAPTCHA: 27
 };
 
 
@@ -65,6 +69,10 @@ function hideAllCefPackets(){
     document.getElementById('standart-etapi-erti').style.display = "none";
     document.getElementById('etapi-ori-container').style.display = "none";
     document.getElementById('mesame-etapi-container').style.display = "none";
+    document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
+    document.getElementById('DONATE-CONTAINER').style.display = "none";
+    document.getElementById('captcha-container').style.display = "none";
+    // document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -140,7 +148,7 @@ function sendCefPacket(response) {
             break
             
         case CEF.MAINMENU:
-            document.getElementById('MainMenu-Section').style.display = "block";
+            document.getElementById('MENU-CONTAINER').style.display = "block";
             break
 
         case CEF.HUD:
@@ -166,6 +174,18 @@ function sendCefPacket(response) {
         case CEF.MESAME:
             document.getElementById('mesame-etapi-container').style.display = "block";
             break 
+
+        case CEF.MEQANIKOSI:
+            document.getElementById('MEQANIKOSI-CONTAINER').style.display = "block";
+            break
+            
+        case CEF.MDONATE:
+            document.getElementById('DONATE-CONTAINER').style.display = "block";
+            break  
+            
+        case CEF.CAPTCHA:
+            document.getElementById('captcha-container').style.display = "block";
+            break
     }
 }
 
@@ -240,7 +260,7 @@ function hideCefPacket(response) {
             break
 
         case CEF.MAINMENU:
-            document.getElementById('MainMenu-Section').style.display = "none";
+            document.getElementById('MENU-CONTAINER').style.display = "none";
             break
 
         case CEF.HUD:
@@ -265,7 +285,19 @@ function hideCefPacket(response) {
 
         case CEF.MESAME:
             document.getElementById('mesame-etapi-container').style.display = "none";
-            break 
+            break
+
+        case CEF.MEQANIKOSI:
+            document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
+            break  
+            
+        case CEF.MDONATE:
+            document.getElementById('DONATE-CONTAINER').style.display = "none";
+            break    
+
+        case CEF.CAPTCHA:
+            document.getElementById('captcha-container').style.display = "none";
+            break
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {

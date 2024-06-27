@@ -2103,6 +2103,7 @@
                     console.log(`Button ${index + 1} clicked on dialog ${dialogId}`);
                     cef.emit('buttonClicked', dialogId, index + 1);
                     closeDialog(); // Close the dialog after button click
+                    cef.set_focus(false);
                 });
 
                 const btnText = document.createElement('div');
@@ -2116,6 +2117,7 @@
 
             dialogList.style.display = 'flex'; // Show the list dialog
             document.getElementById('dialog-input').style.display = 'none'; // Hide the input dialog
+            cef.set_focus(true);
         }
 
         // Function to display the input dialog
@@ -2130,12 +2132,14 @@
 
             dialogInput.style.display = 'flex'; // Show the input dialog
             document.getElementById('dialog-list').style.display = 'none'; // Hide the list dialog
+            cef.set_focus(true);
         }
 
         // Function to close the dialog
         function closeDialog() {
             document.getElementById('dialog-list').style.display = 'none';
             document.getElementById('dialog-input').style.display = 'none';
+            cef.set_focus(false);
         }
 
         // Function to submit the input
@@ -2144,6 +2148,7 @@
             console.log(`Input submitted: ${input}`);
             cef.emit('inputSubmitted', currentDialogId, input);
             closeDialog(); // Close the dialog after input submission
+            cef.set_focus(false);
         }
 
         // Listen for the showDialogList event
@@ -2157,160 +2162,311 @@
         });
 
     </script>
-        <div id="hud-container">
-            <div class="mLIFEHUDEFFECTRIGHT animate__animated animate__fadeIn"></div>
-            <div class="mLIFEHUDEFFECTLEFT animate__animated animate__fadeIn"></div>
-            <div class="hUDRADAR">
-                <div class="hUDSACHMELI">
-                    <div class="hUDSACHMELIRAODENOBA">
-                        <div class="hUDSACHMELIRAODENOBABG"></div>
-                        <h1 class="hUDSACHMELIRAODENOBATEXT" id="thirst">23 %</h1>
+    <div id="hud-container">
+        <div class="mLIFEHUDEFFECTRIGHT animate__animated animate__fadeIn"></div>
+        <div class="mLIFEHUDEFFECTLEFT animate__animated animate__fadeIn"></div>
+        <div class="hUDRADAR">
+            <div class="hUDSACHMELI">
+                <div class="hUDSACHMELIRAODENOBA">
+                    <div class="hUDSACHMELIRAODENOBABG"></div>
+                    <h1 class="hUDSACHMELIRAODENOBATEXT" id="thirst">23 %</h1>
+                </div>
+                <div class="hUDSACHMELIICON">
+                    <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <g filter="url(#filter0_dd_2665_73)">
+                            <path d="M0 0H35C37.7614 0 40 2.23858 40 5V35C40 37.7614 37.7614 40 35 40H0V0Z" fill="white"></path>
+                        </g>
+                        <path d="M25.5091 30H27.0182C27.7818 30 28.4091 29.4091 28.5 28.6636L30 13.6818H25.4545V10H23.6636V13.6818H19.1455L19.4182 15.8091C20.9727 16.2364 22.4273 17.0091 23.3 17.8636C24.6091 19.1545 25.5091 20.4909 25.5091 22.6727V30ZM10 29.0909V28.1818H23.6636V29.0909C23.6636 29.5818 23.2545 30 22.7273 30H10.9091C10.4091 30 10 29.5818 10 29.0909ZM23.6636 22.7273C23.6636 15.4545 10 15.4545 10 22.7273H23.6636ZM10 24.5455H23.6364V26.3636H10V24.5455Z" fill="black" fill-opacity="0.8"></path>
+                        <defs>
+                            <filter id="filter0_dd_2665_73" x="-25" y="-25" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                <feOffset dx="5"></feOffset>
+                                <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2665_73"></feBlend>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                <feOffset></feOffset>
+                                <feGaussianBlur stdDeviation="12.5"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix>
+                                <feBlend mode="normal" in2="effect1_dropShadow_2665_73" result="effect2_dropShadow_2665_73"></feBlend>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_73" result="shape"></feBlend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="hUDSICOCXLE">
+                <div class="hUDSICOCXLERAODENOBA">
+                    <div class="hUDSICOCXLERAODENOBABG"></div>
+                    <h1 class="hUDSICOCXLERAODENOBATEXT" id="hungry">83 %</h1>
+                </div>
+                <div class="hUDSICOCXLEICON">
+                    <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon2">
+                        <g filter="url(#filter0_dd_2665_76)">
+                            <path d="M0 0H35C37.7614 0 40 2.23858 40 5V35C40 37.7614 37.7614 40 35 40H0V0Z" fill="white"></path>
+                        </g>
+                        <path d="M20.8332 29.6222L27.7042 21.7354C30.6786 18.5309 30.5475 14.5064 28.542 12.0631C27.5442 10.8464 26.0909 10.0453 24.4087 10.0019C22.9721 9.96415 21.4621 10.4797 20.0055 11.6042C18.5444 10.4797 17.03 9.96415 15.5911 10.0019C13.9078 10.0464 12.4523 10.8464 11.4534 12.0631C9.44679 14.5087 9.32568 18.5332 12.3112 21.7365L19.181 29.6222C19.3921 29.8622 19.6921 30 20.0066 30C20.163 29.9987 20.3174 29.9644 20.4597 29.8993C20.602 29.8342 20.7289 29.7398 20.8321 29.6222H20.8332Z" fill="black" fill-opacity="0.8"></path>
+                        <defs>
+                            <filter id="filter0_dd_2665_76" x="-25" y="-25" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                <feOffset dx="5"></feOffset>
+                                <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2665_76"></feBlend>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                <feOffset></feOffset>
+                                <feGaussianBlur stdDeviation="12.5"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix>
+                                <feBlend mode="normal" in2="effect1_dropShadow_2665_76" result="effect2_dropShadow_2665_76"></feBlend>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_76" result="shape"></feBlend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="hUDLOKACIA">
+                <div class="hUDLOKACIAICON">
+                    <svg preserveAspectRatio="none" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon3">
+                        <g filter="url(#filter0_dd_2665_79)">
+                            <path d="M0 0H35C37.7614 0 40 2.23858 40 5V51C40 53.7614 37.7614 56 35 56H0V0Z" fill="white"></path>
+                        </g>
+                        <path d="M20 27.45C19.2422 27.45 18.5155 27.1603 17.9797 26.6445C17.4439 26.1288 17.1429 25.4293 17.1429 24.7C17.1429 23.9707 17.4439 23.2712 17.9797 22.7555C18.5155 22.2397 19.2422 21.95 20 21.95C20.7578 21.95 21.4845 22.2397 22.0203 22.7555C22.5561 23.2712 22.8571 23.9707 22.8571 24.7C22.8571 25.0611 22.7832 25.4187 22.6397 25.7524C22.4961 26.086 22.2856 26.3892 22.0203 26.6445C21.755 26.8999 21.44 27.1025 21.0934 27.2407C20.7467 27.3789 20.3752 27.45 20 27.45ZM20 17C17.8783 17 15.8434 17.8112 14.3431 19.2553C12.8429 20.6993 12 22.6578 12 24.7C12 30.475 20 39 20 39C20 39 28 30.475 28 24.7C28 22.6578 27.1571 20.6993 25.6569 19.2553C24.1566 17.8112 22.1217 17 20 17Z" fill="black" fill-opacity="0.8"></path>
+                        <defs>
+                            <filter id="filter0_dd_2665_79" x="-25" y="-25" width="90" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                <feOffset dx="5"></feOffset>
+                                <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2665_79"></feBlend>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                <feOffset></feOffset>
+                                <feGaussianBlur stdDeviation="12.5"></feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix>
+                                <feBlend mode="normal" in2="effect1_dropShadow_2665_79" result="effect2_dropShadow_2665_79"></feBlend>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_79" result="shape"></feBlend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="hUDLOKACIAFRAME">
+                    <div class="hUDLOKACIABG"></div>
+                    <div class="hUDLOKACIATEXT1">LOS SANTOS</div>
+                    <div class="hUDLOKACIATEXT2" id="location">HOLYWOOD</div>
+                </div>
+            </div>
+        </div>
+        <div id="gun-frame" class="hUDIARAGI">
+            <div class="hUDIARAGIBG"></div>
+            <div class="hUDIARAGIEFFECTPIC"></div>
+            <div class="hUDIARAGEBISPIC">
+                <div style="display: none;" id="ak47" class="hUDAK47"></div>
+                <div style="display: none;" id="m4" class="hUDM4"></div>
+                <div style="display: none;" id="drako" class="hUDAKDRACO"></div>
+                <div style="display: none;" id="makarov" class="hUDMAKAROV"></div>
+                <div style="display: none;" id="colt" class="hUDCOLT"></div>
+                <div style="display: none;" id="shothun" class="hUDSHOTGUN"></div>
+                <div style="display: none;" id="uzi" class="hUDUZI"></div>
+                <div id="fist"></div>
+            </div>
+            <div class="hUDIARAGITEXT">?????</div>
+            <div class="hUDIARAGITKVIEBISRAODENOBA" id="ammo">999</div>
+        </div>
+        <div class="hUDFRAME">
+            <div class="hUDWANTED">
+                <img id="wanted1" src="../FOTOEBI/nowanted.png" alt="">
+                <img id="wanted2" src="../FOTOEBI/nowanted.png" alt="">
+                <img id="wanted3" src="../FOTOEBI/nowanted.png" alt="">
+                <img id="wanted4" src="../FOTOEBI/nowanted.png" alt="">
+                <img id="wanted5" src="../FOTOEBI/nowanted.png" alt="">
+                <img id="wanted6" src="../FOTOEBI/nowanted.png" alt="">
+                <img id="wanted7" src="../FOTOEBI/wanted.png" alt="">
+                <img id="wanted8" src="../FOTOEBI/wanted.png" alt="">
+                <img id="wanted9" src="../FOTOEBI/wanted.png" alt="">
+                <img id="wanted10" src="../FOTOEBI/wanted.png" alt="">
+                <img id="wanted11" src="../FOTOEBI/wanted.png" alt="">
+                <img id="wanted12" src="../FOTOEBI/wanted.png" alt="">
+            </div>
+            <div class="hUDTANXA">
+                <h1 class="hUDTANXAMTAVARI" id="money">$1000</h1>
+                <h1 class="hUDTANXANOTIFIKACIA" id="plusmoney" style="display: none;">+99999$</h1>
+            </div>
+            <div class="hUDNOTIFIKACIA">
+                <svg preserveAspectRatio="none" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon5">
+                    <g opacity="1" clip-path="url(#clip0_2665_89)">
+                        <g filter="url(#filter0_b_2665_89)">
+                            <path d="M0 10C0 4.47715 4.47715 0 10 0H38V38H10C4.47715 38 0 33.5228 0 28V10Z" fill="url(#paint0_linear_2665_89)"></path>
+                        </g>
+                        <path d="M19 11C17.5461 11 16.1517 11.6211 15.1236 12.7265C14.0955 13.832 13.5179 15.3314 13.5179 16.8947V19.8657C13.518 19.9963 13.4898 20.1252 13.4357 20.2421L12.091 23.1331C12.0253 23.2743 11.9943 23.4312 12.0009 23.589C12.0075 23.7467 12.0515 23.9001 12.1287 24.0344C12.2059 24.1687 12.3138 24.2796 12.442 24.3565C12.5703 24.4334 12.7147 24.4737 12.8616 24.4737H25.1384C25.2853 24.4737 25.4297 24.4334 25.558 24.3565C25.6862 24.2796 25.7941 24.1687 25.8713 24.0344C25.9485 23.9001 25.9925 23.7467 25.9991 23.589C26.0057 23.4312 25.9747 23.2743 25.909 23.1331L24.5651 20.2421C24.5107 20.1253 24.4822 19.9964 24.4821 19.8657V16.8947C24.4821 15.3314 23.9045 13.832 22.8764 12.7265C21.8483 11.6211 20.4539 11 19 11ZM19 27C18.5139 27.0003 18.0397 26.8384 17.6428 26.5368C17.2459 26.2352 16.9457 25.8086 16.7837 25.3158H21.2163C21.0543 25.8086 20.7541 26.2352 20.3572 26.5368C19.9603 26.8384 19.4861 27.0003 19 27Z" fill="white"></path>
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_2665_89" x="-25" y="-25" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2665_89"></feComposite>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2665_89" result="shape"></feBlend>
+                        </filter>
+                        <linearGradient id="paint0_linear_2665_89" x1="38" y1="19" x2="0" y2="19" gradientUnits="userSpaceOnUse">
+                            <stop stop-opacity="0.6"></stop>
+                            <stop offset="1" stop-opacity="0"></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_2665_89">
+                            <rect width="38" height="38" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="hUDSACHUQARI">
+                <div class="hUDSACHUQARIBG"></div>
+                <div class="hUDSACHUQARIPIC"></div>
+                <div class="hUDSACHUQARIRIGHT">
+                    <div class="hUDSACHUQARIRIGHTTEXT2">??????????</div>
+                    <div class="hUDSACHUQARIRIGHTTEXT1">????????</div>
+                    <div class="hUDSACHUQARIRIGHTXAZI"></div>
+                </div>
+                <div class="hUDSACHUQARITIMEFRAME">
+                    <div class="hUDSACHUQARITIME4">
+                        <div class="hUDSACHUQARITIME4BG"></div>
                     </div>
-                    <div class="hUDSACHMELIICON">
-                        <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"><g filter="url(#filter0_dd_2665_73)"><path d="M0 0H35C37.7614 0 40 2.23858 40 5V35C40 37.7614 37.7614 40 35 40H0V0Z" fill="white"></path></g><path d="M25.5091 30H27.0182C27.7818 30 28.4091 29.4091 28.5 28.6636L30 13.6818H25.4545V10H23.6636V13.6818H19.1455L19.4182 15.8091C20.9727 16.2364 22.4273 17.0091 23.3 17.8636C24.6091 19.1545 25.5091 20.4909 25.5091 22.6727V30ZM10 29.0909V28.1818H23.6636V29.0909C23.6636 29.5818 23.2545 30 22.7273 30H10.9091C10.4091 30 10 29.5818 10 29.0909ZM23.6636 22.7273C23.6636 15.4545 10 15.4545 10 22.7273H23.6636ZM10 24.5455H23.6364V26.3636H10V24.5455Z" fill="black" fill-opacity="0.8"></path><defs><filter id="filter0_dd_2665_73" x="-25" y="-25" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="5"></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2665_73"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="12.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="effect1_dropShadow_2665_73" result="effect2_dropShadow_2665_73"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_73" result="shape"></feBlend></filter></defs></svg>
+                    <div class="hUDSACHUQARITIME3">
+                        <div class="hUDSACHUQARITIME3BG"></div>
+                    </div>
+                    <div class="hUDSACHUQARITIME2">
+                        <div class="hUDSACHUQARITIME2BG"></div>
+                    </div>
+                    <div class="hUDSACHUQARITIME1">
+                        <div class="hUDSACHUQARITIME1BG"></div>
+                    </div>
+                    <h1 id="timer-gift">60:00</h1>
+                </div>
+            </div>
+            <div class="hUDFRAMELVL">
+                <div class="hUDFRAMELVLBG"></div>
+                <div class="hUDFRAMELVLPIC"></div>
+                <div class="hUDFRAMELVLEXP1" id="exp1"></div>
+                <div class="hUDFRAMELVLEXP2" id="exp2"></div>
+                <div class="hUDFRAMELVLEXP3" id="exp3"></div>
+                <div class="hUDFRAMELVLEXP4" id="exp4"></div>
+                <div class="hUDFRAMELVLEXP5" id="exp5"></div>
+                <div class="hUDFRAMELVLEXP6" id="exp6"></div>
+                <div class="hUDFRAMELVLEXP7" id="exp7"></div>
+                <div class="hUDFRAMELVLEXP8" id="exp8"></div>
+                <h1 class="hUDFRAMELVLXPTEXT1" id="exp">2</h1>
+                <div class="hUDFRAMELVLXPTEXT2">?????</div>
+                <h1 class="hUDFRAMELVLTEXTBACK2" id="level">999</h1>
+                <h1 class="hUDFRAMELVLTEXT1" id="backlevel">999</h1>
+            </div>
+            <div class="hUDFRAMEZEDA">
+                <div class="hUDZEDATIME">
+                    <div class="hUDZEDATIMECOUNT">
+                        <div class="hUDZEDATIMECOUNTBG"></div>
+                        <div class="hUDZEDATIMECOUNTTEXT" id="tbilisi-time">Loading...</div>
+                    </div>
+                    <div class="hUDZEDATIMEICON">
+                        <svg preserveAspectRatio="none" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon6">
+                            <g filter="url(#filter0_bd_2665_92)">
+                                <rect width="38" height="38" rx="5" fill="white"></rect>
+                            </g>
+                            <path d="M19 11C23.4184 11 27 14.5816 27 19C27 23.4184 23.4184 27 19 27C14.5816 27 11 23.4184 11 19C11 14.5816 14.5816 11 19 11ZM19 14.2C18.7878 14.2 18.5843 14.2843 18.4343 14.4343C18.2843 14.5843 18.2 14.7878 18.2 15V19C18.2 19.2122 18.2844 19.4156 18.4344 19.5656L20.8344 21.9656C20.9853 22.1113 21.1874 22.192 21.3971 22.1901C21.6069 22.1883 21.8075 22.1042 21.9559 21.9559C22.1042 21.8075 22.1883 21.6069 22.1901 21.3971C22.192 21.1874 22.1113 20.9853 21.9656 20.8344L19.8 18.6688V15C19.8 14.7878 19.7157 14.5843 19.5657 14.4343C19.4157 14.2843 19.2122 14.2 19 14.2Z" fill="black" fill-opacity="0.8"></path>
+                            <defs>
+                                <filter id="filter0_bd_2665_92" x="-25" y="-25" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2665_92"></feComposite>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                    <feOffset dx="5"></feOffset>
+                                    <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_backgroundBlur_2665_92" result="effect2_dropShadow_2665_92"></feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_92" result="shape"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
-                <div class="hUDSICOCXLE">
-                    <div class="hUDSICOCXLERAODENOBA">
-                        <div class="hUDSICOCXLERAODENOBABG"></div>
-                        <h1 class="hUDSICOCXLERAODENOBATEXT" id="hungry">83 %</h1>
+                <div class="hUDZEDAPLAYERS">
+                    <div class="hUDZEDAPLAYERSCOUNT">
+                        <div class="hUDZEDAPLAYERSCOUNTBG"></div>
+                        <h1 class="hUDZEDAPLAYERSCOUNTTEXT" id="players">1000</h1>
                     </div>
-                    <div class="hUDSICOCXLEICON">
-                        <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon2"><g filter="url(#filter0_dd_2665_76)"><path d="M0 0H35C37.7614 0 40 2.23858 40 5V35C40 37.7614 37.7614 40 35 40H0V0Z" fill="white"></path></g><path d="M20.8332 29.6222L27.7042 21.7354C30.6786 18.5309 30.5475 14.5064 28.542 12.0631C27.5442 10.8464 26.0909 10.0453 24.4087 10.0019C22.9721 9.96415 21.4621 10.4797 20.0055 11.6042C18.5444 10.4797 17.03 9.96415 15.5911 10.0019C13.9078 10.0464 12.4523 10.8464 11.4534 12.0631C9.44679 14.5087 9.32568 18.5332 12.3112 21.7365L19.181 29.6222C19.3921 29.8622 19.6921 30 20.0066 30C20.163 29.9987 20.3174 29.9644 20.4597 29.8993C20.602 29.8342 20.7289 29.7398 20.8321 29.6222H20.8332Z" fill="black" fill-opacity="0.8"></path><defs><filter id="filter0_dd_2665_76" x="-25" y="-25" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="5"></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2665_76"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="12.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="effect1_dropShadow_2665_76" result="effect2_dropShadow_2665_76"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_76" result="shape"></feBlend></filter></defs></svg></div></div><div class="hUDLOKACIA"><div class="hUDLOKACIAICON"><svg preserveAspectRatio="none" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon3"><g filter="url(#filter0_dd_2665_79)"><path d="M0 0H35C37.7614 0 40 2.23858 40 5V51C40 53.7614 37.7614 56 35 56H0V0Z" fill="white"></path></g><path d="M20 27.45C19.2422 27.45 18.5155 27.1603 17.9797 26.6445C17.4439 26.1288 17.1429 25.4293 17.1429 24.7C17.1429 23.9707 17.4439 23.2712 17.9797 22.7555C18.5155 22.2397 19.2422 21.95 20 21.95C20.7578 21.95 21.4845 22.2397 22.0203 22.7555C22.5561 23.2712 22.8571 23.9707 22.8571 24.7C22.8571 25.0611 22.7832 25.4187 22.6397 25.7524C22.4961 26.086 22.2856 26.3892 22.0203 26.6445C21.755 26.8999 21.44 27.1025 21.0934 27.2407C20.7467 27.3789 20.3752 27.45 20 27.45ZM20 17C17.8783 17 15.8434 17.8112 14.3431 19.2553C12.8429 20.6993 12 22.6578 12 24.7C12 30.475 20 39 20 39C20 39 28 30.475 28 24.7C28 22.6578 27.1571 20.6993 25.6569 19.2553C24.1566 17.8112 22.1217 17 20 17Z" fill="black" fill-opacity="0.8"></path><defs><filter id="filter0_dd_2665_79" x="-25" y="-25" width="90" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="5"></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2665_79"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="12.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="effect1_dropShadow_2665_79" result="effect2_dropShadow_2665_79"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_79" result="shape"></feBlend></filter></defs></svg>
-                        </div>
-                        <div class="hUDLOKACIAFRAME">
-                            <div class="hUDLOKACIABG"></div>
-                            <div class="hUDLOKACIATEXT1">LOS SANTOS</div>
-                            <div class="hUDLOKACIATEXT2" id="location">HOLYWOOD</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="gun-frame" class="hUDIARAGI">
-                    <div class="hUDIARAGIBG"></div>
-                    <div class="hUDIARAGIEFFECTPIC"></div>
-                    <div class="hUDIARAGEBISPIC">
-                        <div style="display: none;" id="ak47" class="hUDAK47"></div>
-                        <div style="display: none;" id="m4" class="hUDM4"></div>
-                        <div style="display: none;" id="drako" class="hUDAKDRACO"></div>
-                        <div style="display: none;" id="makarov" class="hUDMAKAROV"></div>
-                        <div style="display: none;" id="colt" class="hUDCOLT"></div>
-                        <div style="display: none;" id="shothun" class="hUDSHOTGUN"></div>
-                        <div style="display: none;" id="uzi" class="hUDUZI"></div>
-                        <div id="fist"></div>
-                    </div>
-                    <div class="hUDIARAGITEXT">ტყვიო</div>
-                    <div class="hUDIARAGITKVIEBISRAODENOBA" id="ammo">999</div>
-                </div>
-                <div class="hUDFRAME">
-                    <div class="hUDWANTED">
-                        <img id="wanted1" src="../FOTOEBI/nowanted.png" alt=""><img id="wanted2" src="../FOTOEBI/nowanted.png" alt=""><img id="wanted3" src="../FOTOEBI/nowanted.png" alt=""><img id="wanted4" src="../FOTOEBI/nowanted.png" alt=""><img id="wanted5" src="../FOTOEBI/nowanted.png" alt=""><img id="wanted6" src="../FOTOEBI/nowanted.png" alt=""><img id="wanted7" src="../FOTOEBI/wanted.png" alt=""><img id="wanted8" src="../FOTOEBI/wanted.png" alt=""><img id="wanted9" src="../FOTOEBI/wanted.png" alt=""><img id="wanted10" src="../FOTOEBI/wanted.png" alt=""><img id="wanted11" src="../FOTOEBI/wanted.png" alt=""><img id="wanted12" src="../FOTOEBI/wanted.png" alt="">
-                    </div>
-                    <div class="hUDTANXA">
-                        <h1 class="hUDTANXAMTAVARI" id="money">$1000</h1>
-                        <h1 class="hUDTANXANOTIFIKACIA" id="plusmoney" style="display: none;">+99999$</h1>
-                    </div>
-                    <div class="hUDNOTIFIKACIA">
-                        <svg preserveAspectRatio="none" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon5"><g opacity="1" clip-path="url(#clip0_2665_89)"><g filter="url(#filter0_b_2665_89)"><path d="M0 10C0 4.47715 4.47715 0 10 0H38V38H10C4.47715 38 0 33.5228 0 28V10Z" fill="url(#paint0_linear_2665_89)"></path></g><path d="M19 11C17.5461 11 16.1517 11.6211 15.1236 12.7265C14.0955 13.832 13.5179 15.3314 13.5179 16.8947V19.8657C13.518 19.9963 13.4898 20.1252 13.4357 20.2421L12.091 23.1331C12.0253 23.2743 11.9943 23.4312 12.0009 23.589C12.0075 23.7467 12.0515 23.9001 12.1287 24.0344C12.2059 24.1687 12.3138 24.2796 12.442 24.3565C12.5703 24.4334 12.7147 24.4737 12.8616 24.4737H25.1384C25.2853 24.4737 25.4297 24.4334 25.558 24.3565C25.6862 24.2796 25.7941 24.1687 25.8713 24.0344C25.9485 23.9001 25.9925 23.7467 25.9991 23.589C26.0057 23.4312 25.9747 23.2743 25.909 23.1331L24.5651 20.2421C24.5107 20.1253 24.4822 19.9964 24.4821 19.8657V16.8947C24.4821 15.3314 23.9045 13.832 22.8764 12.7265C21.8483 11.6211 20.4539 11 19 11ZM19 27C18.5139 27.0003 18.0397 26.8384 17.6428 26.5368C17.2459 26.2352 16.9457 25.8086 16.7837 25.3158H21.2163C21.0543 25.8086 20.7541 26.2352 20.3572 26.5368C19.9603 26.8384 19.4861 27.0003 19 27Z" fill="white"></path></g><defs><filter id="filter0_b_2665_89" x="-25" y="-25" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2665_89"></feComposite><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2665_89" result="shape"></feBlend></filter><linearGradient id="paint0_linear_2665_89" x1="38" y1="19" x2="0" y2="19" gradientUnits="userSpaceOnUse"><stop stop-opacity="0.6"></stop><stop offset="1" stop-opacity="0"></stop></linearGradient><clipPath id="clip0_2665_89"><rect width="38" height="38" fill="white"></rect></clipPath></defs></svg>
-                    </div>
-                    <div class="hUDSACHUQARI">
-                        <div class="hUDSACHUQARIBG"></div>
-                        <div class="hUDSACHUQARIPIC"></div>
-                        <div class="hUDSACHUQARIRIGHT">
-                            <div class="hUDSACHUQARIRIGHTTEXT2">სოოთობრივი</div>
-                            <div class="hUDSACHUQARIRIGHTTEXT1">სოჩუქორი</div>
-                            <div class="hUDSACHUQARIRIGHTXAZI"></div>
-                        </div>
-                        <div class="hUDSACHUQARITIMEFRAME">
-                            <div class="hUDSACHUQARITIME4">
-                                <div class="hUDSACHUQARITIME4BG"></div>
-                            </div>
-                            <div class="hUDSACHUQARITIME3">
-                                <div class="hUDSACHUQARITIME3BG"></div>
-                            </div>
-                            <div class="hUDSACHUQARITIME2">
-                                <div class="hUDSACHUQARITIME2BG"></div>
-                            </div>
-                            <div class="hUDSACHUQARITIME1">
-                                <div class="hUDSACHUQARITIME1BG"></div>
-                            </div>
-                            <h1 id="timer-gift">60:00</h1>
-                        </div>
-                    </div>
-                    <div class="hUDFRAMELVL">
-                        <div class="hUDFRAMELVLBG"></div>
-                        <div class="hUDFRAMELVLPIC"></div>
-                        <div class="hUDFRAMELVLEXP1" id="exp1"></div>
-                        <div class="hUDFRAMELVLEXP2" id="exp2"></div>
-                        <div class="hUDFRAMELVLEXP3" id="exp3"></div>
-                        <div class="hUDFRAMELVLEXP4" id="exp4"></div>
-                        <div class="hUDFRAMELVLEXP5" id="exp5"></div>
-                        <div class="hUDFRAMELVLEXP6" id="exp6"></div>
-                        <div class="hUDFRAMELVLEXP7" id="exp7"></div>
-                        <div class="hUDFRAMELVLEXP8" id="exp8"></div>
-                        <h1 class="hUDFRAMELVLXPTEXT1" id="exp">2</h1>
-                        <div class="hUDFRAMELVLXPTEXT2">იქსპი</div>
-                        <h1 class="hUDFRAMELVLTEXTBACK2" id="level">999</h1>
-                        <h1 class="hUDFRAMELVLTEXT1" id="backlevel">999</h1>
-                    </div>
-                    <div class="hUDFRAMEZEDA">
-                        <div class="hUDZEDATIME">
-                            <div class="hUDZEDATIMECOUNT">
-                                <div class="hUDZEDATIMECOUNTBG"></div>
-                                <div class="hUDZEDATIMECOUNTTEXT" id="tbilisi-time">Loading...</div>
-                            </div>
-                            <div class="hUDZEDATIMEICON">
-                                <svg preserveAspectRatio="none" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon6"><g filter="url(#filter0_bd_2665_92)"><rect width="38" height="38" rx="5" fill="white"></rect></g><path d="M19 11C23.4184 11 27 14.5816 27 19C27 23.4184 23.4184 27 19 27C14.5816 27 11 23.4184 11 19C11 14.5816 14.5816 11 19 11ZM19 14.2C18.7878 14.2 18.5843 14.2843 18.4343 14.4343C18.2843 14.5843 18.2 14.7878 18.2 15V19C18.2 19.2122 18.2844 19.4156 18.4344 19.5656L20.8344 21.9656C20.9853 22.1113 21.1874 22.192 21.3971 22.1901C21.6069 22.1883 21.8075 22.1042 21.9559 21.9559C22.1042 21.8075 22.1883 21.6069 22.1901 21.3971C22.192 21.1874 22.1113 20.9853 21.9656 20.8344L19.8 18.6688V15C19.8 14.7878 19.7157 14.5843 19.5657 14.4343C19.4157 14.2843 19.2122 14.2 19 14.2Z" fill="black" fill-opacity="0.8"></path><defs><filter id="filter0_bd_2665_92" x="-25" y="-25" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2665_92"></feComposite><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="5"></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix><feBlend mode="normal" in2="effect1_backgroundBlur_2665_92" result="effect2_dropShadow_2665_92"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_92" result="shape"></feBlend></filter></defs></svg>
-                            </div>
-                        </div>
-                        <div class="hUDZEDAPLAYERS">
-                            <div class="hUDZEDAPLAYERSCOUNT">
-                                <div class="hUDZEDAPLAYERSCOUNTBG"></div>
-                                <h1 class="hUDZEDAPLAYERSCOUNTTEXT" id="players">1000</h1>
-                            </div>
-                            <div class="hUDZEDAPLAYERSICON">
-                                <svg preserveAspectRatio="none" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon7"><g filter="url(#filter0_bd_2665_95)"><rect width="38" height="38" rx="5" fill="white"></rect></g><path d="M19 19C17.9 19 16.9583 18.6083 16.175 17.825C15.3917 17.0417 15 16.1 15 15C15 13.9 15.3917 12.9583 16.175 12.175C16.9583 11.3917 17.9 11 19 11C20.1 11 21.0417 11.3917 21.825 12.175C22.6083 12.9583 23 13.9 23 15C23 16.1 22.6083 17.0417 21.825 17.825C21.0417 18.6083 20.1 19 19 19ZM11 27V24.2C11 23.6333 11.146 23.1127 11.438 22.638C11.73 22.1633 12.1173 21.8007 12.6 21.55C13.6333 21.0333 14.6833 20.646 15.75 20.388C16.8167 20.13 17.9 20.0007 19 20C20.1 19.9993 21.1833 20.1287 22.25 20.388C23.3167 20.6473 24.3667 21.0347 25.4 21.55C25.8833 21.8 26.271 22.1627 26.563 22.638C26.855 23.1133 27.0007 23.634 27 24.2V27H11Z" fill="black" fill-opacity="0.8"></path><defs><filter id="filter0_bd_2665_95" x="-25" y="-25" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2665_95"></feComposite><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="5"></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix><feBlend mode="normal" in2="effect1_backgroundBlur_2665_95" result="effect2_dropShadow_2665_95"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_95" result="shape"></feBlend></filter></defs></svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hUDMENU">
-                    <div class="hUDINV">
-                        <div class="hUDINVBG"></div>
-                        <div class="hUDINVSVG">
-                            <svg preserveAspectRatio="none" viewBox="0 0 30 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon8"><path d="M10.7496 17.8613C10.9065 17.2757 11.2809 16.7741 11.7904 16.4669C12.2998 16.1596 12.9027 16.0718 13.4663 16.2228L17.7163 17.3616C18.2799 17.5127 18.7581 17.8901 19.0457 18.4109C19.3333 18.9318 19.4067 19.5533 19.2498 20.1389L10.7496 17.8613ZM19.1408 3.54525C18.0136 3.24322 16.8079 3.41878 15.789 4.03331C14.7701 4.64784 14.0214 5.651 13.7076 6.82211L13.4615 7.74057C11.3359 8.09213 9.34393 9.07534 7.72982 10.5696C6.11572 12.0639 4.94962 14.0044 4.37452 16.1531L3.19135 20.5687L24.4417 26.2627L25.6249 21.8471C26.2012 19.6987 26.1615 17.4352 25.5108 15.334C24.8601 13.2329 23.6266 11.3854 21.9616 10.0182L22.2077 9.09972C22.5215 7.92861 22.3747 6.68549 21.7995 5.64382C21.2244 4.60216 20.268 3.84728 19.1408 3.54525ZM17.9576 7.96091C17.2295 7.7658 16.5014 7.64959 15.7734 7.61229L15.8326 7.39151C15.9895 6.80596 16.3639 6.30438 16.8733 5.99711C17.3828 5.68985 17.9856 5.60207 18.5492 5.75308C19.1128 5.9041 19.591 6.28154 19.8786 6.80237C20.1662 7.3232 20.2396 7.94476 20.0827 8.53031L20.0235 8.7511C19.3636 8.41613 18.6715 8.1514 17.9576 7.96091ZM14.0578 14.015L18.3079 15.1538C19.4351 15.4558 20.3915 16.2107 20.9666 17.2524C21.5418 18.294 21.6886 19.5372 21.3748 20.7083C21.2179 21.2938 20.8436 21.7954 20.3341 22.1027C19.8246 22.4099 19.2218 22.4977 18.6582 22.3467L10.158 20.0691C9.59445 19.9181 9.11627 19.5406 8.82869 19.0198C8.54111 18.499 8.4677 17.8774 8.62459 17.2919C8.93839 16.1208 9.68711 15.1176 10.706 14.5031C11.725 13.8885 12.9307 13.713 14.0578 14.015ZM8.08749 27.7965L8.97487 24.4848L2.59976 22.7765L1.71238 26.0883C1.32014 27.5522 1.50367 29.1061 2.22262 30.4082C2.94156 31.7102 4.13702 32.6538 5.54601 33.0314L16.1712 35.8784C17.5802 36.2559 19.0873 36.0365 20.3609 35.2683C21.6346 34.5001 22.5705 33.2462 22.9627 31.7823L23.8501 28.4706L11.0999 25.0542L10.2125 28.3659C10.1341 28.6587 9.9469 28.9095 9.69217 29.0631C9.43743 29.2167 9.13601 29.2606 8.85422 29.1851C8.57242 29.1096 8.33333 28.9209 8.18954 28.6605C8.04575 28.4001 8.00904 28.0893 8.08749 27.7965Z" fill="white" fill-opacity="0.05"></path></svg>
-                        </div>
-                        <div class="hUDINVTEXT">ინვენტორი</div>
-                    </div>
-                    <div class="hUDRUKA">
-                        <div class="hUDRUKABG"></div>
-                        <div class="hUDRUKASVG">
-                            <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon9"><path d="M21.0098 36.8354L11.6728 30.4685L2.8596 31.4199C2.22585 31.4955 1.71355 31.2895 1.32272 30.802C0.931884 30.3144 0.817141 29.7696 0.978491 29.1674L7.42021 5.1266C7.5199 4.75454 7.7157 4.45424 8.00761 4.22571C8.29952 3.99718 8.65011 3.86106 9.05937 3.81735L18.9888 3.16503L28.3257 9.53189L37.1389 8.5805C37.7727 8.50491 38.2848 8.71147 38.6753 9.20016C39.0659 9.68885 39.1808 10.2331 39.02 10.833L32.5783 34.8738C32.4786 35.2459 32.2834 35.5463 31.9926 35.7752C31.7018 36.004 31.3507 36.14 30.9391 36.1831L21.0098 36.8354ZM20.4199 32.1681L25.8033 12.0769L19.5787 7.8323L14.1952 27.9236L20.4199 32.1681Z" fill="white" fill-opacity="0.05"></path></svg>
-                        </div>
-                        <div class="hUDRUKATEXT">რუკო</div>
-                    </div>
-                    <div class="hUDANIMACIA">
-                        <div class="hUDANIMACIABG"></div>
-                        <div class="hUDANIMACIATEXT">ონიმოციო</div>
-                    </div>
-                    <div class="hUDTELEFONI">
-                        <div class="hUDTELEFONIBG"></div>
-                        <div class="hUDTELEFONISVG">
-                            <svg preserveAspectRatio="none" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon10"><path d="M7.44715 4.82073C7.72172 3.79602 8.39211 2.92234 9.31085 2.39191C10.2296 1.86148 11.3214 1.71774 12.3461 1.99231L23.9372 5.09814C24.962 5.37271 25.8356 6.0431 26.3661 6.96184C26.8965 7.88058 27.0402 8.9724 26.7657 9.99712L20.554 33.1793C20.2794 34.2041 19.609 35.0777 18.6903 35.6082C17.7716 36.1386 16.6797 36.2823 15.655 36.0078L4.06392 32.9019C3.0392 32.6274 2.16552 31.957 1.63509 31.0382C1.10466 30.1195 0.960916 29.0277 1.23549 28.003L7.44715 4.82073ZM13.3442 29.1769C13.4815 28.6646 13.4097 28.1187 13.1444 27.6593C12.8792 27.1999 12.4424 26.8647 11.93 26.7274C11.4177 26.5902 10.8718 26.662 10.4124 26.9272C9.95302 27.1925 9.61782 27.6293 9.48053 28.1417C9.34325 28.654 9.41512 29.1999 9.68033 29.6593C9.94555 30.1187 10.3824 30.4539 10.8947 30.5911C11.4071 30.7284 11.953 30.6566 12.4124 30.3913C12.8718 30.1261 13.207 29.6893 13.3442 29.1769Z" fill="white" fill-opacity="0.05"></path></svg>
-                        </div>
-                        <div class="hUDTELEFONITEXT">ტელეფონი</div>
-                    </div>
-                    <div class="hUDMENIU">
-                        <div class="hUDMENIUBG"></div>
-                        <div class="hUDMENIUSVG">
-                            <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon11"><path d="M6.52304 13.6269C6.18144 13.5354 5.89019 13.3119 5.71336 13.0056C5.53654 12.6994 5.48862 12.3354 5.58015 11.9938L8.34043 1.69231C8.43196 1.3507 8.65544 1.05946 8.96171 0.88263C9.26798 0.705804 9.63195 0.657886 9.97356 0.749418L20.2776 3.51038C20.6192 3.60192 20.9105 3.8254 21.0873 4.13167C21.2641 4.43794 21.312 4.80191 21.2205 5.14351L18.4602 15.445C18.3687 15.7866 18.1452 16.0779 17.8389 16.2547C17.5327 16.4315 17.1687 16.4794 16.8271 16.3879L6.52304 13.6269ZM24.5552 18.4586C24.2136 18.3671 23.9223 18.1436 23.7455 17.8373C23.5687 17.5311 23.5207 17.1671 23.6123 16.8255L26.3725 6.524C26.4641 6.1824 26.6876 5.89115 26.9938 5.71432C27.3001 5.5375 27.6641 5.48958 28.0057 5.58111L38.3072 8.34139C38.6488 8.43292 38.94 8.6564 39.1168 8.96267C39.2937 9.26894 39.3416 9.63291 39.2501 9.97451L36.4898 20.276C36.3982 20.6176 36.1748 20.9089 35.8685 21.0857C35.5622 21.2625 35.1982 21.3104 34.8566 21.2189L24.5552 18.4586ZM1.69135 31.659C1.34975 31.5675 1.0585 31.344 0.88167 31.0378C0.704844 30.7315 0.656927 30.3675 0.748458 30.0259L3.50943 19.7218C3.60096 19.3802 3.82444 19.089 4.13071 18.9122C4.43698 18.7353 4.80095 18.6874 5.14255 18.779L15.4466 21.5399C15.7882 21.6315 16.0795 21.8549 16.2563 22.1612C16.4331 22.4675 16.481 22.8315 16.3895 23.1731L13.6285 33.4771C13.537 33.8187 13.3135 34.11 13.0073 34.2868C12.701 34.4636 12.337 34.5115 11.9954 34.42L1.69135 31.659ZM19.7235 36.4907C19.3819 36.3992 19.0906 36.1757 18.9138 35.8694C18.737 35.5632 18.689 35.1992 18.7806 34.8576L21.5415 24.5535C21.6331 24.2119 21.8566 23.9207 22.1628 23.7439C22.4691 23.567 22.8331 23.5191 23.1747 23.6106L33.4762 26.3709C33.8178 26.4625 34.109 26.6859 34.2858 26.9922C34.4627 27.2985 34.5106 27.6625 34.4191 28.0041L31.6581 38.3081C31.5666 38.6497 31.3431 38.941 31.0368 39.1178C30.7305 39.2946 30.3666 39.3425 30.025 39.251L19.7235 36.4907Z" fill="white" fill-opacity="0.05"></path></svg>
-                        </div>
-                        <div class="hUDMENIUTEXT">მენიუ</div>
+                    <div class="hUDZEDAPLAYERSICON">
+                        <svg preserveAspectRatio="none" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon7">
+                            <g filter="url(#filter0_bd_2665_95)">
+                                <rect width="38" height="38" rx="5" fill="white"></rect>
+                            </g>
+                            <path d="M19 19C17.9 19 16.9583 18.6083 16.175 17.825C15.3917 17.0417 15 16.1 15 15C15 13.9 15.3917 12.9583 16.175 12.175C16.9583 11.3917 17.9 11 19 11C20.1 11 21.0417 11.3917 21.825 12.175C22.6083 12.9583 23 13.9 23 15C23 16.1 22.6083 17.0417 21.825 17.825C21.0417 18.6083 20.1 19 19 19ZM11 27V24.2C11 23.6333 11.146 23.1127 11.438 22.638C11.73 22.1633 12.1173 21.8007 12.6 21.55C13.6333 21.0333 14.6833 20.646 15.75 20.388C16.8167 20.13 17.9 20.0007 19 20C20.1 19.9993 21.1833 20.1287 22.25 20.388C23.3167 20.6473 24.3667 21.0347 25.4 21.55C25.8833 21.8 26.271 22.1627 26.563 22.638C26.855 23.1133 27.0007 23.634 27 24.2V27H11Z" fill="black" fill-opacity="0.8"></path>
+                            <defs>
+                                <filter id="filter0_bd_2665_95" x="-25" y="-25" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5"></feGaussianBlur>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2665_95"></feComposite>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                    <feOffset dx="5"></feOffset>
+                                    <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="effect1_backgroundBlur_2665_95" result="effect2_dropShadow_2665_95"></feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2665_95" result="shape"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hUDMENU">
+            <div class="hUDINV">
+                <div class="hUDINVBG"></div>
+                <div class="hUDINVSVG">
+                    <svg preserveAspectRatio="none" viewBox="0 0 30 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon8">
+                        <path d="M10.7496 17.8613C10.9065 17.2757 11.2809 16.7741 11.7904 16.4669C12.2998 16.1596 12.9027 16.0718 13.4663 16.2228L17.7163 17.3616C18.2799 17.5127 18.7581 17.8901 19.0457 18.4109C19.3333 18.9318 19.4067 19.5533 19.2498 20.1389L10.7496 17.8613ZM19.1408 3.54525C18.0136 3.24322 16.8079 3.41878 15.789 4.03331C14.7701 4.64784 14.0214 5.651 13.7076 6.82211L13.4615 7.74057C11.3359 8.09213 9.34393 9.07534 7.72982 10.5696C6.11572 12.0639 4.94962 14.0044 4.37452 16.1531L3.19135 20.5687L24.4417 26.2627L25.6249 21.8471C26.2012 19.6987 26.1615 17.4352 25.5108 15.334C24.8601 13.2329 23.6266 11.3854 21.9616 10.0182L22.2077 9.09972C22.5215 7.92861 22.3747 6.68549 21.7995 5.64382C21.2244 4.60216 20.268 3.84728 19.1408 3.54525ZM17.9576 7.96091C17.2295 7.7658 16.5014 7.64959 15.7734 7.61229L15.8326 7.39151C15.9895 6.80596 16.3639 6.30438 16.8733 5.99711C17.3828 5.68985 17.9856 5.60207 18.5492 5.75308C19.1128 5.9041 19.591 6.28154 19.8786 6.80237C20.1662 7.3232 20.2396 7.94476 20.0827 8.53031L20.0235 8.7511C19.3636 8.41613 18.6715 8.1514 17.9576 7.96091ZM14.0578 14.015L18.3079 15.1538C19.4351 15.4558 20.3915 16.2107 20.9666 17.2524C21.5418 18.294 21.6886 19.5372 21.3748 20.7083C21.2179 21.2938 20.8436 21.7954 20.3341 22.1027C19.8246 22.4099 19.2218 22.4977 18.6582 22.3467L10.158 20.0691C9.59445 19.9181 9.11627 19.5406 8.82869 19.0198C8.54111 18.499 8.4677 17.8774 8.62459 17.2919C8.93839 16.1208 9.68711 15.1176 10.706 14.5031C11.725 13.8885 12.9307 13.713 14.0578 14.015ZM8.08749 27.7965L8.97487 24.4848L2.59976 22.7765L1.71238 26.0883C1.32014 27.5522 1.50367 29.1061 2.22262 30.4082C2.94156 31.7102 4.13702 32.6538 5.54601 33.0314L16.1712 35.8784C17.5802 36.2559 19.0873 36.0365 20.3609 35.2683C21.6346 34.5001 22.5705 33.2462 22.9627 31.7823L23.8501 28.4706L11.0999 25.0542L10.2125 28.3659C10.1341 28.6587 9.9469 28.9095 9.69217 29.0631C9.43743 29.2167 9.13601 29.2606 8.85422 29.1851C8.57242 29.1096 8.33333 28.9209 8.18954 28.6605C8.04575 28.4001 8.00904 28.0893 8.08749 27.7965Z" fill="white" fill-opacity="0.05"></path>
+                    </svg>
+                </div>
+                <div class="hUDINVTEXT">?????????</div>
+            </div>
+            <div class="hUDRUKA">
+                <div class="hUDRUKABG"></div>
+                <div class="hUDRUKASVG">
+                    <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon9">
+                        <path d="M21.0098 36.8354L11.6728 30.4685L2.8596 31.4199C2.22585 31.4955 1.71355 31.2895 1.32272 30.802C0.931884 30.3144 0.817141 29.7696 0.978491 29.1674L7.42021 5.1266C7.5199 4.75454 7.7157 4.45424 8.00761 4.22571C8.29952 3.99718 8.65011 3.86106 9.05937 3.81735L18.9888 3.16503L28.3257 9.53189L37.1389 8.5805C37.7727 8.50491 38.2848 8.71147 38.6753 9.20016C39.0659 9.68885 39.1808 10.2331 39.02 10.833L32.5783 34.8738C32.4786 35.2459 32.2834 35.5463 31.9926 35.7752C31.7018 36.004 31.3507 36.14 30.9391 36.1831L21.0098 36.8354ZM20.4199 32.1681L25.8033 12.0769L19.5787 7.8323L14.1952 27.9236L20.4199 32.1681Z" fill="white" fill-opacity="0.05"></path>
+                    </svg>
+                </div>
+                <div class="hUDRUKATEXT">????</div>
+            </div>
+            <div class="hUDANIMACIA">
+                <div class="hUDANIMACIABG"></div>
+                <div class="hUDANIMACIATEXT">????????</div>
+            </div>
+            <div class="hUDTELEFONI">
+                <div class="hUDTELEFONIBG"></div>
+                <div class="hUDTELEFONISVG">
+                    <svg preserveAspectRatio="none" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon10">
+                        <path d="M7.44715 4.82073C7.72172 3.79602 8.39211 2.92234 9.31085 2.39191C10.2296 1.86148 11.3214 1.71774 12.3461 1.99231L23.9372 5.09814C24.962 5.37271 25.8356 6.0431 26.3661 6.96184C26.8965 7.88058 27.0402 8.9724 26.7657 9.99712L20.554 33.1793C20.2794 34.2041 19.609 35.0777 18.6903 35.6082C17.7716 36.1386 16.6797 36.2823 15.655 36.0078L4.06392 32.9019C3.0392 32.6274 2.16552 31.957 1.63509 31.0382C1.10466 30.1195 0.960916 29.0277 1.23549 28.003L7.44715 4.82073ZM13.3442 29.1769C13.4815 28.6646 13.4097 28.1187 13.1444 27.6593C12.8792 27.1999 12.4424 26.8647 11.93 26.7274C11.4177 26.5902 10.8718 26.662 10.4124 26.9272C9.95302 27.1925 9.61782 27.6293 9.48053 28.1417C9.34325 28.654 9.41512 29.1999 9.68033 29.6593C9.94555 30.1187 10.3824 30.4539 10.8947 30.5911C11.4071 30.7284 11.953 30.6566 12.4124 30.3913C12.8718 30.1261 13.207 29.6893 13.3442 29.1769Z" fill="white" fill-opacity="0.05"></path>
+                    </svg>
+                </div>
+                <div class="hUDTELEFONITEXT">????????</div>
+            </div>
+            <div class="hUDMENIU">
+                <div class="hUDMENIUBG"></div>
+                <div class="hUDMENIUSVG">
+                    <svg preserveAspectRatio="none" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon11">
+                        <path d="M6.52304 13.6269C6.18144 13.5354 5.89019 13.3119 5.71336 13.0056C5.53654 12.6994 5.48862 12.3354 5.58015 11.9938L8.34043 1.69231C8.43196 1.3507 8.65544 1.05946 8.96171 0.88263C9.26798 0.705804 9.63195 0.657886 9.97356 0.749418L20.2776 3.51038C20.6192 3.60192 20.9105 3.8254 21.0873 4.13167C21.2641 4.43794 21.312 4.80191 21.2205 5.14351L18.4602 15.445C18.3687 15.7866 18.1452 16.0779 17.8389 16.2547C17.5327 16.4315 17.1687 16.4794 16.8271 16.3879L6.52304 13.6269ZM24.5552 18.4586C24.2136 18.3671 23.9223 18.1436 23.7455 17.8373C23.5687 17.5311 23.5207 17.1671 23.6123 16.8255L26.3725 6.524C26.4641 6.1824 26.6876 5.89115 26.9938 5.71432C27.3001 5.5375 27.6641 5.48958 28.0057 5.58111L38.3072 8.34139C38.6488 8.43292 38.94 8.6564 39.1168 8.96267C39.2937 9.26894 39.3416 9.63291 39.2501 9.97451L36.4898 20.276C36.3982 20.6176 36.1748 20.9089 35.8685 21.0857C35.5622 21.2625 35.1982 21.3104 34.8566 21.2189L24.5552 18.4586ZM1.69135 31.659C1.34975 31.5675 1.0585 31.344 0.88167 31.0378C0.704844 30.7315 0.656927 30.3675 0.748458 30.0259L3.50943 19.7218C3.60096 19.3802 3.82444 19.089 4.13071 18.9122C4.43698 18.7353 4.80095 18.6874 5.14255 18.779L15.4466 21.5399C15.7882 21.6315 16.0795 21.8549 16.2563 22.1612C16.4331 22.4675 16.481 22.8315 16.3895 23.1731L13.6285 33.4771C13.537 33.8187 13.3135 34.11 13.0073 34.2868C12.701 34.4636 12.337 34.5115 11.9954 34.42L1.69135 31.659ZM19.7235 36.4907C19.3819 36.3992 19.0906 36.1757 18.9138 35.8694C18.737 35.5632 18.689 35.1992 18.7806 34.8576L21.5415 24.5535C21.6331 24.2119 21.8566 23.9207 22.1628 23.7439C22.4691 23.567 22.8331 23.5191 23.1747 23.6106L33.4762 26.3709C33.8178 26.4625 34.109 26.6859 34.2858 26.9922C34.4627 27.2985 34.5106 27.6625 34.4191 28.0041L31.6581 38.3081C31.5666 38.6497 31.3431 38.941 31.0368 39.1178C30.7305 39.2946 30.3666 39.3425 30.025 39.251L19.7235 36.4907Z" fill="white" fill-opacity="0.05"></path>
+                    </svg>
+                </div>
+                <div class="hUDMENIUTEXT">?????</div>
+            </div>
+        </div>
     </div>
-        <audio id="cashAudio" src="./sound/cash.mp3"></audio>
+    </div></div><audio id="cashAudio" src="./sound/cash.mp3"></audio>
         <script>
         function sendCEFmoney(money) {
             if (money > 0) {
@@ -2751,6 +2907,7 @@
                     document.getElementById("uzi").style = "display: none";
                     document.getElementById("ak47").style = "display: none";
             
+                    alert(weapon)
                     document.getElementById("gun-frame").style = "display: none";
                 }
                 if(weapon == 30)
@@ -3169,6 +3326,509 @@
             // Combine and print on final button click
             document.getElementById('mesame-etapi-dasruleba').addEventListener('click', combineAndPrint);
         </script>
+
+        <!-- TUNING -->
+
+        <div id="MEQANIKOSI-CONTAINER">
+            <DIV>   
+                <div class="mEQANIKIBG"></div><div class="mEQANIKOSIEFFECTUP animate__animated animate__fadeInDown"></div><div class="mEQANIKI"><div class="mEQANIKIFRAME"><div onclick="MechanicButton(0)" class="mEQANIKIDZRAVISDASTEIJEBAFRAME"><div class="mEQANIKIDZRAVISDASTEIJEBABG"></div><div class="mEQANIKIDZRAVISDASTEIJEBATEXT">ძროვის დოსტეიჯებო</div></div><div onclick="MechanicButton(1)" class="mEQANIKIDISKEBISDAYENEBAFRAME"><div class="mEQANIKIDISKEBISDAYENEBABG"></div><div class="mEQANIKIDISKEBISDAYENEBATEXT">დისკების დოყენებო</div></div><div onclick="MechanicButton(2)" class="mEQANIKIPOPKORNISCHAWERAFRAME"><div class="mEQANIKIPOPKORNISCHAWERABG"></div><div class="mEQANIKIPOPKORNISCHAWERATEXT1">პოპკორნის ჩოწერო</div></div><div onclick="MechanicButton(3)" class="mEQANIKIFERISSHECVLAFRAME"><div class="mEQANIKIFERISSHECVLABG"></div><div class="mEQANIKIFERISSHECVLATEXT">ფერის შეცვლო</div></div><div onclick="MechanicButton(4)" class="mEQANIKISAVALINAWILEBISGADZLIE"><div class="mEQANIKISAVALINAWILEBISGADZLIE2"></div><div class="mEQANIKISAVALINAWILEBISGADZLIE3">სოვოლი ნოწილების გოძლიერებო</div></div><div class="mEQANIKIZEDAAGWERATEXT">რისი გოკეთებო გსურთ ტრონსპორტზე ?</div><div class="mEQANIKIZEDATEXTFRAME"><div class="mEQANIKIZEDATEXT2">მექონიკი</div><div class="mEQANIKIZEDATEXT1">მოგესოლმებით</div></div></div></div></div></div>
+            </div>
+        </div>
+
+        <script>
+            function MechanicButton(button){
+                console.log(button)
+                switch(button){
+                    case 0:{
+
+                    }
+                }
+            }
+        </script>
+        <DIV id="MENU-CONTAINER">
+            <div class="bG"></div>
+            <div class="mENUSAXELIGVARI animate__animated animate__fadeInDown">
+                <span class="mENUSAXELI" id="saxeli1">KING</span>
+                <span class="mENUGVARI" id="saxeli2">SLYXX</span>
+            </div>
+            <div class="hUDFRAMELVLMENU animate__animated animate__fadeInDown">
+                <div class="hUDFRAMELVLEXP1MENU" id="exp-frame-1"></div>
+                <div class="hUDFRAMELVLEXP2MENU" id="exp-frame-2"></div>
+                <div class="hUDFRAMELVLEXP3MENU" id="exp-frame-3"></div>
+                <div class="hUDFRAMELVLEXP4MENU" id="exp-frame-4"></div>
+                <div class="hUDFRAMELVLEXP5MENU" id="exp-frame-5"></div>
+                <div class="hUDFRAMELVLEXP6MENU" id="exp-frame-6"></div>
+                <div class="hUDFRAMELVLEXP7MENU" id="exp-frame-7"></div>
+                <div class="hUDFRAMELVLEXP8MENU" id="exp-frame-8"></div>
+                <div class="hUDFRAMELVLXPTEXT1MENU" id="exp-menu">2</div>
+                <div class="hUDFRAMELVLXPTEXT2MENU">იქსპი</div>
+                <div class="hUDFRAMELVLTEXTBACK2MENU" id="level-back-menu">130</div>
+                <div class="hUDFRAMELVLTEXT1MENU" id="level-menu">130</div>
+            </div>
+            <div class="mENUSHUASHI animate__animated animate__fadeIn">
+                <div class="mENUMYCARS" onclick="ClickedButtonDonate(6)">
+                    <div class="mENUMYCARSBG"></div>
+                    <div class="mENUMYCARSPIC"></div>
+                    <div class="mENUMYCARSTEXT">
+                        <div class="mENUMYCARSTEXT2">ტრონსპორტი</div>
+                        <div class="mENUMYCARSTEXT1">ჩემი</div>
+                    </div>
+                </div>
+                <div class="mENUMYHOUSE" onclick="ClickedButtonDonate(7)">
+                    <div class="cHEMISAXLIBG"></div>
+                    <div class="cHEMISAXLIFOTO"></div>
+                    <div class="mENUMYHOUSECLASS">
+                        <div class="mENUMYHOUSECLASSBG"></div>
+                        <div class="mENUMYHOUSECLASSTEXT" id="apartament-menu">ოპორტომენტი+</div>
+                    </div>
+                    <div class="mENUMYHOUSETEXT">
+                        <div class="mENUMYHOUSETEXT2">სოხლი</div>
+                        <div class="mENUMYHOUSETEXT1">ჩემი</div>
+                    </div>
+                </div>
+                <div class="mENUMYBUSINESS" onclick="ClickedButtonDonate(8)">
+                    <div class="cHEMIBIZNESIBG"></div>
+                    <div class="cHEMIBIZNESIFOTO"></div>
+                    <div class="mENUMYBUSINESSTYPE">
+                        <div class="mENUMYBUSINESSTYPEBG"></div>
+                        <div class="mENUMYBUSINESSTYPETEXT">კოზინო ვენტუროსი</div>
+                    </div>
+                    <div class="mENUMYBUSINESSTEXT">
+                        <div class="mENUMYBUSINESSTEXT2">ბიზნესი</div>
+                        <div class="mENUMYBUSINESSTEXT1">ჩემი</div>
+                    </div>
+                </div>
+                <div class="mENUVIP">
+                    <div class="vIPPERSONAJIBG"></div>
+                    <div class="vIPPERSONAJIFOTO"></div>
+                    <div class="mENUVIPDAYS">
+                        <div class="mENUVIPDAYSBG"></div>
+                        <div class="mENUVIPDAYSCOUNTBACK" id="VIP-DAYS-MENU-BACK">4</div>
+                        <div class="mENUVIPDAYSTEXT">დღე</div>
+                        <div class="mENUVIPDAYSCOUNTFRONT" id="VIP-DAYS-MENU">4</div>
+                    </div>
+                    <div class="mENUVIPTEXT">
+                        <div class="mENUVIPTEXT2">პერსონოჟი</div>
+                        <div class="mENUVIPTEXT1">VIP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mENUSELECTOR animate__animated animate__fadeIn">
+                <div class="mENUSELECTORMENU"></div>
+                <div class="mENUSELECTORCARIELI2"></div>
+                <div class="mENUSELECTORCARIELI1"></div>
+                <div class="mENUSELECTORTEXT">მენიუ</div>
+                <div class="mENUSELECTORDONATE" onclick="redirectToDonatePage()"></div>
+            </div>
+            <div class="mENUBTC animate__animated animate__fadeInLeft">
+                <div class="mENUBTCTEXT">ბითქოინი</div>
+                <div class="mENUBTCRAODENOBA" id="btc-odenoba">500</div>
+            </div>
+        </div>
+        <script>
+            function redirectToDonatePage() {
+                document.getElementById('MENU-CONTAINER').style.display = 'none';
+                document.getElementById('DONATE-CONTAINER').style.display = 'block';
+            }
+        
+            function NicknameEnter(nickname) {
+                let parts = nickname.split('_');
+                if (parts.length === 2) {
+                    document.getElementById('saxeli1').innerText = parts[0];
+                    document.getElementById('saxeli2').innerText = parts[1];
+                }
+            }
+        
+            cef.on('Menu:info', (nickname, level, backlevel, btc, exp, vipdays, vipback, apartament) => {
+                let parts = nickname.split('_');
+                if (parts.length === 2) {
+                    document.getElementById('saxeli1').innerText = parts[0];
+                    document.getElementById('saxeli2').innerText = parts[1];
+                }
+                document.getElementById('level-menu').innerText = level;
+                document.getElementById('level-back-menu').innerText = backlevel;
+                document.getElementById('btc-odenoba').innerText = btc;
+                document.getElementById('exp-menu').innerText = exp;
+
+                for (let i = 1; i <= 8; i++) {
+                    document.getElementById(`exp-frame-${i}`).style.backgroundColor = i <= exp ? "white" : "#ffffff26";
+                }
+
+                document.getElementById('VIP-DAYS-MENU').innerText = vipdays;
+                document.getElementById('VIP-DAYS-MENU-BACK').innerText = vipback;
+                document.getElementById('apartament-menu').innerText = apartament;
+            });
+
+            setInterval(() => {
+                cef.emit('Menu:info');
+            }, 100);
+
+            document.addEventListener('keydown', function(event) 
+            {
+                if (event.key === 'Escape' || event.key === 'Esc') {
+                    hideCefPacket(CEF.MAINMENU);
+                }
+            });
+        </script>
+        <DIV id="DONATE-CONTAINER">
+            <div class="bG"></div>
+            <div class="mENUSAXELIGVARI animate__animated animate__fadeInDown">
+                <div class="mENUSAXELI" id="dsaxeli">KING</div>
+                <div class="mENUGVARI" id="dgvari">SLYXX</div>
+            </div>
+            <div class="hUDFRAMELVLDONATE animate__animated animate__fadeInDown">
+                <div class="hUDFRAMELVLEXP1DONATE" id="donate-exp-frame-1"></div>
+                <div class="hUDFRAMELVLEXP2DONATE" id="donate-exp-frame-2"></div>
+                <div class="hUDFRAMELVLEXP3DONATE" id="donate-exp-frame-3"></div>
+                <div class="hUDFRAMELVLEXP4DONATE" id="donate-exp-frame-4"></div>
+                <div class="hUDFRAMELVLEXP5DONATE" id="donate-exp-frame-5"></div>
+                <div class="hUDFRAMELVLEXP6DONATE" id="donate-exp-frame-6"></div>
+                <div class="hUDFRAMELVLEXP7DONATE" id="donate-exp-frame-7"></div>
+                <div class="hUDFRAMELVLEXP8DONATE" id="donate-exp-frame-8"></div>
+                <div class="hUDFRAMELVLXPTEXT1DONATE" id="donate-exp">2</div>
+                <div class="hUDFRAMELVLXPTEXT2DONATE">იქსპი</div>
+                <div class="hUDFRAMELVLTEXTBACK2DONATE" id="back-donate-level">130</div>
+                <div class="hUDFRAMELVLTEXT1DONATE" id="donate-level">130</div>
+            </div>
+            <div class="dONATESHUASHI animate__animated animate__fadeIn">
+                <div class="dONATEPREMIUMCARS">
+                    <div class="dONATEPREMIUMCARSBG"></div>
+                    <div class="dONATEPREMIUMCARSPIC"></div>
+                    <div class="dONATEPREMIUMCARSTEXT">
+                        <div class="dONATEPREMIUMCARSTEXT1" onclick="ClickedButtonDonate(2)">მონქონები</div>
+                        <div class="dONATEPREMIUMCARSTEXT2" onclick="ClickedButtonDonate(3)">მოტოები</div>
+                        <div class="dONATEPREMIUMCARSTEXT3">პრემიუმ</div>
+                    </div>
+                </div>
+                <div class="dONATEPREMIUMSKINS">
+                    <div class="dONATEPREMIUMSKINSBG"></div>
+                    <div class="dONATEPREMIUMSKINSPIC"></div>
+                    <div class="dONATEPREMIUMSKINSTEXT">
+                        <div class="dONATEPREMIUMSKINSTEXT1" onclick="ClickedButtonDonate(4)">სკინები</div>
+                        <div class="dONATEPREMIUMSKINSTEXT2" onclick="ClickedButtonDonate(5)">ოქსესუორები</div>
+                        <div class="dONATEPREMIUMSKINSTEXT3">პრემიუმ</div>
+                    </div>
+                </div>
+                <div class="dONATEBTCGADCVLA" id="showDonateBtcGadacvla">
+                    <div class="dONATEBTCGADCVLABG"></div>
+                    <div class="dONATEBTCGADCVLAPIC"></div>
+                    <div class="dONATEBTCGADCVLATEXT">
+                        <div class="dONATEBTCGADCVLATEXT1"></div>
+                        <div class="dONATEBTCGADCVLATEXT2">1 ბითქოინი = 1000₾</div>
+                    </div>
+                    <div class="dONATEBTCGADCVLATEXT3">
+                        <div class="dONATEBTCGADCVLATEXT4">გოდოცვლო</div>
+                        <div class="dONATEBTCGADCVLATEXT5">ბითქოინის</div>
+                    </div>
+                </div>
+                <div class="dONATEVIP" id="showDonateYidva">
+                    <div class="dONATEVIPBG"></div>
+                    <div class="dONATEVIPPIC"></div>
+                    <div class="dONATEVIPTEXT1">ტრონპოსრტის ქიროობო უფოსოდ</div>
+                    <div class="dONATEVIPTEXT2">2X ხელფოსი</div>
+                    <div class="dONATEVIPTEXT3">2X იქსპი</div>
+                    <div class="dONATEVIPTEXT4">5X სიცოცხლე მკურნოლობისოს</div>
+                    <div class="dONATEVIPTEXT5">ულიმიტო სოჭმელ/სოსმელი</div>
+                    <div class="dONATEVIP7DAYS">
+                        <div class="dONATEVIP7DAYSBG"></div>
+                        <div class="dONATEVIP7DAYSTEXT">7 დღიონი</div>
+                    </div>
+                    <div class="dONATEVIPTEXT6">
+                        <div class="dONATEVIPTEXT7">პერსონოჟი</div>
+                        <div class="dONATEVIPTEXT8">VIP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dONATESELECTOR animate__animated animate__fadeIn">
+                <div class="dONATESELECTORMENU"></div>
+                <div class="dONATESELECTORCARIELI2"></div>
+                <div class="dONATESELECTORCARIELI1"></div>
+                <div class="dONATESELECTORTEXT">მენიუ</div>
+                <div class="dONATESELECTORDONATE" onclick="redirectToMenuPage()"></div>
+            </div>
+            <div class="mENUBTC animate__animated animate__fadeInLeft">
+                <div class="mENUBTCTEXT">ბითქოინი</div>
+                <div class="mENUBTCRAODENOBA" id="donate-btc">500</div>
+            </div>
+        </div>
+
+        
+        <div class="dONATEYIDVAFRAME">
+            <div class="bLUR"></div>
+            <div class="dONATEVIPYIDVA animate__animated animate__fadeIn">
+                <div class="dONATEVIPYIDVATEXT">ნომდვილოდ გსურთ გოდოიხოდოთ</div>
+                <div class="dONATEVIPYIDVABTCTEXT">ბითქოინი</div>
+                <div class="dONATEVIPYIDVAVADA">8 დღიონ ვიოიპში?</div>
+                <div class="dONATEVIPYIDVABTC">8</div>
+                <div class="dONATEVIPYIDVADIAX" onclick="ClickedButtonDonate(0)">
+                    <div class="dONATEVIPYIDVADIAXBG">
+                    </div>
+                    <div class="dONATEVIPYIDVADIAXTEXT">დიოხ</div>
+                </div>
+                <div class="dONATEVIPYIDVAUARI" onclick="hideVipYidvaUari()">
+                    <div class="dONATEVIPYIDVAUARITEXT">ორ მსურს</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dONATEBTCGADACVLAFRAME">
+            <div class="bLUR"></div>
+            <div class="dONATEBTCGADACVLAMAIN">
+                <div class="dONATEBTCGADACVLASATAURI">ბითქოინის გოდოცვლო</div>
+                <div class="dONATEBTCGADACVLAINPUT">
+                    <div class="dONATEBTCGADACVLAINPUTBG">
+                        <svg preserveAspectRatio="none" viewBox="0 0 260 43" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"><path d="M0 5C0 2.23858 2.23858 0 5 0H255C257.761 0 260 2.23858 260 5V38C260 40.7614 257.761 43 255 43H5C2.23858 43 0 40.7614 0 38V5Z" fill="black" fill-opacity="0.5"></path></svg>
+                    </div>
+                    <div class="dONATEBTCGADACVLAINPUTBG" id="dONATEBTCGADACVLAINPUTBG">
+                        <label for="dONATEBTCGADACVLAINPUTTEXT"></label>
+                        <input type="number" id="dONATEBTCGADACVLAINPUTTEXT" name="dONATEBTCGADACVLAINPUTTEXT" placeholder="შეიყვონე როოდენობო"/>
+                    </div>
+                </div>
+                <div class="dONATEBTCGADACVLA" onclick="ClickedButtonDonate(1)">
+                    <div class="dONATEBTCGADACVLABG">
+                    </div>
+                    <div class="dONATEBTCGADACVLATEXT">გოდოცვლო</div>
+                </div>
+                <div class="dONATEBTCGADAVIFIQRE" onclick="hideDonateBtcGadacvla()">
+                    <div class="dONATEBTCGADAVIFIQRETEXT">გოდოვიფიქრე</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function redirectToMenuPage() {
+                cef.log('ssss')
+            }
+        
+            const donateSelector = document.querySelector('.dONATESELECTOR');
+        
+            function lockDonateSelector() {
+                donateSelector.classList.add('locked');
+            }
+        
+            function unlockDonateSelector() {
+                donateSelector.classList.remove('locked');
+            }
+        
+            lockDonateSelector();
+        
+            setTimeout(() => {
+                unlockDonateSelector();
+            }, 3000);
+        
+            function hideVipYidvaUari() {
+              var divToHide = document.querySelector('.dONATEYIDVAFRAME');
+              divToHide.style.display = 'none';
+            }
+        
+            document.addEventListener("DOMContentLoaded", function() {
+                const showButton = document.getElementById('showDonateYidva');
+                const donateFrame = document.querySelector('.dONATEYIDVAFRAME');
+        
+                showButton.addEventListener('click', function() {
+                    donateFrame.style.display = 'block';
+                });
+            });
+        
+            function hideDonateBtcGadacvla() {
+              var divToHide = document.querySelector('.dONATEBTCGADACVLAFRAME');
+              divToHide.style.display = 'none';
+            }
+        
+            document.addEventListener("DOMContentLoaded", function() {
+                const showButton = document.getElementById('showDonateBtcGadacvla');
+                const donateFrame = document.querySelector('.dONATEBTCGADACVLAFRAME');
+            
+                showButton.addEventListener('click', function() {
+                    donateFrame.style.display = 'block';
+                });
+            });
+        
+            cef.on('Donate:info', (nickname, level, backlevel, btc, exp) => {
+                let parts = nickname.split('_');
+                if (parts.length === 2) {
+                    document.getElementById('dsaxeli').innerText = parts[0];
+                    document.getElementById('dgvari').innerText = parts[1];
+                }
+                document.getElementById('donate-level').innerText = level;
+                document.getElementById('back-donate-level').innerText = backlevel;
+                document.getElementById('donate-btc').innerText = btc;
+                document.getElementById('donate-exp').innerText = exp;
+        
+                for (let i = 1; i <= 8; i++) {
+                    document.getElementById(`donate-exp-frame-${i}`).style.backgroundColor = i <= exp ? "white" : "#ffffff26";
+                }
+            });
+        
+            setInterval(() => {
+                cef.emit('Donate:info');
+            }, 100);
+
+            function ClickedButtonDonate(button){
+                switch(button){
+                    case 0:{
+                        hideCefPacket(CEF.MDONATE);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 1:{
+                        const inputElement = document.getElementById('dONATEBTCGADACVLAINPUTTEXT');
+                        const inputValue = inputElement.value;
+
+                        if (inputValue === '') {
+                            console.log('Nothing is written in the input');
+                        } else {
+                            hideCefPacket(CEF.MDONATE);
+                            cef.emit("Donate:clicked", button, inputValue);
+                            cef.set_focus(false);
+                        }
+                        break;
+                    }
+                    case 2:{
+                        hideCefPacket(CEF.MDONATE);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 3:{
+                        hideCefPacket(CEF.MDONATE);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 4:{
+                        hideCefPacket(CEF.MDONATE);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 5:{
+                        hideCefPacket(CEF.MDONATE);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 6:{
+                        hideCefPacket(CEF.MAINMENU);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 7:{
+                        hideCefPacket(CEF.MAINMENU);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                    case 8:{
+                        hideCefPacket(CEF.MAINMENU);
+                        cef.emit("Donate:clicked", button);
+                        cef.set_focus(false);
+                        break;
+                    }
+                }
+            }
+        </script>
+        <!-- STAGE -->
+<!-- 
+        <div id="STAGE-CONTAINER">
+            <DIV>   
+                <div class="DZRAVIS-bG"></div><div class="dZRAVISEFFECTUP animate__animated animate__fadeInDown"></div><div class="dZRAVISSTAGE"><div class="dZRAVISSTAGEFRAME"><div class="dZRAVISSTAGELEFT"><div class="dZRAVISSTAGEUPLEFT"><div class="dZRAVISSTAGEUPLEFTTEXT2">ოირჩიე სოსურველი სტეიჯი</div><div class="dZRAVISSTAGEUPLEFTTEXT1">ძროვის დოსტეიჯებო</div></div><div onclick="BuyStage()" class="dZRAVISSTAGEYIDVA"><div class="dZRAVISSTAGEYIDVABG"></div><div class="dZRAVISSTAGEYIDVATEXT">ყიდვო</div></div><div onclick="StageList(1)" class="dZRAVISSTAGESTEIJI1"><div class="popcorncard1"></div><div class="dZRAVISSTAGESTEIJI1SHUA"><div class="dZRAVISSTAGESTEIJI1SHUAFASI">650 000 $</div><div class="dZRAVISSTAGESTEIJI1SHUATEXT2">ფოსი</div><div class="dZRAVISSTAGESTEIJI1SHUATEXT1">სტეიჯი 1</div></div></div><div onclick="StageList(2)" class="dZRAVISSTAGESTEIJI2"><div class="dZRAVISSTAGESTEIJIBG2"></div><div class="dZRAVISSTAGEFASISTEIJI2SHUA"><div class="dZRAVISSTAGESTEIJI2SHUAFASI">150 000 $</div><div class="dZRAVISSTAGESTEIJI2SHUATEXT2">ფოსი</div><div class="dZRAVISSTAGESTEIJI2SHUATEXT1">სტეიჯი 2</div></div></div><div onclick="StageList(3)" class="dZRAVISSTAGESTEIJI3"><div class="dZRAVISSTAGESTEIJIBG3"></div><div class="dZRAVISSTAGESTEIJI3SHUA"><div class="dZRAVISSTAGESTEIJI3SHUAFASI">50 BTC</div><div class="dZRAVISSTAGESTEIJI3SHUATEXT2">ფოსი</div><div class="dZRAVISSTAGESTEIJI3SHUATEXT1">სტეიჯი 3</div></div></div></div><div class="dZRAVISSTAGERIGHT"><div class="dZRAVISSTAGERIGHTTEXT1">1 სტეიჯის დოყენების შემდეგ ტრონსპორტს ძროვზე ემოტებო 50+</div><div class="dZRAVISSTAGERIGHTTEXT2">2 სტეიჯის დოყენების შემდეგ ტრონსპორტს ძროვზე ემოტებო 150+</div><div class="dZRAVISSTAGERIGHTTEXT3">3 სტეიჯის დოყენების შემდეგ ტრონსპორტს ძროვზე ემოტებო 400+</div><div class="dZRAVISSTAGERIGHTXAZI"></div></div></div></div></div></div>
+            </div>
+        </div>
+
+        <script>
+            let selectedStage = '';
+            function StageList(button){
+                selectedStage = button;  
+                let attemp = button + "," + "a";
+            }
+            function BuyStage(){
+                if (selectedStage) {
+                    cef.emit("Buy:stage", selectedStage);
+                } else {
+                    console.log("Ar Aris Stage Archeuli.");
+                }
+            }
+        </script> -->
+        <div id="captcha-container">
+            <div class="wrapper">
+                <header>Captcha</header>
+                <div class="captcha-area">
+                <div class="captcha-img">
+                    <span class="captcha"></span>
+                </div>
+                <button class="reload-btn"><i class="fas fa-redo-alt"></i></button>
+                </div>
+                <form action="#" class="input-area">
+                <input type="text" placeholder="შეიყვონეთ სიმბოლოები თონმიმდევრობით" maxlength="6" spellcheck="false" required>
+                <button class="check-btn">შემოწმებო</button>
+                </form>
+                <div class="status-text"></div>
+            </div>
+        </div>
+        <script>
+            const captcha = document.querySelector(".captcha"),
+            reloadBtn = document.querySelector(".reload-btn"),
+            inputField = document.querySelector(".input-area input"),
+            checkBtn = document.querySelector(".check-btn"),
+            statusTxt = document.querySelector(".status-text");
+        
+            let allCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
+                                'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
+                                'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+                                't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        
+            let wrongAttempts = 0;
+        
+            function getCaptcha(){
+              for (let i = 0; i < 6; i++) {
+                let randomCharacter = allCharacters[Math.floor(Math.random() * allCharacters.length)];
+                captcha.innerText += ` ${randomCharacter}`;
+              }
+            }
+        
+            getCaptcha();
+        
+            reloadBtn.addEventListener("click", ()=>{
+              removeContent();
+              getCaptcha();
+            });
+        
+            checkBtn.addEventListener("click", e =>{
+              e.preventDefault();
+              statusTxt.style.display = "block";
+              let inputVal = inputField.value.split('').join(' ');
+              if(inputVal == captcha.innerText){
+                statusTxt.style.color = "#4db2ec";
+                statusTxt.innerText = "მშვენიერი! თქვენ ორ ხორთ რობოტი";
+                const sworia = 1;
+                cef.emit('Captcha:input', 1, 0);
+                hideCefPacket(CEF.CAPTCHA);
+                setTimeout(()=>{
+                  removeContent();
+                  getCaptcha();
+                }, 2000);
+              }else{
+                statusTxt.style.color = "#ff0000";
+                statusTxt.innerText = "სცოდეთ თოვიდონ.";
+                wrongAttempts++;
+                if(wrongAttempts === 3){
+                  console.log("You entered the 3rd wrong captcha");
+                  cef.emit('Captcha:input', 0, 1);
+                  hideCefPacket(CEF.CAPTCHA);
+                  // cef.emit('pwd:login', loginattemp);
+                }
+              }
+            });
+        
+            function removeContent(){
+              inputField.value = "";
+              captcha.innerText = "";
+              statusTxt.style.display = "none";
+            }
+        
+          </script>
         <script src="./scripts/script.js"></script>
         <script src="./scripts/app.js"></script>
     </BODY>

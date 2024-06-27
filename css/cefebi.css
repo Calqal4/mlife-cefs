@@ -1,3 +1,8 @@
+body{
+  background-color: black;
+  user-select: none;
+  overflow-y: hidden;
+}
 
 /* ოვტორიზოციო */
 
@@ -181,22 +186,8 @@
   user-select: none;
 }
 
-#MainMenu-Section{
-  display: none;
-  cursor: default;
-  user-select: none;
-}
-
-#MainMenu-DonateSection{
-  display: none;
-  cursor: default;
-  user-select: none;
-}
-
 #hud-container{
   display: none;
-  cursor: default;
-  user-select: none;
 }
 
 #choose-sanomre-container{
@@ -218,6 +209,27 @@
 #mesame-etapi-container{
   display: none;
 }
+
+#MEQANIKOSI-CONTAINER{
+  display: none;
+}
+
+#STAGE-CONTAINER{
+  display: none;
+}
+
+#MENU-CONTAINER{
+  display: none;
+}
+
+#DONATE-CONTAINER{
+  display: none;
+}
+
+#captcha-container{
+  display: none;
+}
+
 /* ოვტობოზრობო */
 .AVTOBAZROBA-BG1 {
   width: 100%;
@@ -8880,1729 +8892,6 @@ transition-duration: 0.3s;
   height: 100%;
 }
 
-/* MAINMENU */
-
-/* მთოვორი მენიუ /// მენიუ */
-.MTAVARI-MENIU-MENIU-BG1 {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-BG2 {
-  width: 100%;
-  height: 100%;
-  background: url("../FOTOEBI/BG.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-SHUA {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 1470px;
-  height: 894px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.MTAVARI-MENIU-MENIU-SAXELI-GVARI {
-  width: 380px;
-  height: 55px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-GVARI {
-  width: 380px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 37px;
-  left: 0px;
-    font-family: "TBCContracticaBold";
-  font-weight: Book;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-SAXELI {
-  width: 380px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-    font-family: "TBCContracticaBold";
-  font-weight: Bold;
-  font-size: 35px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-DADONATEBA {
-  width: 43px;
-  height: 43px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 530px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-DADONATEBA-BG {
-  width: 43px;
-  height: 43px;
-  background: rgba(115,171,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-BTC {
-  width: 105px;
-  height: 37px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 3px;
-  left: 593px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-BTC-RAODENOBA {
-  width: 105px;
-  color: rgba(115,171,255,1);
-  position: absolute;
-  top: 22px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 17px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-BTC-TEXT {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Bold;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-LVL {
-  width: 320px;
-  height: 37px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 909px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-LVL-UKANA-BG {
-  width: 320px;
-  height: 10px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 27px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-LVL-WINA-BG {
-  width: 130px;
-  height: 10px;
-  background: rgba(115,171,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 27px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-XP-MACHVENEBELI {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2px;
-  left: 147px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 17px;
-  opacity: 1;
-  text-align: right;
-}
-.MTAVARI-MENIU-MENIU-XP-MACHVENEBELI2 {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2px;
-  left: 215px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 17px;
-  opacity: 1;
-  text-align: right;
-}
-.MTAVARI-MENIU-MENIU-LVL-MACHVENEBELI {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 100px;
-  font-family: "NinoMtavruliBold";
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-LVL-MACHVENEBELI2 {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-SHUA2 {
-  width: 100%;
-  height: 479px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 215px;
-  left: 1px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI {
-  width: 416px;
-  height: 208px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 18px;
-  left: 1px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI:HOVER {
-  width: 416px;
-  height: 208px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 18px;
-  left: 1px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: linear-gradient(rgba(182,159,102,0.25), rgba(182,159,102,0));
-  transform: scale(0.95);
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI-BG {
-  width: 416px;
-  height: 208px;
-  background: linear-gradient(rgba(182,159,102,0.25), rgba(182,159,102,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI-FOTO {
-  width: 416px;
-  height: 208px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/CHEMI-TRANSPORTI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI-TEXT1 {
-  width: 150px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI-TEXT2 {
-  width: 150px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-TRANSPORTI-TEXT3 {
-  width: 150px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI {
-  width: 416px;
-  height: 186px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 276px;
-  left: 1px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI:HOVER {
-  width: 416px;
-  height: 186px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 276px;
-  left: 1px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: linear-gradient(rgba(70,206,91,0.10000000149011612), rgba(0,0,0,0));
-  transform: scale(0.95);
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-BG {
-  width: 416px;
-  height: 186px;
-  background: linear-gradient(rgba(70,206,91,0.10000000149011612), rgba(0,0,0,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-FOTO {
-  width: 416px;
-  height: 186px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/CHEMI-SAXLI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-AQ {
-  width: 192px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 103px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-AQ-BG {
-  width: 192px;
-  height: 44px;
-  background: rgba(255,255,255,0.02500000037252903);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-AQ-TEXT {
-  width: 191px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-TEXT1 {
-  width: 120px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-TEXT2 {
-  width: 120px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-SAXLI-TEXT3 {
-  width: 120px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI {
-  width: 397px;
-  height: 479px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 467px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI:HOVER {
-  width: 397px;
-  height: 479px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 467px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: linear-gradient(rgba(206,70,70,0.10000000149011612), rgba(0,0,0,0));
-  transform: scale(0.95);
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-BG {
-  width: 397px;
-  height: 479px;
-  background: linear-gradient(rgba(206,70,70,0.10000000149011612), rgba(0,0,0,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-FOTO {
-  width: 397px;
-  height: 479px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/CHEMI-BIZNESI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-AQ {
-  width: 192px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 113px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-AQ-BG {
-  width: 192px;
-  height: 44px;
-  background: rgba(255,255,255,0.02500000037252903);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-AQ-TEXT {
-  width: 191px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-TEXT1 {
-  width: 400px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 3px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-TEXT2 {
-  width: 400px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-CHEMI-BIZNESI-TEXT3 {
-  width: 400px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI {
-  width: 315px;
-  height: 479px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 914px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI:hover {
-  width: 315px;
-  height: 479px;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 914px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: linear-gradient(rgba(255,153,0,0.10000000149011612), rgba(0,0,0,0));
-  transform: scale(0.95);
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-BG {
-  width: 315px;
-  height: 479px;
-  background: linear-gradient(rgba(255,153,0,0.10000000149011612), rgba(0,0,0,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-FOTO {
-  width: 315px;
-  height: 479px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/MTAVARI-MENIU/VIP-PERSONAJI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-AQ {
-  width: 192px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 113px;
-  left: 123px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-AQ-BG {
-  width: 192px;
-  height: 44px;
-  background: rgba(255,255,255,0.02500000037252903);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-AQ-TEXT {
-  width: 191px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-TEXT1 {
-  width: 315px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-TEXT2 {
-  width: 315px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-VIP-PERSONAJI-TEXT3 {
-  width: 315px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI {
-  width: 420px;
-  height: 86px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 759px;
-  left: 809px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI-MENIU {
-  width: 45px;
-  height: 45px;
-  background: rgba(115,171,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 41px;
-  left: 225px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI-2 {
-  width: 35px;
-  height: 35px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 335px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI-3 {
-  width: 35px;
-  height: 35px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 385px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI-MENIU-TEXT {
-  width: 420px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 30px;
-  opacity: 1;
-  text-align: right;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI-DONACIA {
-  width: 35px;
-  height: 35px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 285px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-MENIU-SELECTORI-DONACIA:HOVER {
-  width: 35px;
-  height: 35px;
-  background: rgba(115,171,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 285px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-  transform: scale(0.90);
-  transition-duration: 0.2s;
-}
-
-.GVARI {
-  width: 380px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 5px;
-  left: 0px;
-    font-family: "TBCContracticaBold";
-  font-weight: Book;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-
-/* donacia */
-/* მთოვორი მენიუ /// დონოციო */
-.MTAVARI-MENIU-DONACIA-BG1 {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BG2 {
-  width: 100%;
-  height: 100%;
-  background: url("../FOTOEBI/BG.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-SHUA {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 1470px;
-  height: 894px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.MTAVARI-MENIU-DONACIA-SAXELI-GVARI {
-  width: 380px;
-  height: 55px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-GVARI {
-  width: 380px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 37px;
-  left: 0px;
-    font-family: "TBCContracticaBold";
-  font-weight: Book;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-SAXELI {
-  width: 380px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 35px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-DADONATEBA {
-  width: 43px;
-  height: 43px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 650px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-DADONATEBA-BG {
-  width: 43px;
-  height: 43px;
-  background: rgba(115,171,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTC {
-  width: 105px;
-  height: 37px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 3px;
-  left: 713px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTC-RAODENOBA {
-  width: 105px;
-  color: rgba(115,171,255,1);
-  position: absolute;
-  top: 22px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 17px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-BTC-TEXT {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-LVL {
-  width: 320px;
-  height: 37px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 1150px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-LVL-UKANA-BG {
-  width: 320px;
-  height: 10px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 27px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-LVL-WINA-BG {
-  width: 130px;
-  height: 10px;
-  background: rgba(115,171,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 27px;
-  left: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-XP-MACHVENEBELI {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2px;
-  left: 147px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 17px;
-  opacity: 1;
-  text-align: right;
-}
-.MTAVARI-MENIU-DONACIA-XP-MACHVENEBELI2 {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2px;
-  left: 215px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 17px;
-  opacity: 1;
-  text-align: right;
-}
-.MTAVARI-MENIU-DONACIA-LVL-MACHVENEBELI {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 100px;
-  font-family: "NinoMtavruliBold";
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-LVL-MACHVENEBELI2 {
-  width: 105px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI {
-  width: 420px;
-  height: 86px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 808px;
-  left: 1050px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI-DONACIA {
-  width: 45px;
-  height: 45px;
-  background: rgba(115,171,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 41px;
-  left: 280px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI-1 {
-  width: 35px;
-  height: 35px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 335px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI-2 {
-  width: 35px;
-  height: 35px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 385px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI-DONACIA-TEXT {
-  width: 420px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 30px;
-  opacity: 1;
-  text-align: right;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI-MENIU {
-  width: 35px;
-  height: 35px;
-  background: rgba(255,255,255,0.15000000596046448);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 235px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-DONACIA-SELECTORI-MENIU:hover {
-  width: 35px;
-  height: 35px;
-  background: rgba(115,171,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 46px;
-  left: 235px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-  transform: scale(0.90);
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-DONACIA-SHUA2 {
-  width: 100%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 143px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI {
-  width: 540px;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI:hover {
-  width: 540px;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transform: scale(0.95);
-  transition-duration: 0.2s;
-  background: linear-gradient(rgba(207,204,209,0.25), rgba(207,204,209,0));
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-BG {
-  width: 540px;
-  height: 250px;
-  background: linear-gradient(rgba(207,204,209,0.25), rgba(207,204,209,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-FOTO {
-  width: 540px;
-  height: 250px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/PREMIUM-TRANSPORTI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-TEXT1 {
-  width: 230px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-TEXT2 {
-  width: 230px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 78px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-TEXT3 {
-  width: 230px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 46px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-TRANSPORTI-TEXT4 {
-  width: 230px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI {
-  width: 410px;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 590px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI:hover {
-  width: 410px;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 590px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transform: scale(0.95);
-transition-duration: 0.2s;
-background: linear-gradient(rgba(90,184,236,0.25), rgba(90,184,236,0));
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-BG {
-  width: 410px;
-  height: 250px;
-  background: linear-gradient(rgba(90,184,236,0.25), rgba(90,184,236,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-FOTO {
-  width: 410px;
-  height: 250px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/PREMIUM-SKINEBI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-TEXT1 {
-  width: 230px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-TEXT2 {
-  width: 230px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 78px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-TEXT3 {
-  width: 230px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 46px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-PREMIUM-NIVTEBI-TEXT4 {
-  width: 230px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA {
-  width: 250px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 300px;
-  left: 750px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA:hover {
-  width: 250px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 300px;
-  left: 750px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transform: scale(0.95);
-transition-duration: 0.2s;
-background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA-BG {
-  width: 250px;
-  height: 300px;
-  background: linear-gradient(rgba(191,152,89,0.25), rgba(0,0,0,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA-FOTO {
-  width: 250px;
-  height: 300px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/BTC-GADACVLA.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTCUDRISDOLARS {
-  width: 250px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 128px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTCUDRISDOLARS-BG {
-  width: 250px;
-  height: 44px;
-  background: rgba(255,255,255,0.02500000037252903);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTCUDRISDOLARS-TEXT {
-  width: 249px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 15px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA-TEXT1 {
-  width: 250px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA-TEXT2 {
-  width: 250px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-DONACIA-BTC-GADACVLA-TEXT3 {
-  width: 250px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI {
-  width: 420px;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 1050px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transition-duration: 0.2s;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI:hover {
-  width: 420px;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 1050px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  transform: scale(0.95);
-  transition-duration: 0.2s;
-  background: linear-gradient(rgba(255,153,0,0.25), rgba(0,0,0,0));
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-BG {
-  width: 420px;
-  height: 600px;
-  background: linear-gradient(rgba(255,153,0,0.25), rgba(0,0,0,0));
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-FOTO {
-  width: 420px;
-  height: 600px;
-  background: url("../FOTOEBI/MTAVARI-MENIU/DONACIA/VIP-PERSONAJI.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI {
-  width: 370px;
-  height: 368px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 207px;
-  left: 25px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI1 {
-  width: 370px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 185px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI2 {
-  width: 370px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 148px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI3 {
-  width: 370px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 111px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI4 {
-  width: 370px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 74px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI5 {
-  width: 370px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 37px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-CHAMONATVALI6 {
-  width: 370px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-.MTAVARI-MENIU-DONACIA-V7DGIANI {
-  width: 192px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 113px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-V7DGIANI-BG {
-  width: 192px;
-  height: 44px;
-  background: rgba(255,255,255,0.02500000037252903);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-V7DGIANI-TEXT {
-  width: 191px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-TEXT1 {
-  width: 420px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 25px;
-  left: 0px;
-  overflow: hidden;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-TEXT2 {
-  width: 420px;
-  color: rgba(255,255,255,0.800000011920929);
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  font-family: "NinoMtavruliRegular";
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
-}
-.MTAVARI-MENIU-DONACIA-VIP-PERSONAJI-TEXT3 {
-  width: 420px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: "NinoMtavruliBold";
-  font-size: 30px;
-  opacity: 1;
-  text-align: center;
-}
-
 /* hud */
 
 
@@ -13123,4 +11412,2379 @@ body{
   color: white;
   text-align: center;
   text-transform: uppercase;
+} 
+
+/* meqanikosi */
+.mEQANIKIBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/mEQANIKIBG.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mEQANIKOSIEFFECTUP {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../images/mEQANIKOSIEFFECTUP.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mEQANIKI {
+  position: absolute;
+  left: calc(50% - 0.5px);
+  top: calc(50% - -0.5px);
+  width: 633px;
+  height: 285px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mEQANIKIFRAME {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 633px;
+  height: 285px;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mEQANIKIDZRAVISDASTEIJEBAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 148px;
+  width: 190px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIDZRAVISDASTEIJEBAFRAME:hover{
+  opacity: 1;
+}
+.mEQANIKIDZRAVISDASTEIJEBABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIDZRAVISDASTEIJEBATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 140px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIDISKEBISDAYENEBAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 205px;
+  top: 148px;
+  width: 190px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIDISKEBISDAYENEBAFRAME:hover{
+  opacity: 1;
+}
+.mEQANIKIDISKEBISDAYENEBABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIDISKEBISDAYENEBATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 140px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIPOPKORNISCHAWERAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 410px;
+  top: 148px;
+  width: 188px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIPOPKORNISCHAWERAFRAME:hover{
+ opacity: 1;
+}
+.mEQANIKIPOPKORNISCHAWERABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 188px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIPOPKORNISCHAWERATEXT1 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  width: 138px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIFERISSHECVLAFRAME {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 224px;
+  width: 156px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKIFERISSHECVLAFRAME:hover{
+  opacity: 1;
+}
+.mEQANIKIFERISSHECVLABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 156px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKIFERISSHECVLATEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 106px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKISAVALINAWILEBISGADZLIE {
+  opacity: 0.5;
+  transform-origin: top left;
+  position: absolute;
+  left: 171px;
+  top: 224px;
+  width: 281px;
+  height: 61px;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 0.4s ease;
+}
+.mEQANIKISAVALINAWILEBISGADZLIE:hover{
+  opacity: 1;
+}
+.mEQANIKISAVALINAWILEBISGADZLIE2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 281px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mEQANIKISAVALINAWILEBISGADZLIE3 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.035em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 231px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIZEDAAGWERATEXT {
+  transform-origin: top left;
+  color: #ffffff80;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 84px;
+  width: 633px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIZEDATEXTFRAME {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 59px;
+  align-items: flex-start;
+}
+.mEQANIKIZEDATEXT2 {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 633px;
+  height: 36px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mEQANIKIZEDATEXT1 {
+  transform-origin: top left;
+  color: #73abff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "TBCContracticaCapsBold";
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 633px;
+  height: 18px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* MAINMENU */
+.bG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/bG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mENUSAXELIGVARI {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 320px;
+  height: 46px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUSAXELI {
+  color: #fff;
+  font-size: 35px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 5.5px);
+  width: 320px;
+  height: 35px;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.mENUGVARI {
+  color: #ffffff80;
+  font-size: 20px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -22px);
+  width: 320px;
+  height: 20px;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLMENU {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 285px;
+  height: 84px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hUDFRAMELVLEXP1MENU {
+  position: absolute;
+  left: 25px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 0px #ffffff40;
+}
+.hUDFRAMELVLEXP2MENU {
+  position: absolute;
+  left: 55px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 0px #ffffff40;
+}
+.hUDFRAMELVLEXP3MENU {
+  position: absolute;
+  left: 85px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP4MENU {
+  position: absolute;
+  left: 115px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP5MENU {
+  position: absolute;
+  left: 145px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP6MENU {
+  position: absolute;
+  left: 175px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP7MENU {
+  position: absolute;
+  left: 205px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP8MENU {
+  position: absolute;
+  left: 235px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLXPTEXT1MENU {
+  color: #fff;
+  font-size: 16px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -30.5px);
+  top: calc(50% - 6px);
+  width: 100px;
+  height: 16px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLXPTEXT2MENU {
+  color: #ffffff80;
+  font-size: 10px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -101.5px);
+  top: calc(50% - 2.5px);
+  width: 32px;
+  height: 9px;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLTEXTBACK2MENU {
+  color: #ffffff0d;
+  font-size: 48px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - 78.5px);
+  top: calc(50% - 26.5px);
+  width: 98px;
+  height: 36px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLTEXT1MENU {
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - 73.5px);
+  top: calc(50% - 12.5px);
+  width: 88px;
+  height: 19px;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.mENUSHUASHI {
+  position: absolute;
+  left: calc(50% - 0.5px);
+  top: calc(50% - -0.5px);
+  width: 1229px;
+  height: 479px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.mENUMYCARS {
+  opacity: 0.6;
+  position: absolute;
+  top: 18px;
+  width: 416px;
+  height: 208px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.mENUMYCARS:HOVER {
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  width: 416px;
+  height: 208px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  transform: scale(0.95);
+}
+.mENUMYCARSBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 416px;
+  height: 208px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.mENUMYCARSPIC {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 416px;
+  height: 208px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/MENU/mENUMYCARSPIC.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mENUMYCARSTEXT {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 150px;
+  height: 52px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUMYCARSTEXT2 {
+  opacity: 0.5;
+  color: #fffc;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 34px;
+  width: 150px;
+  height: 18px;
+  flex-direction: column;
+}
+.mENUMYCARSTEXT1 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 29px;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.mENUMYHOUSE {
+  opacity: 0.6;
+  position: absolute;
+  top: 276px;
+  width: 416px;
+  height: 186px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.3s;
+}
+.mENUMYHOUSE:HOVER {
+  opacity: 1;
+  position: absolute;
+  top: 276px;
+  width: 416px;
+  height: 186px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.3s;
+  transform: scale(0.95);
+}
+.cHEMISAXLIBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 416px;
+  height: 186px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.cHEMISAXLIFOTO {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 416px;
+  height: 186px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/MENU/cHEMISAXLIFOTO.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mENUMYHOUSECLASS {
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 103px;
+  width: 192px;
+  height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUMYHOUSECLASSBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 192px;
+  height: 44px;
+  border-radius: 0 5px 5px 0;
+  background-color: #ffffff0d;
+}
+.mENUMYHOUSECLASSTEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 192px;
+  height: 14px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUMYHOUSETEXT {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 120px;
+  height: 52px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUMYHOUSETEXT2 {
+  opacity: 0.5;
+  color: #fffc;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 34px;
+  width: 120px;
+  height: 18px;
+  flex-direction: column;
+}
+.mENUMYHOUSETEXT1 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 29px;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.mENUMYBUSINESS {
+  opacity: 0.6;
+  position: absolute;
+  left: 469px;
+  width: 397px;
+  height: 479px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.3s;
+}
+.mENUMYBUSINESS:HOVER {
+  opacity: 1;
+  position: absolute;
+  left: 469px;
+  width: 397px;
+  height: 479px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.3s;
+  transform: scale(0.95);
+}
+.cHEMIBIZNESIBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 397px;
+  height: 479px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.cHEMIBIZNESIFOTO {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 397px;
+  height: 479px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/MENU/cHEMIBIZNESIFOTO.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mENUMYBUSINESSTYPE {
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 113px;
+  width: 192px;
+  height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUMYBUSINESSTYPEBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 192px;
+  height: 44px;
+  border-radius: 0 5px 5px 0;
+  background-color: #ffffff0d;
+}
+.mENUMYBUSINESSTYPETEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 192px;
+  height: 14px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUMYBUSINESSTEXT {
+  position: absolute;
+  left: -3px;
+  top: 25px;
+  width: 400px;
+  height: 53px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUMYBUSINESSTEXT2 {
+  opacity: 0.5;
+  color: #fffc;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 400px;
+  height: 18px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mENUMYBUSINESSTEXT1 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.mENUVIP {
+  position: absolute;
+  left: calc(50% - -457px);
+  top: 50%;
+  width: 315px;
+  height: 479px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.vIPPERSONAJIBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 315px;
+  height: 479px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.vIPPERSONAJIFOTO {
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 315px;
+  height: 479px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/MENU/vIPPERSONAJIFOTO.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mENUVIPDAYS {
+  transform-origin: top left;
+  position: absolute;
+  left: 123px;
+  top: 113px;
+  width: 192px;
+  height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUVIPDAYSBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 192px;
+  height: 44px;
+  border-radius: 5px 0 0 5px;
+  background-color: #ffffff0d;
+}
+.mENUVIPDAYSCOUNTBACK {
+  transform-origin: top left;
+  color: #ffffff0d;
+  font-size: 48px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - 50.5px);
+  top: calc(50% - 12px);
+  width: 81px;
+  height: 36px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0) translate(-50%, -50%);
+}
+.mENUVIPDAYSTEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 86px;
+  top: 15px;
+  width: 106px;
+  height: 14px;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUVIPDAYSCOUNTFRONT {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 71px;
+  height: 18px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.mENUVIPTEXT {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 315px;
+  height: 53px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUVIPTEXT2 {
+  opacity: 0.5;
+  color: #fffc;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 315px;
+  height: 18px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mENUVIPTEXT1 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 315px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.mENUSELECTOR {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: 195px;
+  height: 82px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUSELECTORMENU {
+  position: absolute;
+  left: 0;
+  top: 37px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px 0px #ffffff80;
+}
+.mENUSELECTORCARIELI2 {
+  position: absolute;
+  left: 110px;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mENUSELECTORCARIELI1 {
+  position: absolute;
+  left: 160px;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.mENUSELECTORTEXT {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 30px);
+  width: 195px;
+  height: 22px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.mENUSELECTORDONATE {
+  position: absolute;
+  left: 60px;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+  transition-duration: 0.3s;
+}
+.mENUSELECTORDONATE:HOVER {
+  position: absolute;
+  left: 60px;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px 0px #ffffff80;
+  transition-duration: 0.3s;
+  transform: scale(1.10);
+}
+.mENUBTC {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 246px;
+  height: 36px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUBTCTEXT {
+  color: #ffffff0d;
+  font-size: 48px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 246px;
+  height: 36px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.mENUBTCRAODENOBA {
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -15px);
+  width: 226px;
+  height: 19px;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+
+/* donate menu */
+
+.bG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/bG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mENUSAXELIGVARI {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 320px;
+  height: 46px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUSAXELI {
+  color: #fff;
+  font-size: 35px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 5.5px);
+  width: 320px;
+  height: 35px;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.mENUGVARI {
+  color: #ffffff80;
+  font-size: 20px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -22px);
+  width: 320px;
+  height: 20px;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLDONATE {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 285px;
+  height: 84px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hUDFRAMELVLEXP1DONATE {
+  position: absolute;
+  left: 25px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 0px #ffffff40;
+}
+.hUDFRAMELVLEXP2DONATE {
+  position: absolute;
+  left: 55px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 0px #ffffff40;
+}
+.hUDFRAMELVLEXP3DONATE {
+  position: absolute;
+  left: 85px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP4DONATE {
+  position: absolute;
+  left: 115px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP5DONATE {
+  position: absolute;
+  left: 145px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP6DONATE {
+  position: absolute;
+  left: 175px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP7DONATE {
+  position: absolute;
+  left: 205px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLEXP8DONATE {
+  position: absolute;
+  left: 235px;
+  top: 54px;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff26;
+}
+.hUDFRAMELVLXPTEXT1DONATE {
+  color: #fff;
+  font-size: 16px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -30.5px);
+  top: calc(50% - 6px);
+  width: 100px;
+  height: 16px;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLXPTEXT2DONATE {
+  color: #ffffff80;
+  font-size: 10px;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -101.5px);
+  top: calc(50% - 2.5px);
+  width: 32px;
+  height: 9px;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLTEXTBACK2DONATE {
+  color: #ffffff0d;
+  font-size: 48px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - 78.5px);
+  top: calc(50% - 26.5px);
+  width: 98px;
+  height: 36px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.hUDFRAMELVLTEXT1DONATE {
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - 73.5px);
+  top: calc(50% - 12.5px);
+  width: 88px;
+  height: 19px;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATESHUASHI {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1470px;
+  height: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.dONATEPREMIUMCARS {
+  opacity: 1;
+  position: absolute;
+  width: 540px;
+  height: 250px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMCARSBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 540px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.dONATEPREMIUMCARSPIC {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 540px;
+  height: 250px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/DONATE/dONATEPREMIUMCARSPIC.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dONATEPREMIUMCARSTEXT {
+  opacity: 1;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 230px;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMCARSTEXT1 {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 490px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMCARSTEXT1:hover {
+  opacity: 1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 490px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMCARSTEXT2 {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 78px;
+  width: 490px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMCARSTEXT2:hover {
+  opacity: 1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 78px;
+  width: 490px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMCARSTEXT3 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 490px;
+  height: 30px;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.dONATEPREMIUMSKINS {
+  opacity: 1;
+  position: absolute;
+  left: calc(50% - -60px);
+  top: calc(50% - 175px);
+  width: 410px;
+  height: 250px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+.dONATEPREMIUMSKINSBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 410px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.dONATEPREMIUMSKINSPIC {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 410px;
+  height: 250px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/DONATE/dONATEPREMIUMSKINSPIC.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dONATEPREMIUMSKINSTEXT {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 230px;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dONATEPREMIUMSKINSTEXT1 {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 360px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMSKINSTEXT1:HOVER {
+  opacity: 1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 360px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMSKINSTEXT2 {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 74px;
+  width: 360px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMSKINSTEXT2:hover {
+  opacity: 1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 74px;
+  width: 360px;
+  height: 18px;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.dONATEPREMIUMSKINSTEXT3 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360px;
+  height: 30px;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.dONATEBTCGADCVLA {
+  opacity: 0.5;
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  width: 250px;
+  height: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.dONATEBTCGADCVLA:HOVER {
+  opacity: 1;
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  width: 250px;
+  height: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  transform: scale(0.95);
+}
+.dONATEBTCGADCVLABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.dONATEBTCGADCVLAPIC {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 300px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/DONATE/dONATEBTCGADCVLAPIC.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dONATEBTCGADCVLATEXT {
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 128px;
+  width: 250px;
+  height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.dONATEBTCGADCVLATEXT1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 44px;
+  background-color: #ffffff0d;
+}
+.dONATEBTCGADCVLATEXT2 {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 250px;
+  height: 14px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.dONATEBTCGADCVLATEXT3 {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 250px;
+  height: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dONATEBTCGADCVLATEXT4 {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 250px;
+  height: 18px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dONATEBTCGADCVLATEXT5 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.dONATEVIP {
+  opacity: 0.5;
+  position: absolute;
+  left: 1050px;
+  width: 420px;
+  height: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.dONATEVIP:hover {
+  opacity: 1;
+  position: absolute;
+  left: 1050px;
+  width: 420px;
+  height: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  transform: scale(0.95);
+}
+.dONATEVIPBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 420px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: #00000040;
+}
+.dONATEVIPPIC {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 420px;
+  height: 600px;
+  background-image:/* webpackIgnore: true */ url('../FOTOEBI/DONATE/dONATEVIPPIC.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dONATEVIPTEXT1 {
+  color: #fffc;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 25px;
+  top: 207px;
+  width: 370px;
+  height: 14px;
+  flex-direction: column;
+}
+.dONATEVIPTEXT2 {
+  color: #fffc;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 25px;
+  top: 241px;
+  width: 370px;
+  height: 14px;
+  flex-direction: column;
+}
+.dONATEVIPTEXT3 {
+  color: #fffc;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 25px;
+  top: 275px;
+  width: 370px;
+  height: 14px;
+  flex-direction: column;
+}
+.dONATEVIPTEXT4 {
+  color: #fffc;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 25px;
+  top: 309px;
+  width: 370px;
+  height: 14px;
+  flex-direction: column;
+}
+.dONATEVIPTEXT5 {
+  color: #fffc;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 25px;
+  top: 343px;
+  width: 370px;
+  height: 14px;
+  flex-direction: column;
+}
+.dONATEVIP7DAYS {
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  top: 113px;
+  width: 192px;
+  height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.dONATEVIP7DAYSBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 192px;
+  height: 44px;
+  border-radius: 0 5px 5px 0;
+  background-color: #ffffff0d;
+}
+.dONATEVIP7DAYSTEXT {
+  transform-origin: top left;
+  color: #fffc;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 192px;
+  height: 14px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.dONATEVIPTEXT6 {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 420px;
+  height: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dONATEVIPTEXT7 {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 420px;
+  height: 18px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dONATEVIPTEXT8 {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 420px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+}
+.dONATESELECTOR {
+  opacity: 1;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: 195px;
+  height: 82px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: opacity 0.3s ease; /* Transition effect for opacity change */
+  pointer-events: auto; /* Enable pointer events by default */
+}
+.dONATESELECTOR.locked {
+  pointer-events: none; /* Disable pointer events when locked */
+}
+.dONATESELECTORMENU {
+  position: absolute;
+  left: 50px;
+  top: 37px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px 0px #ffffff80;
+}
+.dONATESELECTORCARIELI2 {
+  position: absolute;
+  left: 110px;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.dONATESELECTORCARIELI1 {
+  position: absolute;
+  left: 160px;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+}
+.dONATESELECTORTEXT {
+  color: #fff;
+  font-size: 30px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 30px);
+  width: 195px;
+  height: 22px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATESELECTORDONATE {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff0d;
+  transition-duration: 0.3s;
+}
+.dONATESELECTORDONATE:hover {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition-duration: 0.3s;
+  transform: scale(1.10);
+}
+.mENUBTC {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 246px;
+  height: 36px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mENUBTCTEXT {
+  color: #ffffff0d;
+  font-size: 48px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 246px;
+  height: 36px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.mENUBTCRAODENOBA {
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -15px);
+  width: 226px;
+  height: 19px;
+  justify-content: center;
+  text-shadow: 0px 0px 25px #ffffff80;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+.dONATEYIDVAFRAME {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.bLUR {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #00000040;
+  backdrop-filter: blur(12.5px);
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVA {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - -0.5px);
+  width: 452px;
+  height: 151px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVATEXT {
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 66px);
+  width: 452px;
+  height: 19px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVABTCTEXT {
+  color: #ffffff80;
+  font-size: 16px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -65.5px);
+  top: calc(50% - 21.5px);
+  width: 321px;
+  height: 12px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVAVADA {
+  color: #ffffff80;
+  font-size: 16px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -65.5px);
+  top: calc(50% - 4.5px);
+  width: 321px;
+  height: 12px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVABTC {
+  color: #ffffff80;
+  font-size: 60px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.16em;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: calc(50% - 24px);
+  width: 126px;
+  height: 45px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVADIAX {
+  opacity: 0.25;
+  position: absolute;
+  left: 123px;
+  top: 108px;
+  width: 109px;
+  height: 43px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+  animation: flash 1s infinite;
+}
+@keyframes flash {
+  0% {
+    background-color: #52525230;
+  }
+  50% {
+    background-color: #00000000;
+    opacity: 1;
+  }
+  100% {
+    background-color: #52525260;
+  }
+}
+.dONATEVIPYIDVADIAX:HOVER {
+  opacity: 1;
+  position: absolute;
+  left: 123px;
+  top: 108px;
+  width: 109px;
+  height: 43px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.dONATEVIPYIDVADIAXBG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 109px;
+  height: 43px;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.dONATEVIPYIDVADIAXTEXT {
+  color: #fffc;
+  font-size: 18px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  top: 38.5%;
+  width: 49px;
+  height: 13px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEVIPYIDVAUARI {
+  opacity: 0.25;
+  position: absolute;
+  left: 257px;
+  top: 124px;
+  width: 71px;
+  height: 11px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.dONATEVIPYIDVAUARI:hover {
+  opacity: 1;
+  position: absolute;
+  left: 257px;
+  top: 124px;
+  width: 71px;
+  height: 11px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.dONATEVIPYIDVAUARITEXT {
+  color: #ffffff80;
+  font-size: 12px;
+  font-family: 'BPG ExtraSquare Mtavruli';
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  width: 71px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+.dONATEBTCGADACVLAFRAME {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.dONATEBTCGADACVLAMAIN {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 432px;
+  height: 194px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+.dONATEBTCGADACVLASATAURI {
+  color: #fff;
+  font-size: 24px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 73px);
+  width: 432px;
+  height: 48px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEBTCGADACVLAINPUT {
+  position: absolute;
+  left: 86px;
+  top: 68px;
+  width: 260px;
+  height: 43px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dONATEBTCGADACVLAINPUTBG {
+  opacity: 0.25;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 43px;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+#dONATEBTCGADACVLAINPUTTEXT {
+  width: 260px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  z-index: 2;
+  font-weight: 300;
+  font-family: TBC Contractica CAPS, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  top: 1px;
+}
+#dONATEBTCGADACVLAINPUTTEXT::placeholder {
+  color: #ffffff; /* Adjust the color to your preference */
+}
+.dONATEBTCGADACVLA {
+  opacity: 0.25;
+  position: absolute;
+  left: 68px;
+  top: 151px;
+  width: 163px;
+  height: 43px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+  animation: flash 1s infinite;
+}
+@keyframes flash {
+  0% {
+    background-color: #52525230;
+  }
+  50% {
+    background-color: #00000000;
+    opacity: 1;
+  }
+  100% {
+    background-color: #52525260;
+  }
+}
+.dONATEBTCGADACVLABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 163px;
+  height: 43px;
+  overflow: visible;
+}
+.dONATEBTCGADACVLABG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 163px;
+  height: 43px;
+  overflow: visible;
+}
+.icon2 {
+  width: 100%;
+  height: 100%;
+}
+.dONATEBTCGADACVLATEXT {
+  color: #fffc;
+  font-size: 18px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  top: 38.5%;
+  width: 113px;
+  height: 13px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+.dONATEBTCGADAVIFIQRE {
+  opacity: 0.25;
+  position: absolute;
+  left: 256px;
+  top: 167px;
+  width: 107px;
+  height: 11px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.dONATEBTCGADAVIFIQRE:hover {
+  opacity: 1;
+  position: absolute;
+  left: 256px;
+  top: 167px;
+  width: 107px;
+  height: 11px;
+  flex-direction: column;
+  align-items: flex-start;
+  transition-duration: 0.4s;
+}
+.dONATEBTCGADAVIFIQRETEXT {
+  color: #ffffff80;
+  font-size: 14px;
+  font-family: BPG ExtraSquare Mtavruli, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 50%;
+  width: 107px;
+  height: 11px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+
+/* Captcha */
+.container {
+  text-align: center;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  margin-right: 10px;
+  position: relative;
+  transition: transform 1s ease;
+}
+
+.checkbox-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+input[type="checkbox"]:checked + .checkbox-label .checkbox-custom {
+  transform: rotate(360deg);
+}
+
+input[type="checkbox"]:checked + .checkbox-label .checkbox-custom::after {
+  opacity: 1;
+}
+
+.checkbox-label.disappear {
+  animation: disappear 1s forwards;
+}
+
+@keyframes disappear {
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
 }
