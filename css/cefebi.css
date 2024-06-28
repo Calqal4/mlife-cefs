@@ -11715,7 +11715,7 @@ body{
 }
 
 /* MAINMENU */
-.bG {
+.MENU-bG {
   position: absolute;
   left: 0;
   top: 0;
@@ -12482,7 +12482,7 @@ body{
 
 /* donate menu */
 
-.bG {
+.Donate-bg {
   position: absolute;
   left: 0;
   top: 0;
